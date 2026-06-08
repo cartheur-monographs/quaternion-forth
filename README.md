@@ -14,8 +14,10 @@ Cayley graph showing the six cycles of multiplication by `i`, `j` and `k`.
 
 _Efficient Data Manipulation_
 
-* Multi-Dimensional Data: Quaternions allow for the representation and manipulation of data in four dimensions, adding substantive power to discrete analysis within complex transformations, such as in current AI models.
-* Simplified Calculations: The unique properties of quaternions help streamline calculations involving vast rotations of data clusters.
+* Quaternions allow for the representation and manipulation of data in four dimensions, adding substantive power to discrete analysis within complex transformations, such as in current AI models.
+  - Higher-dimensional manipulations available by sclaing to octonions and multenions.
+* The unique properties of quaternions help streamline calculations involving vast rotations of data clusters.
+* The ability to project predictive analyses using large groups of transformative rotations.
 
 -----
 
