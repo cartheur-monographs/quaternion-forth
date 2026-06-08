@@ -1,0 +1,128 @@
+Agent notes: block-file method deductions
+=========================================
+
+Purpose
+-------
+
+This note records the reasoning that led from a simple serial source uploader
+to the current block-image deployment method for Volatco.
+
+Initial mistaken assumption
+---------------------------
+
+The first workable idea was to send polyForth source line by line over serial
+and define the words directly at the terminal. That is good enough for quick
+experiments, but it is not a faithful description of the saneForth / Volatco
+workflow and it is weaker for paper reproducibility.
+
+What changed the method
+-----------------------
+
+Inspection of the sibling saneForth repo showed that the normal Volatco usage
+pattern is block-based and image-based.
+
+Important observations:
+
+1. The stock pFDISK.blk image is 4800 blocks of 1024 bytes each.
+2. The stock image uses block 1560 for AFORTH environment material.
+3. The stock example uses block 1585 as a demo application load block.
+4. The generic Project file says:
+
+      Intended to be load block for your application
+      2340 blocks of source and 2340 of shadows follow
+
+5. The Volatco custom configuration points to VOLATCO.src as the project file.
+6. VOLATCO.src is also 4800 blocks long.
+7. In the checked Volatco project file, block 0 contains only a project header
+   and the rest of the file is empty.
+
+Resulting deduction
+-------------------
+
+The correct deployment artifact for this repo should be a project image that
+arrayForth / saneForth can use directly, not only a terminal transcript.
+
+That means:
+
+- choose a safe application block range
+- place a load block in that range
+- place the human-readable source into explicit block numbers
+- tell the operator exactly which LOAD command to issue
+
+Why block 10
+------------
+
+A user suggestion was made to start after block 9. That is reasonable because:
+
+- block 0 already acts as project header
+- there was no evidence in the checked VOLATCO.src file that blocks 1-9 were
+  being used by this repo
+- starting at 10 leaves a small reserved front matter area
+- it avoids reusing the stock-demo block 1585, which belongs to a different
+  layout story
+
+Chosen layout
+-------------
+
+- blocks 0..9 reserved
+- block 10 load block
+- blocks 11..30 source blocks
+
+Why the .pf source had to change
+--------------------------------
+
+The Volatco-facing source file was originally only visually divided into
+"blocks" by comments. That is not enough. A real classical Forth block must fit
+within a fixed geometry.
+
+The chosen geometry was:
+
+- 16 lines per block
+- 64 characters per line
+- 1024 bytes total
+
+Once the packer enforced that geometry, it exposed a real formatting problem:
+
+- one block in polyforth/volatco-blocks.pf had 19 lines
+
+That forced a cleanup pass so the target file became a true block-shaped source
+file rather than only a stylistic approximation.
+
+Why the load block is explicit
+------------------------------
+
+The generated load block uses a visible list of:
+
+    11 LOAD
+    12 LOAD
+    ...
+    30 LOAD
+
+instead of relying on a less explicit helper. That makes the paper and the
+deployment easier to audit. A reader can inspect the exact source range that is
+being loaded.
+
+Why qreport and mreport are not auto-run by the load block
+----------------------------------------------------------
+
+At one point the load block also issued qreport and mreport. That was removed.
+
+Reason:
+
+- 10 LOAD should be a pure load action
+- correctness checks should stay explicit in the operator instructions
+- it is cleaner for both debugging and paper reproducibility
+
+Operational conclusion
+----------------------
+
+The preferred reproducible method is:
+
+1. replace the active VOLATCO.src in the saneForth Volatco project
+2. reach AFORTH over serial
+3. type 10 LOAD
+4. type qreport and mreport
+5. only then run benchmarks
+
+The serial uploader remains in the repo as a fallback or exploratory tool, but
+it is no longer the primary deployment story for the paper.

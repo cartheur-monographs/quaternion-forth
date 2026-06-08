@@ -1,0 +1,64 @@
+WINDOWS 7 INSTALL STEPS
+======================
+
+This is the shortest no-agent procedure.
+
+What you need already working
+-----------------------------
+
+- your normal saneForth / arrayForth-3 installation
+- your normal Volatco serial path to AFORTH
+
+What you copy from this USB deployment
+-------------------------------------
+
+- VOLATCO.src
+- check-volatco.txt
+- BLOCK-MAP.txt
+
+Preferred method
+----------------
+
+1. Back up the current VOLATCO.src file in your saneForth Volatco project
+   directory.
+2. Copy this deployment's VOLATCO.src into that same project directory.
+3. Start your normal arrayForth-3 / saneForth Volatco workflow.
+4. Reach AFORTH over serial.
+5. Type:
+
+      10 LOAD
+
+6. Then type:
+
+      qreport
+      mreport
+
+7. Both should print:
+
+      10 -20 -30
+
+8. If that works, type:
+
+      1000 biter!
+      bqr
+      bmr
+      bq*
+      bmm
+
+If the first check fails
+------------------------
+
+- stop
+- do not trust any benchmark result
+- restore the previous VOLATCO.src if needed
+- compare the block map and source layout before trying again
+
+Fallback method
+---------------
+
+If you do not want to replace VOLATCO.src yet, use:
+
+    upload-volatco-safe.bat
+
+That method is secondary. The paper's reproducible path is the project-image
+method above.
