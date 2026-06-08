@@ -1,0 +1,56 @@
+\ block 01 title and scratch
+decimal
+\ change these variables to suit the problem
+variable left    variable right
+variable out     variable tmp1
+variable tmp2
+
+\ block 02 offsets and storage
+\ define field offsets or element accessors here
+: a0 ;
+: a1 1 cells + ;
+: a2 2 cells + ;
+: a3 3 cells + ;
+
+: clear4  ( addr -- )
+  dup a0 0 swap !
+  dup a1 0 swap !
+  dup a2 0 swap !
+      a3 0 swap ! ;
+
+\ block 03 basic words
+\ keep words short and factored
+: copy4  ( src dst -- )
+  out ! left !
+  left @ a0 @ out @ a0 !
+  left @ a1 @ out @ a1 !
+  left @ a2 @ out @ a2 !
+  left @ a3 @ out @ a3 ! ;
+
+\ block 04 arithmetic or transform words
+\ add the core problem-specific words here
+: op  ( left right out -- )
+  out ! right ! left !
+  \ fill in the body
+;
+
+\ block 05 fixtures
+create f0 4 cells allot
+create f1 4 cells allot
+create f2 4 cells allot
+
+: init-fixtures  ( -- )
+  f0 clear4
+  f1 clear4
+  f2 clear4 ;
+
+\ block 06 reports and checks
+: report  ( -- )
+  init-fixtures
+  \ print the most useful visible result here
+;
+
+: bench  ( -- )
+  init-fixtures
+  \ add looped timing workload here
+;

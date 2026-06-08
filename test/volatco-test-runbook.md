@@ -11,13 +11,29 @@ words.
 
 ## Files to load
 
-- `forth/quaternion.fs`
-- `forth/matrix.fs`
-- `forth/benchmarks.fs`
+- `polyforth/volatco-blocks.pf`
 
-If your `polyForth` image supports relative `include`, loading
-`forth/benchmarks.fs` should be sufficient because it includes the other two
-files.
+The `polyforth/` source is the Volatco-facing version. The `forth/` directory
+remains the reference implementation used for local checking under `gforth`.
+Do not use `polyforth/dev-template-blocks.pf` for hardware testing; it is only
+for future development.
+
+## Terminal sequence
+
+This is the minimum sequence to type or run on Volatco:
+
+1. Load or enter `polyforth/volatco-blocks.pf`.
+2. Type `qreport`
+3. Type `mreport`
+4. If both print `10 -20 -30`, type `1000 biter!`
+5. Then measure:
+   `bqr`
+   `bmr`
+   `bq*`
+   `bmm`
+
+If `qreport` and `mreport` do not both print `10 -20 -30`, stop and fix the
+loading or dialect issue before measuring anything.
 
 ## Known aligned rotation fixture
 
@@ -39,8 +55,8 @@ The matrix benchmark uses the equivalent matrix:
 
 Run these words before measuring performance:
 
-- `bench-qrotate-report`
-- `bench-mrotate-report`
+- `qreport`
+- `mreport`
 
 Expected printed component order in each case:
 
@@ -48,20 +64,17 @@ Expected printed component order in each case:
 
 Optional full quaternion inspection:
 
-- `bench-qrotate-full`
-
-If you inspect `bench-qrotate-full` or `bench-qrotate-vector` manually with
-repeated `.` operations, remember that plain stack printing shows the top item
-first. The `*-report` words are the easiest human check.
+- there is no separate full-report helper in the `.pf` target file yet; use
+  `qreport` for the first correctness check
 
 ## Benchmark words to measure
 
-- `bench-q+`
-- `bench-q*`
-- `bench-qnorm2`
-- `bench-qrotate`
-- `bench-mrotate`
-- `bench-mmultiply`
+- `bq+`
+- `bq*`
+- `bqn`
+- `bqr`
+- `bmr`
+- `bmm`
 
 ## Iteration control
 
@@ -71,7 +84,7 @@ Default iterations:
 
 To set a new count:
 
-- `5000 bench-set-iterations`
+- `5000 biter!`
 
 Use the same iteration count for quaternion and matrix comparisons.
 
@@ -96,10 +109,10 @@ For each benchmark:
 
 If time is limited, measure these first:
 
-1. `bench-qrotate`
-2. `bench-mrotate`
-3. `bench-q*`
-4. `bench-mmultiply`
+1. `bqr`
+2. `bmr`
+3. `bq*`
+4. `bmm`
 
 That gives the paper its core empirical comparison.
 

@@ -19,6 +19,8 @@ matrix representation for bounded rotational workloads in `polyForth`.
 
 - `paper/`
   LaTeX manuscript, bibliography, build file, and measurement protocol.
+- `polyforth/`
+  Screen-oriented `polyForth` source intended for Volatco loading.
 - `publish/`
   Submission planning notes, including journal targets and fit analysis.
 - `test/`
