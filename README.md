@@ -1,2 +1,50 @@
 # quaternion-forth
-Imagine McAuley and Jasper Joly at the forefront of a new scientific frontier
+
+This repository is a working scaffold for a mathematical and engineering paper
+about quaternion arithmetic in `polyForth` on Volatco hardware.
+
+The current goal is not to claim a finished result. The goal is to build a
+reproducible path from literature, to implementation, to measurement, so that a
+paper can make a defensible performance argument.
+
+## Repository layout
+
+- `paper/`
+  LaTeX manuscript, bibliography, build file, and measurement protocol.
+- `forth/`
+  Portable Forth source intended as a starting point for `polyForth`.
+- `quaternions/`
+  Background papers and historical references.
+
+## Research claim
+
+The core claim this repository is structured to test is:
+
+> A fixed-point quaternion representation is a reasonable rotational algebra
+> for `polyForth` on Volatco because it keeps state compact, composes cleanly,
+> and can be benchmarked against matrix-based alternatives under explicit power
+> and latency constraints.
+
+## Current status
+
+This repository now contains:
+
+- a LaTeX paper source with PDF build output
+- a first quaternion package in Forth
+- a companion `3x3` matrix comparison kernel
+- a benchmark scaffold
+- a protocol for turning benchmark results into manuscript evidence
+
+It does not yet contain:
+
+- confirmed `polyForth` target-specific compatibility fixes
+- hardware measurements from a real Volatco board
+- a completed bibliography or final paper text
+
+## Next steps
+
+1. Adapt the Forth words to the exact `polyForth` image available on Volatco.
+2. Decide on numeric format: integer, scaled fixed-point, or mixed strategy.
+3. Run the benchmark protocol on hardware.
+4. Record timing, power, and code-size results in `paper/results.md`.
+5. Revise the manuscript claim to match measured evidence.

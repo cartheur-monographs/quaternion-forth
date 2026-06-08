@@ -1,0 +1,241 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\newcommand{\todoitem}[1]{%
+  \par\noindent\textbf{TODO:} #1\par
+}
+
+\title{Reasonable Quaternion Arithmetic for \texttt{polyForth} on Volatco\\
+\large Representation, Implementation, and Performance Evidence}
+\author{Cartheur}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies whether quaternion arithmetic is a reasonable computational
+choice for \texttt{polyForth} on Volatco, an asynchronous F18A-based platform
+intended for low-power control, robotics, and experimental machine-intelligence
+workloads. The standard of reasonableness adopted here is deliberately narrow:
+the representation must be simple to encode in a stack language, compact enough
+to respect the constraints of an 18-bit node, and measurably competitive with
+plausible alternatives on representative rotational workloads. The repository
+therefore combines source code, benchmark definitions, and manuscript material
+so that the argument can be revised against hardware measurements rather than
+asserted from algebra alone.
+\todoitem{Revise the abstract once real Volatco measurements exist so that it
+states actual findings rather than the present research intent.}
+\end{abstract}
+
+\section{Introduction}
+
+Quaternion methods are attractive in rotational computation because they offer a
+compact composition law and avoid some of the representational overhead of
+matrix-based formulations. Those advantages are familiar in conventional
+software environments, but they cannot simply be assumed on a tiny asynchronous
+multicomputer running \texttt{polyForth}. On such a platform, the right
+question is not whether quaternions are elegant, but whether they are
+operationally reasonable.
+
+Volatco is a useful target for this question because it is explicitly
+Forth-native and designed around deterministic, low-latency execution. Its
+published documentation emphasizes reproducible \texttt{polyForth} experiments
+with explicit pass/fail criteria, power measurement points, and bounded-latency
+behavior \cite{volatco-site,volatco-docs}. That combination makes it possible
+to write a paper that is both mathematical and empirical.
+
+\todoitem{Add citations from the local quaternion corpus for the mathematical
+motivation, especially references on quaternion rotation and computational
+advantages or limitations relative to matrices.}
+
+\section{Claim}
+
+The working claim of this paper is modest:
+
+\begin{quote}
+A fixed-point quaternion representation is a reasonable rotational algebra for
+\texttt{polyForth} on Volatco when it yields compact code, controlled state,
+and reproducible performance under explicitly measured workloads.
+\end{quote}
+
+The claim is intentionally narrower than ``quaternions are best.'' It is a
+claim about suitability under a specific architecture, runtime style, and
+evidence standard.
+
+\todoitem{Replace the current claim text with a version tied to measured
+thresholds, for example code size, elapsed time, or power bounds, once those
+numbers exist.}
+
+\section{Representations Under Comparison}
+
+The implementation scaffold in this repository uses two competing
+representations. The quaternion kernel stores $(a,b,c,d)$, where $a$ is the
+scalar part and $b,c,d$ are the vector components. The comparison kernel stores
+a $3\times 3$ rotation matrix in row-major order plus a three-component vector.
+This side-by-side structure is important: the paper should not ask whether
+quaternions are elegant in the abstract, but whether they remain reasonable
+once compared to a direct matrix approach under the same tooling and target
+constraints.
+
+The quaternion layout maps directly to Hamilton's multiplication rule. The
+current draft keeps the representation abstract enough to allow either integer
+arithmetic or scaled fixed-point arithmetic after target measurements determine
+which is more practical on Volatco.
+
+\todoitem{Choose the actual numeric model for the paper: plain integer,
+fixed-point with explicit scale factor, or a mixed representation. Document the
+overflow and precision tradeoffs for the chosen model.}
+
+The scalar-first ordering is not mathematically necessary. It is adopted here
+for engineering clarity, because conjugation, norm-squared, and scalar-vector
+decomposition can be written with simple address-based stack effects in Forth.
+
+\todoitem{Add one short worked example showing the in-memory layout of a
+quaternion and a matrix on the target Forth system.}
+
+\section{Implementation Strategy}
+
+The initial Forth implementation favors transparency over optimization. Core
+quaternion words are provided for addition, subtraction, conjugation,
+norm-squared, Hamilton product, and vector rotation via
+$qvq^{-1}$, implemented as \texttt{q * v * conjugate(q)}. A companion matrix
+kernel performs matrix-vector and matrix-matrix multiplication in the same
+address-based style. This is the correct place to start because a paper cannot
+defend an optimized kernel unless it first presents readable reference
+implementations for both the proposed and comparison methods.
+
+\todoitem{Add an appendix excerpt of the actual reference Forth code and note
+any edits required for the exact Volatco \texttt{polyForth} image.}
+
+After reference behavior is established, optimization can proceed in three
+directions:
+
+\begin{enumerate}[label=\arabic*.]
+\item reduce stack traffic
+\item remove scratch storage where the target system permits
+\item distribute work across nodes when the communication cost is justified
+\end{enumerate}
+
+\todoitem{State whether this paper evaluates only single-node kernels or also
+includes multi-node decomposition across the Volatco mesh.}
+
+\section{Measurement Plan}
+
+The benchmark argument in this repository compares quaternion operations against
+a direct $3\times 3$ rotation matrix kernel written in the same style. That
+comparison is necessary because the matrix method spends more storage but may
+win in some workloads by avoiding quaternion conjugation or normalization
+overhead.
+
+Each benchmark should record:
+
+\begin{itemize}
+\item iteration count
+\item elapsed time
+\item code footprint
+\item current or power measurement
+\item watchdog stability during long runs
+\end{itemize}
+
+The results should be treated as evidence about suitability for Volatco, not as
+universal claims about all Forth systems.
+
+\todoitem{Insert a real results table here with at least quaternion rotation
+versus matrix-vector rotation, including iteration count, elapsed time, and
+power measurement point.}
+
+\todoitem{Document the timing method precisely: serial timestamping, on-board
+counter, external logic capture, or another method.}
+
+\section{Expected Contribution}
+
+If the measurements support the working claim, the paper contributes a concrete
+case study in how a classical algebraic formalism can be adapted to a modern
+asynchronous Forth-native platform. If the measurements do not support the
+claim, that result is still valuable because it clarifies where quaternion
+methods cease to be worth their conceptual appeal under tight embedded
+constraints.
+
+The comparison with a matrix kernel is especially important here. A paper that
+only demonstrates that quaternion code runs on Volatco would be incomplete. The
+interesting result is whether quaternion state, composition, and rotation
+support a better tradeoff than a simpler matrix pipeline once timing, code
+size, and power are measured on the same board.
+
+\todoitem{Once data exists, make this section argue from the observed tradeoff
+rather than from expected contribution alone.}
+
+\section{Current Status}
+
+At present, the repository contains:
+
+\begin{itemize}
+\item an address-based quaternion kernel for Forth
+\item a companion $3\times 3$ matrix kernel
+\item a benchmark scaffold for repeated arithmetic and rotation workloads
+\item a reproducibility protocol for eventual Volatco measurements
+\end{itemize}
+
+It does not yet contain:
+
+\begin{itemize}
+\item confirmed target-specific \texttt{polyForth} adaptations
+\item hardware measurements from a real Volatco board
+\item a completed citation apparatus grounded in the local quaternion corpus
+\end{itemize}
+
+The present engineering assumptions about Volatco derive from the public site
+and documentation rather than from private hardware notes
+\cite{volatco-site,volatco-docs}.
+
+\todoitem{Replace this status section with a brief methodology section after the
+first hardware campaign is complete.}
+
+\section{Next Revision Points}
+
+\begin{itemize}
+\item replace placeholder prose with citations from the local quaternion corpus
+\item confirm \texttt{polyForth} compatibility on Volatco
+\item choose and document a fixed-point scaling rule
+\item add measured benchmark results
+\item interpret the quaternion results against the matrix baseline
+\item narrow the claim to match the data
+\end{itemize}
+
+\section{Focused TODO List}
+
+\begin{itemize}
+\item Gather mathematical citations from the local quaternion papers and books.
+\item Confirm the exact Volatco \texttt{polyForth} dialect and any source edits
+needed for the current Forth files.
+\item Choose the numeric representation and document scale, range, and overflow
+behavior.
+\item Run quaternion and matrix benchmarks on real Volatco hardware.
+\item Add tables for timing, power, and code size.
+\item Rewrite the abstract, claim, and discussion around measured evidence.
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\appendix
+\section{Benchmark Protocol Summary}
+
+The benchmark protocol should report, at minimum, board revision, runtime
+revision, exact source, iteration count, elapsed time, power measurement point,
+code size, pass/fail outcome, and notes on watchdog or reset behavior. The
+baseline workload set should include repeated quaternion addition, Hamilton
+product, norm-squared, vector rotation, matrix-vector rotation, and
+matrix-matrix multiplication.
+
+\end{document}
