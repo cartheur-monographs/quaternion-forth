@@ -1,7 +1,6 @@
 # quaternion-forth
 
-This repository is a working scaffold for a mathematical and engineering paper
-about quaternion arithmetic in `polyForth` on Volatco hardware. The goal is to build a com;utational track from the literature of quaternion calculus and projections (predictions in linear algebra - based on the Gibbs Analysis), to implementation, to measurement, so that a paper can make a defensible performance argument of the superiority of the method and main driver of high-efficientcy algorithms on native Forth hardware in the F18A architecture..
+This repository is a mathematical and engineering research record about the potential of quaternion arithmetic in `polyForth` on Volatco hardware. The goal is to build a computational track from the literature of quaternion calculus and projections (predictions in linear algebra - based on the Gibbs Analysis), to implementation, to measurement, so that a paper illustrates and supports the published GA144A12 statistics of the superiority of the method and means of high-efficientcy algorithms executed in the F18A architecture.
 
 _The Question_
 
