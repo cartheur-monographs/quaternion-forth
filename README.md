@@ -13,6 +13,8 @@ It's ALL about this....
 
 ![bassic](/images/bassic.png)
 
+Cayley graph of the quaternion group Q8 showing the six cycles of multiplication by i, j and k.
+
 ## Motivation
 
 On Volatco-class asynchronous embedded systems, the representation of rotational
