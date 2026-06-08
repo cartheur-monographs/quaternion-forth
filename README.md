@@ -1,4 +1,4 @@
-## The magnificience of quaternions in polyForth
+## The magnificience of quaternion calculus in polyForth using McAulay's framework
 
 This repository is a mathematical and engineering research record on the potential of quaternion arithmetic in `polyForth` on Volatco hardware. The goal is to build a computational track from the literature of quaternion calculus and projections (predictions in linear algebra - based on the Gibbs Analysis), to implementation and comparative analysis presented as a published academic paper wherein as an instrument to support reported GA144A12 statistics and contributing experimental evidence toward a method and means of high-efficientcy algorithms executed in F18A architecture, including intranodal cooperation via Snorkel and Ganglia.
 
@@ -9,6 +9,13 @@ How does this algebra reliably transform as a computational system in polyForth?
 ![bassic](/images/bassic.png)
 
 Cayley graph showing the six cycles of multiplication by `i`, `j` and `k`.
+
+## Key benefits
+
+_Efficient Data Manipulation_
+
+* Multi-Dimensional Data: Quaternions allow for the representation and manipulation of data in four dimensions, which is essential for complex transformations.
+* Simplified Calculations: The unique properties of quaternions help streamline calculations involving rotations, making them more efficient compared to traditional methods.
 
 ## Motivation
 
