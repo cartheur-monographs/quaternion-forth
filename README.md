@@ -20,7 +20,7 @@ matrix representation for bounded rotational workloads in `polyForth`.
 - `paper/`
   LaTeX manuscript, bibliography, build file, and measurement protocol.
 - `polyforth/`
-  Screen-oriented `polyForth` source intended for Volatco loading.
+  Block-oriented `polyForth` source and block-layout notes for Volatco.
 - `publish/`
   Submission planning notes, including journal targets and fit analysis.
 - `test/`
@@ -49,6 +49,7 @@ This repository now contains:
 - a first quaternion package in Forth
 - a companion `3x3` matrix comparison kernel
 - a benchmark scaffold
+- a block-image generation path for Volatco project deployment
 - a protocol for turning benchmark results into manuscript evidence
 
 It does not yet contain:

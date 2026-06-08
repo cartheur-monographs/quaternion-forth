@@ -1,6 +1,8 @@
 # Windows Tcl Quick Start
 
-Use these commands on the Windows 7 machine.
+Use these commands on the Windows 7 machine only if you are taking the fallback
+serial path. The preferred path is to copy `VOLATCO.src` into the saneForth
+Volatco project directory, enter `AFORTH`, and type `10 LOAD`.
 
 ## 1. Dry run
 

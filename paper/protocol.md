@@ -5,6 +5,22 @@
 Produce a reproducible performance argument for quaternion arithmetic in
 `polyForth` on Volatco.
 
+## Deployment basis
+
+The reproducible deployment path for this repo is block-image based rather than
+terminal-paste based.
+
+Use a `4800`-block Volatco project image with this mapping:
+
+- blocks `0` through `9` reserved
+- block `10` as the application load block
+- blocks `11` through `30` as source generated from
+  `polyforth/volatco-blocks.pf`
+
+The intended operator command after entering `AFORTH` is:
+
+- `10 LOAD`
+
 ## Comparison
 
 Compare the quaternion kernel against the included alternative:

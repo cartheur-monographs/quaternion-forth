@@ -129,6 +129,16 @@ directions:
 \todoitem{State whether this paper evaluates only single-node kernels or also
 includes multi-node decomposition across the Volatco mesh.}
 
+The deployment method also matters to reproducibility. In the current repo, the
+Volatco-facing source is treated as block-resident \texttt{polyForth} source
+rather than as an ephemeral terminal transcript. A generated \texttt{VOLATCO}
+project image reserves blocks $0$ through $9$, uses block $10$ as the
+application load block, and places the quaternion source in blocks $11$ through
+$30$. The intended operator action is therefore to enter \texttt{AFORTH} and
+issue \texttt{10 LOAD}. This detail is important because it makes the
+experiment reproducible in the same block-oriented style used by the surrounding
+saneForth workflow.
+
 \section{Measurement Plan}
 
 The benchmark argument in this repository compares quaternion operations against

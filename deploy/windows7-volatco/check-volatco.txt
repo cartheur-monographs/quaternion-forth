@@ -1,4 +1,8 @@
-Type these on the Volatco terminal after upload:
+Type these on the Volatco terminal after entering AFORTH:
+
+10 LOAD
+
+Then check:
 
 qreport
 mreport

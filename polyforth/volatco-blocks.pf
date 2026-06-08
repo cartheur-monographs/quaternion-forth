@@ -138,14 +138,10 @@ variable vo   variable iters
   r> m00 ! ;
 
 : m0  ( m -- )
-  dup m00 0 swap !
-  dup m01 0 swap !
-  dup m02 0 swap !
-  dup m10 0 swap !
-  dup m11 0 swap !
-  dup m12 0 swap !
-  dup m20 0 swap !
-  dup m21 0 swap !
+  dup m00 0 swap ! dup m01 0 swap !
+  dup m02 0 swap ! dup m10 0 swap !
+  dup m11 0 swap ! dup m12 0 swap !
+  dup m20 0 swap ! dup m21 0 swap !
       m22 0 swap ! ;
 
 \ block 11 vector storage

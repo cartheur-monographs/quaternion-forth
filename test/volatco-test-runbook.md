@@ -9,18 +9,36 @@ Confirm that the quaternion and matrix benchmark fixtures produce the same
 rotation, then record timing, power, and code-size data for the benchmark
 words.
 
+## Preferred deployment
+
+Use a generated Volatco project image, not a terminal paste, for the
+reproducible path described by the paper.
+
+Generate the image locally:
+
+```bash
+python3 tools/pf_block_pack.py \
+  polyforth/volatco-blocks.pf \
+  deploy/windows7-volatco/VOLATCO.src
+```
+
+Then place `deploy/windows7-volatco/VOLATCO.src` into the saneForth Volatco
+project directory on the Windows machine so it becomes the active project image.
+
 ## Files to load
 
-- `polyforth/volatco-blocks.pf`
+- `deploy/windows7-volatco/VOLATCO.src`
 
-The `polyforth/` source is the Volatco-facing version. The `forth/` directory
-remains the reference implementation used for local checking under `gforth`.
-Do not use `polyforth/dev-template-blocks.pf` for hardware testing; it is only
-for future development.
+The `polyforth/` source remains the human-readable Volatco-facing source used
+to generate the image. The `forth/` directory remains the reference
+implementation used for local checking under `gforth`. Do not use
+`polyforth/dev-template-blocks.pf` for hardware testing; it is only for future
+development.
 
-## Automated loading option
+## Fallback automated loading option
 
-Instead of typing the source manually, you can try the host-side uploader:
+If you are experimenting and do not want to replace the project image, you can
+still try the host-side uploader:
 
 ```bash
 python3 tools/volatco_upload.py polyforth/volatco-blocks.pf --port /dev/ttyUSB0
@@ -55,18 +73,19 @@ tclsh tools\volatco_upload.tcl polyforth\volatco-blocks.pf
 
 This is the minimum sequence to type or run on Volatco:
 
-1. Load or enter `polyforth/volatco-blocks.pf`.
-2. Type `qreport`
-3. Type `mreport`
-4. If both print `10 -20 -30`, type `1000 biter!`
-5. Then measure:
+1. Enter `AFORTH`.
+2. Type `10 LOAD`.
+3. Type `qreport`
+4. Type `mreport`
+5. If both print `10 -20 -30`, type `1000 biter!`
+6. Then measure:
    `bqr`
    `bmr`
    `bq*`
    `bmm`
 
 If `qreport` and `mreport` do not both print `10 -20 -30`, stop and fix the
-loading or dialect issue before measuring anything.
+loading, block mapping, or dialect issue before measuring anything.
 
 ## Known aligned rotation fixture
 
@@ -160,3 +179,10 @@ Then revise the LaTeX paper:
 - replace TODOs tied to results
 - add a real results table
 - update the claim to match the measured evidence
+
+## Block map used by this repo
+
+- blocks `0` through `9` are treated as reserved
+- block `10` is the quaternion project load block
+- blocks `11` through `30` contain the source generated from
+  `polyforth/volatco-blocks.pf`
