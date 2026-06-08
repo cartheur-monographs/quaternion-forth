@@ -7,10 +7,20 @@ The current goal is not to claim a finished result. The goal is to build a
 reproducible path from literature, to implementation, to measurement, so that a
 paper can make a defensible performance argument.
 
+## Motivation
+
+On Volatco-class asynchronous embedded systems, the representation of rotational
+state is a systems design decision rather than a cosmetic mathematical choice.
+Storage, latency, and power are constrained, so this repository asks whether a
+fixed-point quaternion representation yields a better tradeoff than a `3x3`
+matrix representation for bounded rotational workloads in `polyForth`.
+
 ## Repository layout
 
 - `paper/`
   LaTeX manuscript, bibliography, build file, and measurement protocol.
+- `publish/`
+  Submission planning notes, including journal targets and fit analysis.
 - `forth/`
   Portable Forth source intended as a starting point for `polyForth`.
 - `quaternions/`
