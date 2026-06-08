@@ -25,6 +25,8 @@ matrix representation for bounded rotational workloads in `polyForth`.
   Submission planning notes, including journal targets and fit analysis.
 - `test/`
   Hardware runbooks and execution notes for Volatco validation.
+- `tools/`
+  Host-side helpers such as the serial uploader for Volatco.
 - `forth/`
   Portable Forth source intended as a starting point for `polyForth`.
 - `quaternions/`

@@ -18,6 +18,39 @@ remains the reference implementation used for local checking under `gforth`.
 Do not use `polyforth/dev-template-blocks.pf` for hardware testing; it is only
 for future development.
 
+## Automated loading option
+
+Instead of typing the source manually, you can try the host-side uploader:
+
+```bash
+python3 tools/volatco_upload.py polyforth/volatco-blocks.pf --port /dev/ttyUSB0
+```
+
+Start with conservative pacing until the exact terminal behavior is known:
+
+```bash
+python3 tools/volatco_upload.py \
+  polyforth/volatco-blocks.pf \
+  --port /dev/ttyUSB0 \
+  --line-delay 0.10 \
+  --read-timeout 0.30
+```
+
+If the target emits a stable prompt, you can later experiment with:
+
+```bash
+python3 tools/volatco_upload.py \
+  polyforth/volatco-blocks.pf \
+  --port /dev/ttyUSB0 \
+  --wait-for-prompt
+```
+
+For an old Windows 7 machine with Tcl installed, use:
+
+```bat
+tclsh tools\volatco_upload.tcl polyforth\volatco-blocks.pf
+```
+
 ## Terminal sequence
 
 This is the minimum sequence to type or run on Volatco:

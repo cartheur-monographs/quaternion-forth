@@ -1,0 +1,16 @@
+Type these on the Volatco terminal after upload:
+
+qreport
+mreport
+
+Both should print:
+
+10 -20 -30
+
+If both are correct, then type:
+
+1000 biter!
+bqr
+bmr
+bq*
+bmm
