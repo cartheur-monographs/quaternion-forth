@@ -90,6 +90,15 @@ After Experiment 0 passes, measure the benchmark words:
 - `bmr`
 - `bmm`
 
+### Experiment 2: Optional reference-platform calibration
+
+This experiment is optional and secondary.
+
+Use the `gforth` reference implementation on a conventional machine, preferably
+Raspberry Pi `arm64`, to compare the same quaternion-versus-matrix workloads in
+a mainstream environment. Record this as appendix material, not as the paper's
+main evidence.
+
 ## Baseline fixture for the current repo
 
 The current benchmark scaffold uses a concrete aligned rotation case so that the
