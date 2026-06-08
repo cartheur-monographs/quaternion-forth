@@ -177,9 +177,10 @@ and should be presented as appendix evidence about the qualitative
 quaternion-versus-matrix tradeoff, not as the primary basis of the paper's
 claim.
 
-\todoitem{Insert a real results table here with at least quaternion rotation
-versus matrix-vector rotation, including iteration count, elapsed time, and
-power measurement point.}
+\todoitem{Insert the primary Volatco results table here with at least
+quaternion rotation versus matrix-vector rotation, including iteration count,
+elapsed time, and power measurement point. The Raspberry Pi appendix
+calibration already exists and should remain secondary.}
 
 \todoitem{Document the timing method precisely: serial timestamping, on-board
 counter, external logic capture, or another method.}
@@ -210,14 +211,16 @@ At present, the repository contains:
 \item an address-based quaternion kernel for Forth
 \item a companion $3\times 3$ matrix kernel
 \item a benchmark scaffold for repeated arithmetic and rotation workloads
-\item a reproducibility protocol for eventual Volatco measurements
+\item a reproducibility protocol for Volatco measurements
+\item a block-image deployment path for Volatco with an explicit load block
+\item an appendix-grade Raspberry Pi reference-platform calibration run
 \end{itemize}
 
 It does not yet contain:
 
 \begin{itemize}
 \item confirmed target-specific \texttt{polyForth} adaptations
-\item hardware measurements from a real Volatco board
+\item completed hardware measurements from a real Volatco board
 \item a completed citation apparatus grounded in the local quaternion corpus
 \end{itemize}
 
@@ -234,8 +237,9 @@ first hardware campaign is complete.}
 \item replace placeholder prose with citations from the local quaternion corpus
 \item confirm \texttt{polyForth} compatibility on Volatco
 \item choose and document a fixed-point scaling rule
-\item add measured benchmark results
-\item interpret the quaternion results against the matrix baseline
+\item add measured Volatco benchmark results
+\item interpret the Volatco results against both the matrix baseline and the
+Raspberry Pi appendix calibration
 \item narrow the claim to match the data
 \end{itemize}
 
@@ -247,8 +251,8 @@ first hardware campaign is complete.}
 needed for the current Forth files.
 \item Choose the numeric representation and document scale, range, and overflow
 behavior.
-\item Run quaternion and matrix benchmarks on real Volatco hardware.
-\item Add tables for timing, power, and code size.
+\item Run Experiment 0 and Experiment 1 on real Volatco hardware.
+\item Add the primary Volatco tables for timing, power, and code size.
 \item Rewrite the abstract, claim, and discussion around measured evidence.
 \end{itemize}
 

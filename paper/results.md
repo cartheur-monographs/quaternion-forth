@@ -92,7 +92,7 @@ python3 tools/reference_bench.py --iterations 100000 --repeats 5
 - Architecture: `aarch64`
 - OS: Linux `6.12.87+rpt-rpi-v8`
 - `gforth` version: `gforth 0.7.3`
-- Source revision: `4905805` plus local uncommitted tooling/docs updates
+- Source revision: `f1f63d1`
 - Iterations: `100000`
 - `bench-qrotate` elapsed time: median `0.155188 s`
 - `bench-mrotate` elapsed time: median `0.047465 s`

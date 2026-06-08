@@ -1,13 +1,15 @@
 \begin{thebibliography}{1}
 
 \bibitem{volatco-site}
-Volatco.
-\newblock \url{https://volatco.tech/}.
+{Volatco}.
+\newblock Volatco.
+\newblock \url{https://volatco.tech/}, 2026.
 \newblock Accessed 2026-06-08.
 
 \bibitem{volatco-docs}
-Volatco documentation.
-\newblock \url{https://volatco.github.io/}.
+{Volatco}.
+\newblock Volatco documentation.
+\newblock \url{https://volatco.github.io/}, 2026.
 \newblock Accessed 2026-06-08.
 
 \end{thebibliography}
