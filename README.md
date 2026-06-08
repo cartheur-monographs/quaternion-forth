@@ -7,6 +7,12 @@ The current goal is not to claim a finished result. The goal is to build a
 reproducible path from literature, to implementation, to measurement, so that a
 paper can make a defensible performance argument.
 
+_Background_
+
+It's ALL about this....
+
+![bassic](/images/bassic.png)
+
 ## Motivation
 
 On Volatco-class asynchronous embedded systems, the representation of rotational
