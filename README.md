@@ -8,7 +8,7 @@ How does this algebra reliably transform as a computational system in polyForth?
 
 ![bassic](/images/bassic.png)
 
-Cayley graph showing the six cycles of multiplication by i, j and k.
+Cayley graph showing the six cycles of multiplication by `i`, `j` and `k`.
 
 ## Motivation
 
