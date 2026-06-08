@@ -21,6 +21,8 @@ matrix representation for bounded rotational workloads in `polyForth`.
   LaTeX manuscript, bibliography, build file, and measurement protocol.
 - `publish/`
   Submission planning notes, including journal targets and fit analysis.
+- `test/`
+  Hardware runbooks and execution notes for Volatco validation.
 - `forth/`
   Portable Forth source intended as a starting point for `polyForth`.
 - `quaternions/`

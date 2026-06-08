@@ -20,3 +20,18 @@ available.
 - Code size:
 - Pass/fail:
 - Notes:
+
+## First hardware campaign checklist
+
+Run and record at least these words:
+
+- `bench-qrotate`
+- `bench-mrotate`
+- `bench-q*`
+- `bench-mmultiply`
+
+Correctness checks before timing:
+
+- `bench-qrotate-report` should print `10 -20 -30`
+- `bench-mrotate-report` should print `10 -20 -30`
+- `bench-qrotate-full` should yield `0 10 -20 -30`

@@ -15,6 +15,11 @@ variable q-right
 variable q-out
 variable q-tmp1
 variable q-tmp2
+variable qr-rot
+variable qr-vec
+variable qr-tmp1
+variable qr-tmp2
+variable qr-out
 
 : q.a ( q -- addr ) ;
 : q.b ( q -- addr ) 1 cells + ;
@@ -134,7 +139,7 @@ variable q-tmp2
 \   qtmp2  scratch quaternion
 \   qout   result quaternion
 : qrotate ( qrot qvec qtmp1 qtmp2 qout -- )
-  q-out ! q-tmp2 ! q-tmp1 ! q-right ! q-left !
-  q-left @ q-right @ q-tmp1 @ q*
-  q-left @ q-tmp2 @ qconj
-  q-tmp1 @ q-tmp2 @ q-out @ q* ;
+  qr-out ! qr-tmp2 ! qr-tmp1 ! qr-vec ! qr-rot !
+  qr-rot @ qr-vec @ qr-tmp1 @ q*
+  qr-rot @ qr-tmp2 @ qconj
+  qr-tmp1 @ qr-tmp2 @ qr-out @ q* ;
