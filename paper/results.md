@@ -3,7 +3,52 @@
 This file is the place for hardware measurements once Volatco runs are
 available.
 
-## Template
+## Experiment 0: Deployment and correctness validation
+
+This experiment exists to show that the paper's deployment path is real and
+repeatable. It is a methodology checkpoint, not a substitute for the later
+performance comparison.
+
+### Deployment validation run
+
+- Date:
+- Board revision:
+- Runtime image:
+- Source revision:
+- Serial path:
+- Boot mode:
+- Operator command:
+  - `AFORTH`
+  - `10 LOAD`
+- `qreport` output:
+- `mreport` output:
+- Pass/fail:
+- Notes:
+
+Pass only if both report words print:
+
+- `10 -20 -30`
+
+If this experiment fails, do not record any benchmark timings as paper
+evidence.
+
+## Experiment 1: Performance comparison
+
+Use the benchmark words only after Experiment 0 passes.
+
+Run and record at least these words:
+
+- `bqr`
+- `bmr`
+- `bq*`
+- `bmm`
+
+Optional additional words:
+
+- `bq+`
+- `bqn`
+
+## Benchmark template
 
 ### Benchmark name
 
@@ -20,18 +65,3 @@ available.
 - Code size:
 - Pass/fail:
 - Notes:
-
-## First hardware campaign checklist
-
-Run and record at least these words:
-
-- `bench-qrotate`
-- `bench-mrotate`
-- `bench-q*`
-- `bench-mmultiply`
-
-Correctness checks before timing:
-
-- `bench-qrotate-report` should print `10 -20 -30`
-- `bench-mrotate-report` should print `10 -20 -30`
-- `bench-qrotate-full` should yield `0 10 -20 -30`

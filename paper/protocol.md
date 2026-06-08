@@ -57,6 +57,39 @@ Use at least these workloads:
 5. repeated matrix-vector rotation
 6. repeated matrix-matrix multiplication
 
+## Experiment sequence
+
+Treat the hardware campaign as two stages.
+
+### Experiment 0: Deployment and correctness validation
+
+This is not the main result of the paper. It is the gate that makes later
+performance claims defensible.
+
+Operator sequence:
+
+- enter `AFORTH`
+- issue `10 LOAD`
+- run `qreport`
+- run `mreport`
+
+Pass condition:
+
+- both report words print `10 -20 -30`
+
+Only after this passes should any timing or power numbers be recorded.
+
+### Experiment 1: Performance comparison
+
+After Experiment 0 passes, measure the benchmark words:
+
+- `bq+`
+- `bq*`
+- `bqn`
+- `bqr`
+- `bmr`
+- `bmm`
+
 ## Baseline fixture for the current repo
 
 The current benchmark scaffold uses a concrete aligned rotation case so that the
@@ -72,8 +105,8 @@ The matrix kernel uses the equivalent diagonal matrix:
 
 Before recording performance data, confirm that both:
 
-- `bench-qrotate-report`
-- `bench-mrotate-report`
+- `qreport`
+- `mreport`
 
 produce the expected rotated vector.
 

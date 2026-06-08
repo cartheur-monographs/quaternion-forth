@@ -160,6 +160,16 @@ Each benchmark should record:
 The results should be treated as evidence about suitability for Volatco, not as
 universal claims about all Forth systems.
 
+The first hardware experiment should not yet be a timing experiment. It should
+be a deployment and correctness experiment that validates the block-image path
+itself. In practical terms, that means loading the generated project image,
+entering \texttt{AFORTH}, issuing \texttt{10 LOAD}, and checking that both the
+quaternion and matrix report words produce the same rotated vector
+$ (10, -20, -30) $. This is not the paper's central result, but it is a
+necessary methodological step. Without it, any later performance numbers would
+rest on an uncertain loading procedure and could reasonably be challenged as
+artifact-dependent.
+
 \todoitem{Insert a real results table here with at least quaternion rotation
 versus matrix-vector rotation, including iteration count, elapsed time, and
 power measurement point.}
