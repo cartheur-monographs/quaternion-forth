@@ -7,13 +7,13 @@ The current goal is not to claim a finished result. The goal is to build a
 reproducible path from literature, to implementation, to measurement, so that a
 paper can make a defensible performance argument.
 
-_Background_
+_The Question_
 
-It's ALL about this....
+How does this algebra reliably transform as a computational system in polyForth?
 
 ![bassic](/images/bassic.png)
 
-Cayley graph of the quaternion group Q8 showing the six cycles of multiplication by i, j and k.
+Cayley graph showing the six cycles of multiplication by i, j and k.
 
 ## Motivation
 
