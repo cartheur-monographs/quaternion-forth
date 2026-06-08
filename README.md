@@ -1,6 +1,6 @@
-# quaternion-forth
+## The magnificient potenetial of quaternions in polyForth
 
-This repository is a mathematical and engineering research record about the potential of quaternion arithmetic in `polyForth` on Volatco hardware. The goal is to build a computational track from the literature of quaternion calculus and projections (predictions in linear algebra - based on the Gibbs Analysis), to implementation and comparative analysis presented as a published academic paper illustrates and supports the reported GA144A12 statistics and contributing expimental evidence toward a method and means of high-efficientcy algorithms executed in F18A architecture.
+This repository is a mathematical and engineering research record on the potential of quaternion arithmetic in `polyForth` on Volatco hardware. The goal is to build a computational track from the literature of quaternion calculus and projections (predictions in linear algebra - based on the Gibbs Analysis), to implementation and comparative analysis presented as a published academic paper wherein as an instrument to support reported GA144A12 statistics and contributing experimental evidence toward a method and means of high-efficientcy algorithms executed in F18A architecture, including intranodal cooperation via Snorkel and Ganglia.
 
 _The Question_
 
