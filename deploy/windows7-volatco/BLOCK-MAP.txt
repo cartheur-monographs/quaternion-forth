@@ -19,3 +19,5 @@ Normal operator sequence:
     10 LOAD
     qreport
     mreport
+
+NOTE: At block 4800
