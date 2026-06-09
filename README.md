@@ -19,6 +19,19 @@ _Efficient Data Manipulation_
 * The unique properties of quaternions help streamline calculations involving vast rotations of data clusters.
 * The ability to project predictive analyses using large groups of transformative rotations.
 
+_AI and ML Workloads_
+
+* Quaternion algebra (4D hypercomplex numbers): the full rules for addition, multiplication, conjugation, inverse, and norm — useful for designing algebraic layers or alternatives to vector operations.
+* Composition and noncommutativity: quaternion multiplication encodes composition of rotations and demonstrates noncommutative operators you can exploit in models requiring ordered transforms.
+* Representations of orientation and spinors: links to spinor math and SU(2) → useful in physics-informed ML, 3D pose, and orientation-aware neural architectures.
+* Interpolation methods (slerp): smooth interpolation on the 3-sphere (S^3) with closed-form spherical linear interpolation — valuable for time-series of orientations, generative models producing rotations, and augmentation.
+* Log and exponential maps on quaternions: map between tangent space and manifold for optimization, averaging rotations, and applying gradient-based learning on manifolds.
+* Quaternion differential calculus: derivatives of quaternion-valued functions — useful for designing loss functions and backprop through quaternion layers.
+* Quaternionic Fourier transforms and signal representations: extensions of Fourier analysis to quaternion-valued signals for multi-channel or color image processing.
+* Geometric intuition and coordinate-free reasoning: compact encoding of rotations and reflections that can simplify algorithms in robotics, graphics, and computer vision.
+* Numeric stability and normalization: unit-quaternion constraints and renormalization techniques to maintain stability in iterative algorithms and learning.
+* Links to complex numbers and Clifford/Geometric algebra: provides pathways to richer hypercomplex representations (useful in equivariant networks and geometric deep learning).
+
 -----
 
 ## Motivation
