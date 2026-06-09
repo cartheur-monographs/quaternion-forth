@@ -32,11 +32,9 @@ _AI and ML Workloads_
 * Numeric stability and normalization: unit-quaternion constraints and renormalization techniques to maintain stability in iterative algorithms and learning.
 * Links to complex numbers and Clifford/Geometric algebra: provides pathways to richer hypercomplex representations (useful in equivariant networks and geometric deep learning).
 
-_Projective Geometries_
+_Projective Geometries - Line complexes, congruences, and projections_
 
-### Line complexes, congruences, and projections
-
-Joly studied families of lines in projective 3-space (P^3) — linear and quadratic complexes, congruences (2‑parameter families), ruled/developable surfaces and their focal loci — and how projective maps (including projections from a point or along a line) carry these families and their singular sets. He combined synthetic projective methods with algebraic tools (notably quaternions) to parametrize and transform line families and to analyze degeneracies produced by projections.
+Jasper Joly studied families of lines in projective 3-space (P^3) — linear and quadratic complexes, congruences (2‑parameter families), ruled/developable surfaces and their focal loci — and how projective maps (including projections from a point or along a line) carry these families and their singular sets. He combined synthetic projective methods with algebraic tools (notably quaternions) to parametrize and transform line families and to analyze degeneracies produced by projections.
 
 _Key concepts_
 
@@ -83,6 +81,8 @@ _Translating Joly’s quaternion construction to matrices_
 - Several short notes and communications by C. J. Joly on line geometry appear in the Royal Irish Academy Transactions and Proceedings between 1880–1905; consult the Academy indexes for exact pages.
 
 #### Plücker coordinates — projection formula in computational geometry
+
+Julius Plücker made fundamental contributions to the field of analytical geometry and was a pioneer in the investigations of cathode rays that led eventually to the discovery of the electron.
 
 - Homogeneous coords on P^3: x = (x0:x1:x2:x3).
 - Plücker coords of a line ℓ spanned by points X = (X0:X1:X2:X3) and Y = (Y0:Y1:Y2:Y3) are
