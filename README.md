@@ -181,6 +181,26 @@ matrix representation for bounded rotational workloads in `polyForth`.
 - `quaternions/`
   Background papers and historical references.
 
+## McAulay multenions and finite-state automata
+
+The repository also contains a small historical-and-computational exploration
+of Alex McAulay's **multenions**.  Multenions extend quaternion-style algebra
+using anticommuting generators and a single associative product.  They are
+close in modern spirit to Clifford/geometric algebra, but a real-coefficient
+multenion algebra is not itself a finite-state automaton: it has infinitely
+many elements.
+
+The useful bridge is to choose a finite orbit of algebraic elements and use
+input symbols as multiplicative actions.  For example, with
+`i^2 = j^2 = 1` and `ij = -ji`, the eight states
+`{1, -1, i, -i, j, -j, ij, -ij}` form a finite transition system.  Reading
+`i` then `j` reaches `ij`, whereas reading `j` then `i` reaches `-ij`.
+This makes noncommutativity visible as order-dependent state transitions.
+
+- [Conceptual summary](MULTENIONS-FSA-SUMMARY.md)
+- [General circuit proposal](MULTENIONS-FSA-CIRCUIT.md)
+- [74LS TTL implementation](MULTENIONS-FSA-74LS-CIRCUIT.md)
+
 ## Research claim
 
 The core claim this repository is structured to test is:
