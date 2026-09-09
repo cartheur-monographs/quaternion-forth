@@ -72,6 +72,11 @@ The two word orders therefore reach different finite states.
 
 ## 74LS parts list
 
+The purchase-ready bill of materials is available as
+[`MULTENIONS-FSA-74LS-BOM.csv`](MULTENIONS-FSA-74LS-BOM.csv).  It includes
+the supporting LEDs, switches, reset/debounce components, supply, and
+per-IC bypass capacitors, in addition to the logic ICs below.
+
 | Function | Suggested part | Notes |
 | --- | --- | --- |
 | Three D state registers | 2 × 74LS74 | One dual flip-flop package supplies `S` and `A`; use one half of the second for `B`. |
