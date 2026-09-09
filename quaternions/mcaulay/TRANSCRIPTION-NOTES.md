@@ -38,3 +38,14 @@ for example, $V_0\breve{\alpha}\hat{\alpha}=1$. Do not collapse this paired
 notation into a single accent.
 
 ![Source crop showing the paired breve and hat marks](normal-reciprocal-notation.png)
+
+## Grouped equations: braces and punctuation
+
+When the source groups alternative equation lines with a large right brace,
+preserve the brace and its terminal punctuation before the equation number. In
+LaTeX, use `\left.\begin{aligned} ... \end{aligned}\right\}` followed by the
+source comma or period, then `\tag{...}`. Do not omit that punctuation. This
+was audited and applied to the grouped displays on pp. 297--312; for example,
+on p. 309 equation (4) ends with a comma and equation (5) with a period.
+
+![Source crop showing grouped braces and punctuation](grouped-equations-braces-punctuation.png)
