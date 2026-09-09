@@ -666,16 +666,22 @@ $r$ and $s$ are multenion functions of $p$, and $r'$ and $s'$ are associated fun
 \begin{equation}V_0rs=V_0r's',\tag{9}\end{equation}
 that is, $V_0pq$ is always an invariant if one of the two, $p,q$, is covariant and the other contravariant.
 
-\indent By exactly similar reasoning (a little complicated by the presence of $k$), we may treat of equations (11) and (8) of §8. For the sake of saving space, I merely state the results: $kv$, $kdb$, $kec$, and $kds_a$ are covariant; while $kdb$, $\tau$, $w$, $k^{-1}V_0\nabla(k\tau)$, and $k^{-1}V_1V_1\nabla(kw)$ are contravariant. $kdb$ is both covariant and contravariant: it is invariant.
+\indent By exactly similar reasoning (a little complicated by the presence of $k$), we may treat of equations (11) and (8) of §8. For the sake of saving space, I merely state the results, $k$ being given by (9) of §8, and $\tau,u,d_s$ (including as particular cases $da$ and $db$) being as in (11) and (8) of §8: the following are covariant:---
+\[k\breve v,\qquad kdb,\qquad ka,\qquad kds_a;\]
+and the following are contravariant
+\[kdb,\qquad \tau,\qquad u,\qquad k^{-1}V_0\nabla(k\tau),\qquad k^{-1}V_{a-1}\nabla(ku).\]
+$kdb$ is both covariant and contravariant. This merely means that it is invariant ($kdb=k'db'$). Remembering that $\chi h=h=\chi'^{-1}h$ when $h$ is a scalar, (8) shows at once that, for a scalar, covariance and contravariance both mean precisely the same as invariance.
 
 \indent Remembering that $\nabla'h=\chi'^{-1}\nabla h$ when $h$ is a scalar, (8) shows at once that, for a scalar, covariance and contravariance both mean precisely the same as invariance. The persistent manner in which $k$ thrusts itself into these results tempts one to wonder whether covariant and contravariant terminology is superior to intensity and flux terminology. After some experience of using both, I am inclined to believe that the accepted covariant and contravariant standard scheme is superior to the other.
 
-\indent It is not difficult to show that $kv$ satisfies the test of (8) for covariance. If in (2) and (3) of §6 we read $\chi$ in place of $\phi$ we get theorems closely connected with multiplication and composition in the absolute differential calculus. Let $v_a,v_b$ be covariant multenions of homogeneities $a,b$. Then
+\indent It is not difficult to show that $k\breve v$ satisfies the test of (8) for covariance, that is
+\[k'\breve v'=\chi'^{-1}(k\breve v).\]
+If in (2) and (3) of §6 we read $\chi$ in place of $\phi$ we get theorems closely connected with multiplication and composition in the absolute differential calculus. Let $v_a,v_b$ be covariant multenions of homogeneities $a,b$. Then
 \begin{equation}v_{a+b}=V_{a+b}v_av_b\tag{9}\end{equation}
 is covariant (multiplication). If $u_a,u_b$ are similar contravariants, then
 \begin{equation}u_{a+b}=V_{a+b}u_au_b\tag{10}\end{equation}
-is contravariant (multiplication).
-If $u$ is contravariant (homogeneity $a$) and $v$ is covariant (homogeneity $b$), then
+\newpage\thispagestyle{empty}\begin{center}320\hfill Prof.\ A.\ McAulay.\end{center}
+is contravariant (multiplication). If $u$ is contravariant (homogeneity $a$) and $v$ is covariant (homogeneity $b$), then
 \begin{equation}u_{a-b}=V_{a-b}uv\tag{11}\end{equation}
 is contravariant (composition) when $a>b$. Also
 \begin{equation}v_{b-a}=V_{b-a}uv\tag{12}\end{equation}
@@ -683,11 +689,48 @@ is covariant (composition) when $b>a$. Lastly, when $a=b$, each is invariant, wh
 
 \indent $\xi$, any multenion linity, is said to be covariant when it produces a covariant multenion from a contravariant, thus
 \begin{equation}s=\xi r,\qquad s'=\xi'r'.\tag{13}\end{equation}
-Conversely, since then
+Conversely since then
 \begin{equation}r=\xi^{-1}s,\qquad r'=\xi'^{-1}s',\tag{14}\end{equation}
-$\xi^{-1}$ is said to be contravariant. From (8) we at once get the associated transformation rules. From this, when $\xi$ is covariant, its conjugate $\xi'$ is also covariant, and therefore both the self-conjugate part and the skew part of $\xi$ are covariant. Similarly for $\xi^{-1}$ and contravariance. Also, when $\xi$ is self-conjugate, $\chi$ is self-conjugate. If $\xi$ is a covariant vector linity, the extended linity is also covariant. Also, in this case, the rotation-$V_2$ linity $V_2\xi\chi\xi'$ is covariant.
+$\xi^{-1}$ is said to be contravariant. From (8) we at once get the associated transformation laws. From this, when $\xi$ is covariant, its conjugate $\xi'$ is also covariant; therefore both the self-conjugate and skew parts of $\xi$ are covariant. Similarly for $\xi^{-1}$ and contravariance.
+\begin{equation}\xi'=\chi'^{-1}\xi\chi^{-1},\qquad \xi'^{-1}=\chi\xi^{-1}\chi'.\tag{15}\end{equation}
+From this, when $\xi$ is covariant, its conjugate $\xi'$ is also covariant, and therefore both the self-conjugate part and the skew part of $\xi$ are covariant. Similarly for $\xi^{-1}$ and contravariance. Also, when $\xi$ is self-conjugate, $\chi$ is self-conjugate. If $\xi$ is a covariant vector linity, the extended linity is also covariant. Also, in this case, the rotation-$V_2$ linity $\tfrac12V_2\xi\xi'\xi$ is covariant. To prove this last, we have to show that
+\[\chi'V_2\xi\xi'\xi=V_2\xi\xi'\xi.\]
+Now
+\[\begin{aligned}\chi'V_2\xi\xi'\xi&=V_2\chi'\xi\chi'\xi^{-1}\xi &&\text{[(2) §6]}\\&=V_2\xi\chi'\xi\chi &&\text{[(9) §5]}\\&=V_2\xi\xi'\xi &&\text{[(15) above],}\end{aligned}\]
+as required.
 
-\indent Let $\sigma_1,\sigma_2,\ldots,\sigma_n$ be $n$ independent covariant vectors. [They might be taken as $\nabla h_1,\nabla h_2,\ldots,\nabla h_n$ where the Jacobian of the quantities $h$ does not vanish.] From the reciprocal relations it at once follows that the corresponding reciprocal vectors are $n$ independent contravariant vectors. Any covariant or contravariant vector can be expressed at once in terms of these and invariants. Also, from the $2^n$ vectoriums formed from each set,
+\indent Let $\sigma_1,\sigma_2,\ldots,\sigma_n$ be $n$ independent covariant vectors. [They might be taken as $\nabla h_1,\nabla h_2,\ldots,\nabla h_n$ where the Jacobian of the quantities $h$ does not vanish, that is, where $V_n(\nabla h)^{(n)}\ne0$.] From the relations
+\begin{equation}\left.\begin{aligned}1&=V_0\sigma_1\bar\sigma_1=V_0\sigma_2\bar\sigma_2=\cdots,\\0&=V_0\sigma_1\bar\sigma_2=V_0\sigma_1\bar\sigma_3=\cdots\end{aligned}\right\},\tag{16}\end{equation}
+it at once follows that $\bar\sigma_1,\bar\sigma_2,\ldots,\bar\sigma_n$ are $n$ independent contravariant vectors, and $\sigma_c,\bar\sigma_c$ might just as properly have been denoted by $\bar\tau_c,\tau_c$. Any covariant or contravariant vector can be expressed at once in terms of these and invariants. Also, from the $2^n$ vectoriums formed from each set,
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 321\end{center}
+any covariant or contravariant multenion may be similarly expressed. Thus the expressions for $\sigma,\tau,v,u$ are [see (2) of §5]
+\begin{equation}\left.\begin{aligned}\sigma&=\sum_{c=1}^n\sigma_cV_0\sigma\bar\sigma_c,&\tau&=\sum_{c=1}^n\bar\sigma_cV_0\tau\sigma_c,\\v&=\sum V_b\sigma^{(b)}\cdot V_0v\,\bar\sigma^{(b)},&u&=\sum V_a\bar\sigma^{(a)}\cdot V_0uV_a\sigma^{(a)}\end{aligned}\right\}.\tag{17}\end{equation}
+\noindent\textsc{§ 10. Differentiation.}---Our integration theorems have suggested certain systematisations, now to be given in the use of $\nabla$. We have
+\[\nabla w=V_{c+1}\nabla w+V_{c-1}\nabla w.\]
+If $w$ is covariant, one part on the right, viz., the first, is covariant and the other not. A similar statement applies to contravariance. We cannot, as seems desirable, resolve the symbolic vector $\nabla$ into two parts, to which each of these two discordant parts on the right belong. But we can so resolve the symbolic linity $\nabla()$. The first part of the linity, connected with $V_{c+1}\nabla w$ produces a part of $\nabla w$ of homogeneity one unit higher than that of $w$, and may be thought of as the ascending derivative linity, and will be denoted by $H$. The other part, $L$, produces a lower homogeneity, and may be thought of as the descending derivative. Thus, formally, we define the linities $H$ and $L$ thus
+\begin{equation}\left.\begin{aligned}\nabla()&=H+L\\H&=\sum_{c=0}^{n-1}V_{c+1}\cdot\nabla V_c(),&L&=\sum_{c=1}^{n}V_{c-1}\cdot\nabla V_c()\end{aligned}\right\}.\tag{1}\end{equation}
+Otherwise
+\begin{equation}\left.\begin{aligned}\nabla w&=Hw+Lw\\Hw&=V_{c+1}\nabla w,&Lw&=V_{c-1}\nabla w\end{aligned}\right\}.\tag{2}\end{equation}
+There are two, wholly separate, aspects of $H$ and $L$ as operators. Each is both a linear operator and a differential operator. In (2) the subject of these two operations is the one symbol $w$, but in (4), below (where $H'$ is the conjugate of $H$), in $\phi_gH'_gd\breve\rho_{b+1}$, $H'$ as linear operator affects the immediately succeeding symbol $d\breve\rho_{b+1}$, while as differential operator it affects $\phi$, and this is indicated by suffixes in the usual manner. This example illustrates some of the facilities of operation provided by $H$.
+
+\indent In considering the fundamental properties of $H$ and $L$, think of replacing $\nabla$, $\nabla w$, $V_{c+1}\nabla w$, $V_{c-1}\nabla w$, by $\alpha$, $\alpha w$, $V_{c+1}\alpha w$, $V_{c-1}\alpha w$, where $\alpha$ is an ordinary vector instead of a symbolic vector. Let $H',L'$
+\newpage\thispagestyle{empty}\begin{center}322\hfill Prof.\ A.\ McAulay.\end{center}
+be the conjugates of $H,L$ as usual. From the fundamental relation $V_a p\phi q=V_a q\phi'p$, we at once have
+\begin{equation}H'w=V_{c-1}w\nabla,\qquad L'w=V_{c+1}w\nabla.\tag{3}\end{equation}
+Thus the integration theorems (1) and (4) of §8 read
+\begin{equation}\int_{(b)}\!\int\phi\,d\breve\rho_b=\int_{(b+1)}\!\int\phi_gH'_gd\breve\rho_{b+1}\,g.\tag{4}\end{equation}
+and (7) and (8) of §8 read
+\begin{equation}\int^{(b)}\!\int V_0wk\,d\breve\rho_b=\int^{(b+1)}\!\int V_0d\breve\rho_{b+1}H w,\tag{6}\end{equation}
+\begin{equation}\int^{(n-a)}\!\int V_0wk\,ds_a=\int^{(n-a+1)}\!\int V_0ds_{a-1}L(kw).\tag{7}\end{equation}
+Further we have
+\begin{equation}H^2=0=L^2,\tag{8}\end{equation}
+and by taking conjugates we have $H'^2=0=L'^2$. From (8) consider the various powers $\nabla^2(),\nabla^3()$ of $\nabla()$. Clearly we get
+\begin{equation}\nabla^2()=HL+LH,\qquad \nabla^3()=HLH+LHL,\ \text{etc.}\tag{9}\end{equation}
+Otherwise $\nabla w=Hw+Lw$ where
+\begin{equation}\left.\begin{aligned}Hw&=V_{c+1}\nabla w,\\Lw&=V_{c-1}\nabla w\end{aligned}\right\}.\tag{2}\end{equation}
+There are two, wholly separate, aspects of $H$ and $L$ as operators. Each is both a linear operator and a differential operator. In (2) the subject of these two operations is the one symbol, $w$, but in (4), below (where $H'$ is the conjugate of $H$), in $\phi_gH'_g d\breve\rho_{b+1}$, $H'$, as linear operator, affects the immediately succeeding symbol, $d\breve\rho_{b+1}$, while as differential operator it affects $\phi$, and this is indicated by suffixes in the usual manner. This example illustrates some of the facilities of operation provided by $H$.
+
+\end{document}
 
 \end{document}
 
