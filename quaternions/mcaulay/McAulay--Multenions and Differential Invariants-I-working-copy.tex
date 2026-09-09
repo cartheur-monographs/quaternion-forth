@@ -322,4 +322,106 @@ Every term here is a ${}_nV_2$; for example, consider the third term. Since $\ga
 \[du'=\tfrac12(d\omega u'-u'd\omega)=V_0d\omega u'.\]
 This is the very simple, very useful form in which true infinitesimal rotation
 
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 303\end{center}
+presents itself in our present subject. A rotation of vectors $\rho$ is a linity $\phi\rho$ of $\rho$ such that $\phi'\phi=1$.
+
+\indent When without qualification we speak of rotation we shall understand it to mean $e^\omega()e^{-\omega}$ (a continuous group).
+
+\indent The skew part of any vector linity, $\phi$, is of the form of an infinitesimal rotation. Thus, introduce the $\zeta$ notation of quaternions,\footnote{See \emph{Utility of Quaternions}.} by which
+\begin{equation}\mathrm F(\zeta,\zeta)=\sum_{c=1}^n\mathrm F(i_c,i_c),\tag{7}\end{equation}
+where $\mathrm F$ is bilinear in its two members. We have
+\begin{align}\rho&=-\zeta V_0\zeta\rho,\tag{8}\\\phi'\rho&=-\zeta V_0\zeta\phi'\rho=-\zeta V_0\rho\phi\zeta.\tag{9}\end{align}
+The skew part is
+\begin{equation}\tfrac12(\phi-\phi')\rho=\tfrac12V_1(V_2\zeta\phi\zeta)\rho=V_1\omega\rho.\tag{10}\end{equation}
+Here we have assumed that
+\[V_1(V_2\alpha\beta)\gamma=\alpha V_0\beta\gamma-\beta V_0\gamma\alpha,\]
+much as in quaternions. This is not difficult to prove, and we shall in §7 enunciate much more general theorems of which this is a particular case. The pure part does not similarly reduce. We have
+\begin{equation}\tfrac12(\phi+\phi')\rho=-\tfrac12(\zeta V_0\rho\phi\zeta+\phi\zeta V_0\rho\zeta).\tag{11}\end{equation}
+\noindent\textsc{§ 5. Vectoriums.} Let
+\[\alpha^{(a)}=\alpha_1\alpha_2\ldots\alpha_a,\qquad\beta^{(b)}=\beta_1\beta_2\ldots\beta_b,\qquad\gamma^{(c)}=\gamma_1\gamma_2\ldots\gamma_c.\]
+Then in the expression $V_{a+b+c}(\alpha^{(a)}\beta^{(b)}\gamma^{(c)})$ it is obvious by reduction to primitive units that within the brackets we may at will write either $\alpha^{(a)}$ or $V_a\alpha^{(a)}$, and $\beta^{(b)}$ or $V_b\beta^{(b)}$, and $\gamma^{(c)}$ or $V_c\gamma^{(c)}$; the value of the expression is unaltered by such insertion or removal of $V_a$, $V_b$, or $V_c$. The statement, of course, is in general only true of this particular part, $V_{a+b+c}$ of the product of highest homogeneity. Next, it is similarly evident that if we change, say, $\alpha_2$ to $x\alpha_2+y\alpha'_2$ we simply alter the corresponding vectorium similarly, that is
+\[V_a\alpha_1(x\alpha_2+y\alpha'_2)\alpha_3\ldots\alpha_a=xV_a\alpha_1\alpha_2\alpha_3\ldots\alpha_a+yV_a\alpha_1\alpha'_2\alpha_3\ldots\alpha_a.\]
+Again, if in the vectorium we interchange two consecutive members such as $\alpha_2,\alpha_3$ we merely change the sign of the whole. For we may successively write instead of $\alpha_2\alpha_3$
+\[\alpha_2\alpha_3,\qquad V_2\alpha_2\alpha_3,\qquad-V_2\alpha_3\alpha_2,\qquad-\alpha_3\alpha_2.\]
+Finally, by a familiar simple process we may interchange any two members by successive interchanges of neighbours, and as a final result, again, the vectorium changes in sign merely. Thus $V_a\alpha^{(a)}$ is ``combinatorial.'' The
+
+\newpage\thispagestyle{empty}\begin{center}304\hfill Prof.\ A.\ McAulay.\end{center}
+common simple properties of a combinatorial multilinear function are probably well known to my readers and may be assumed. [Grassmann apparently first, in a perfectly general manner, appreciated the value of, and fully established these properties. Indeed, $V_a\alpha^{(a)}$ is both algebraically and geometrically identical in meaning with Grassmann's combinatorial ``product.'' I should like for a second time to express my unbounded admiration for Grassmann's great pioneer work, though I cannot help believing that the actual form of the matters he dealt with has been put out of court by later developments.]
+
+\indent We may note the following theorem in passing. It is our form of one of Grassmann's products. If $\breve\rho$ is a vectorium of homogeneity $g$, then
+\[V_{a+b+c}(V_{g+a+b}\breve\rho uv)(V_{g+c}w\breve\rho)=V_{a+b+c}(V_{g+a}\breve\rho u)(V_{g+b+c}v\breve\rho w).\]
+Of $u,v,w$ the middle one, $v$, may be passed over from the first to the second bracket-pair.
+
+\indent The following is wanted immediately and is constantly in request. It may be thought of as a passage into or out of the operation of a $V_a()$ [whether as pre-factor or post-factor] of either $\breve\upsilon$ or $p_n$. We have
+\[\breve\upsilon V_aq=V_{n-a}\breve\upsilon q,\qquad V_aq\cdot\breve\upsilon=V_{n-a}(q\breve\upsilon).\]
+Also, if $p_n$ is any multenion of homogeneity $n$, $p_n=x\breve\upsilon$, and, therefore, in the present process, $p_n$ behaves exactly as does $\breve\upsilon$, that is
+\[p_nV_aq=V_{n-a}p_nq,\qquad V_aq\cdot p_n=V_{n-a}qp_n.\]
+
+\indent Suppose there are $n$ given linearly independent vectors $\alpha_1,\alpha_2,\ldots\alpha_n$. Let $\alpha^{(a)}$ be the product of any $a$ of them, and $\alpha^{(n-a)}$ the product of the rest in such sequence that $V_n\alpha^{(a)}\alpha^{(n-a)}$ always retains the same value. Let
+\begin{align}\breve\alpha&=V_a\alpha^{(a)},\notag\\\breve\alpha&=V_{n-a}\alpha^{(n-a)}\cdot V_n^{-1}\alpha^{(a)}\alpha^{(n-a)}.\tag{1}\end{align}
+[By a convenient, strictly speaking indefensible, custom, since $V_n^{-1}$ really $=\infty$, we mean by $V_n^{-1}\alpha^{(a)}\alpha^{(n-a)}$ the reciprocal $(V_n\alpha^{(a)}\alpha^{(n-a)})^{-1}$.]
+
+\indent There are $2^n$ linearly independent [proof of linear independence here omitted] values of $\breve\alpha$, and they will be called the $2^n$ vectoriums formed from $\alpha_1,\alpha_2,\ldots\alpha_n$. [The term may, of course, be used when $\alpha_1,\alpha_2,\ldots\alpha_n$ are not linearly independent.] The $2^n$ corresponding values of $\breve\alpha$, which are also linearly independent, will be called the normal reciprocals of the vectoriums, $\breve\alpha$. They are so called because
+\[V_0\breve\alpha\breve\alpha=1,\qquad V_0\breve\alpha_1\breve\alpha=0,\]
+$\breve\alpha_1$ being a second (not corresponding to $\breve\alpha$) $\breve\alpha$. [Thus, when $n=4$, there are
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 305\end{center}
+sixteen equations of the type $V_0\breve\alpha\hat\alpha=1$, and 240 equations of the type $V_0\breve\alpha_1\hat\alpha=0$.] Both equations are proved quite simply from (1) by passing $p_n=V_n^{-1}\alpha^{(a)}\alpha^{(n-a)}$ out of the operation of $V_0$ in $V_0\breve\alpha\hat\alpha$.
+
+\indent Let now $q=\sum x\breve\alpha=\sum y\hat\alpha$. From the normal reciprocal relations we at once get $x=V_0q\hat\alpha$, $y=V_0q\breve\alpha$. Hence
+\begin{align}q&=\sum\hat\alpha V_0q\hat\alpha=\sum V_a\alpha^{(a)}\cdot V_nq\alpha^{(n-a)}\cdot V_n^{-1}\alpha^{(a)}\alpha^{(n-a)},\notag\\&=\sum\hat\alpha V_0q\breve\alpha=\sum V_0(qV_a\alpha^{(a)})\cdot V_{n-a}\alpha^{(n-a)}\cdot V_n^{-1}\alpha^{(a)}\alpha^{(n-a)}.\tag{2}\end{align}
+the last result in the first line coming from a new application of the $p_n$ theorem. If in (2) we put $q=u$, getting a more particular result, we should at once see that (2) is analogous to the quaternion theorems
+\[\rho S\alpha\beta\gamma\equiv\alpha S\beta\gamma\rho+\cdots\equiv V\beta\gamma S\alpha\rho+\cdots.\]
+A particular case ($a=1$) of (1) is
+\begin{align}\hat\alpha_1&=V_{n-1}\alpha_2\alpha_3\ldots\alpha_n\cdot V_n^{-1}\alpha_1\alpha_2\ldots\alpha_3\notag\\&=-V_{n-1}\alpha_1\alpha_3\ldots\alpha_n\cdot V_n^{-1}\alpha_1\alpha_2\ldots\alpha_3=\text{etc.}\tag{3}\end{align}
+This is clearly the solution of the problem. Given
+\[S\alpha_c\hat\alpha_c=1,\quad c=1,2,\ldots,n,\qquad S\alpha_b\hat\alpha_c=0,\quad b\ne c;\ b,c=1,2,\ldots,n,\]
+what are the vectors $\hat\alpha_c$ in terms of the vectors $\alpha_c$? And, of course, we have a precisely similar solution for $\alpha_c$ in terms of $\hat\alpha_c$. It appears, then, that the relations between the quantities $\hat\alpha$ and the quantities $\hat\alpha$ are symmetrical. No doubt we have here established this if only it be evident what is the precise significance of the word ``symmetrical'' in this connection. The need of the caution may be illustrated thus. If we put $\hat\alpha=V_a\hat\alpha_1\hat\alpha_2\ldots\hat\alpha_n$, we are tempted to say that $\hat\alpha$ must be $V_a\hat\alpha_1\hat\alpha_2\ldots\hat\alpha_a$, but we shall find that we do not thereby always obtain $S\hat\alpha\hat\alpha=1$. The true value of $\hat\alpha$ is
+\begin{align}\hat\alpha&=V_a\hat\alpha_a\hat\alpha_{a-1}\ldots\hat\alpha_1=QV_a\hat\alpha_1\hat\alpha_2\ldots\hat\alpha_a,\notag\\\text{when}\qquad\hat\alpha&=V_a\alpha_1\alpha_2\ldots\alpha_a.\tag{4}\end{align}
+If the $\alpha_c$ are taken as the $i_c$, it is obvious that the $\hat\alpha$ are the primitive vectoriums, and, from the normal reciprocal relations, it is then obvious that the $\hat\alpha$ are also the primitive vectoriums (with different signs in accordance with) $\hat\alpha=K\hat\alpha$.
+
+\newpage\thispagestyle{empty}\begin{center}306\hfill Prof.\ A.\ McAulay.\end{center}
+[Thus $0'=1$, $1'=-1$, $2'=-1/2!$, $3'=+1/3!$ etc., the signs running $+--++--++---\ldots$.]
+\begin{align}\sum\mathrm F(i_a,i_a^{-1})&=a'\mathrm F(V_a\zeta^{(a)},V_a\zeta^{(a)}),\tag{6}\\u&=\sum i_aV_0i_a^{-1}=a'V_a\zeta^{(a)}\cdot V_0i_a\zeta^{(a)}.\tag{7}\end{align}
+In (6) put the second $V_a\zeta^{(a)}=\sum\hat\alpha V_0\hat\alpha\zeta^{(a)}$. Thus,
+\[a'\mathrm F(V_a\zeta^{(a)},V_a\zeta^{(a)})=a'\sum(V_a\zeta^{(a)}V_0\hat\alpha\zeta^{(a)},\hat\alpha)=\sum\mathrm F(\hat\alpha,\hat\alpha).\]
+We might have modified the first $V_a\zeta^{(a)}$ instead of the second. Thus collecting results
+\begin{align}a'\mathrm F(V_a\zeta^{(a)},V_a\zeta^{(a)})&=\sum\mathrm F(i_a,i_a^{-1})\notag\\&=\sum\mathrm F(\hat\alpha,\hat\alpha)=\sum\mathrm F(\alpha,\hat\alpha).\tag{8}\end{align}
+(${}_nC_a$ terms in each summation.) Just as in quaternions $\mathrm F(\zeta,\phi\zeta)=\mathrm F(\phi'\zeta,\zeta)$ so now if $\phi$ is a ${}_nV_a$ linity
+\begin{equation}a'\mathrm F(V_a\zeta^{(a)},\phi V_a\zeta^{(a)})=a'\mathrm F(\phi'V_a\zeta^{(a)},V_a\zeta^{(a)}).\tag{9}\end{equation}
+If $\phi$ is a multenion linity
+\begin{equation}\sum_{a=0}^na'\mathrm F(V_a\zeta^{(a)},\phi V_a\zeta^{(a)})=\sum_{a=0}^na'\mathrm F(\phi'V_a\zeta^{(a)},V_a\zeta^{(a)}).\tag{10}\end{equation}
+For $a=0$ we must put $a'=1$, and for each $V_a\zeta^{(a)}$ we must also put $1$ [see (7) above].
+
+\noindent\textsc{§ 6. Extended Vector Linities.}---The theorems of §§ 6, 7 find continuous applications in the multenion treatment of differential invariants. Such treatment may be considered to begin in §8, and is explicitly introduced in §9.
+
+\indent Let $\phi$ be a given vector linity. The extended linity (a multenion linity) which may for most purposes, but not for all, also be denoted by $\phi$, is here defined thus. Let $i_a=i_gi_h\ldots i_l$ be any primitive unit of homogeneity $a$, $a$ itself being arbitrary. Then
+\[\phi V_ai_a=V_a\phi i_g\phi i_h\ldots\phi i_l.\]
+Now change the $n$ primitive vectors $i_1,i_2,\ldots i_n$ to any other $n$ vectors by such steps as replacing $i_1$ by $xi_1+yi_2$ (or, if $i_1,i_2$ have already changed to $\epsilon_1,\epsilon_2$, the change should be from $\epsilon_1$ to $x\epsilon_1+y\epsilon_2$). Such a change simply multiplies each side of the defining equation (when $i_1$ occurs in it) by $x$; the meaning is therefore unaltered. It follows that $\phi V_a\alpha^{(a)}=V_a(\phi\alpha)^{(a)}$ where $a$ is arbitrary and the vectors $\alpha$ are arbitrary. If, then, $(\phi),(\psi)$ are the extended linities of $\phi,\psi$, we see that $(\phi)(\psi)$ is the extended linity of $\phi\psi$, for
+\[(\phi)(\psi)V_ai_gi_h\ldots i_l=(\phi)V_a\psi i_g\psi i_h\ldots\psi i_l=V_a\phi\psi i_g\phi\psi i_h\ldots\phi\psi i_l.\]
+From this again it follows that the extended linity of $\phi^{-1}$ is $(\phi)^{-1}$.
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 307\end{center}
+Let us use either $(\phi)$ or $\phi$ for the extended linity of $\phi$ for the present. What we have just proved may be put
+\[(\phi)(\psi)=(\phi\psi),\qquad (\phi)^{-1}=(\phi^{-1}).\]
+We are now about to prove a similar proposition concerning $\phi'$ the conjugate, namely
+\[(\phi)'=(\phi').\]
+By (7) of §5 we have
+\begin{equation}\phi u=a'\phi V_a\zeta^{(a)}V_0u\zeta^{(a)},\qquad (\phi)u=a'V_a(\phi\zeta)^{(a)}V_0u\zeta^{(a)}.\tag{1}\end{equation}
+Let $u,u_0$ be two arbitrary multenions of homogeneity $a$. Operate on (1) by $V_0u_0()$
+\[V_0u_0(\phi)u=a'V_0u_0(\phi\zeta)^{(a)}V_0u\zeta^{(a)}.\]
+Modifying the left by the fundamental rule of the meaning of $(\phi)'$, and modifying the right by the rule $\mathrm F(\zeta,\phi\zeta)=\mathrm F(\phi'\zeta,\zeta)$ applicable to a vector linity. We obtain
+\[V_0u(\phi)'u_0=a'V_0u_0\zeta^{(a)}V_0u(\phi'\zeta)^{(a)}.\]
+Since $u$ is arbitrary, by (16) of §3
+\[(\phi)'u_0=a'V_a(\phi'\zeta)^{(a)}V_0u_0\zeta^{(a)},\]
+which by comparison with (1) proves the assertion that $(\phi)'=(\phi')$.
+
+\indent The following theorems are also true
+\begin{align}\phi V_{a+b}uv&=V_{a+b}\phi u\phi v,\tag{2}\\\phi V_{a-b}uv&=V_{a-b}\phi u\phi'^{-1}v,\tag{3}\end{align}
+when $\phi$ is non-vertible we must change $v$ to $\phi'v$. An alternative, less convenient than (3) generally, is thus
+\begin{equation}\phi V_{a-b}u\phi'v=V_{a-b}\phi uv,\tag{4}\end{equation}
+but this alternative is true without qualification. $\breve\upsilon$ having its usual meaning $(i_1,i_2,\ldots i_n)$ it is easy to see that $\phi\breve\upsilon=m\breve\upsilon$ where $m$ is the determinant of $\phi$. Putting $u=\breve\upsilon$ in (3) and (4) we obtain
+\begin{align}\breve\upsilon^{-1}\phi(\breve\upsilon v)&=m\phi'^{-1}v,\notag\\\text{or}\qquad\breve\upsilon^{-1}\phi(\breve\upsilon\phi'v)&=mv.\tag{5}\end{align}
+[\emph{Added February, 1921.}---Closely connected with the extension in §6 from vector operation to multenion operation, of a given vector linity, is a second kind of such extension. If $\phi_E$ is the extended (or, as I now prefer to say
+
 \end{document}

@@ -25,5 +25,16 @@ example, the source notation is rendered as
 `\breve{\alpha}`, `\breve{\epsilon}`, `\breve{\eta}`,
 `x\breve{\upsilon}`, and `\breve{\omega}`.
 
+![Source crop showing the curved vectorium marks](vectorium-breve-notation.png)
+
 This is a visual historical approximation and should be retained consistently
 unless a better documented original notation is identified.
+
+## Normal-reciprocal notation (p. 305 onward)
+
+The p. 305 normal-reciprocal relations introduce a second, distinct mark. Use
+`\breve{\alpha}` for a vectorium and `\hat{\alpha}` for its normal reciprocal;
+for example, $V_0\breve{\alpha}\hat{\alpha}=1$. Do not collapse this paired
+notation into a single accent.
+
+![Source crop showing the paired breve and hat marks](normal-reciprocal-notation.png)
