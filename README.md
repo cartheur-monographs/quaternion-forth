@@ -200,6 +200,7 @@ This makes noncommutativity visible as order-dependent state transitions.
 - [Conceptual summary](MULTENIONS-FSA-SUMMARY.md)
 - [General circuit proposal](MULTENIONS-FSA-CIRCUIT.md)
 - [74LS TTL implementation](MULTENIONS-FSA-74LS-CIRCUIT.md)
+- [74LS switch-and-LED circuit suggestions](74LS-CIRCUIT-EXPERIMENT-SUGGESTIONS.md)
 
 ## Research claim
 

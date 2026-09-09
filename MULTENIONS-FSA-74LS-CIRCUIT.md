@@ -101,6 +101,14 @@ output is selected.  The `000` decoder output can also serve as an
 
 - Use a regulated 5 V supply and place a 0.1 µF bypass capacitor across the
   supply pins of each IC.
+- The sub-miniature toggle terminals are suitable for soldering but are too
+  short for a dependable direct wire-wrap.  With 28 AWG wire-wrap wire,
+  solder one end to the switch terminal and wrap the other end onto a proper
+  square wire-wrap post.  Use a tool and posts specified for 28 AWG wire.
+- Keep a consistent wiring convention: red for `+5 V`, black for ground,
+  green for clock/control, yellow for manual inputs such as `X` and `Y`, blue
+  for ordinary state/logic signals, and white for active-low signals such as
+  `/CLR` and the 74LS138 outputs.
 - Begin with a clean, slow clock source. Add a debounced pushbutton only once
   the transition logic has been checked.
 - Confirm the hold case first, then test `i i = 1`, `j j = 1`, `i j = k`,

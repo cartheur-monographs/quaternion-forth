@@ -16,5 +16,5 @@ Line,Reference designator(s),Quantity,Description,Value / part number,Package / 
 15,SW4,1,Reset pushbutton,SPST normally open,Breadboard THT,true,Connect from the shared active-low clear net to GND; clears the state to 000.
 16,PS1,1,Regulated power supply,5 V DC >= 250 mA,Bench or breadboard module,true,Use a regulated supply suitable for 74LS TTL.
 17,BB1,1,Solderless breadboard,Full-size 830 tie-point or equivalent,Assembly platform,true,Assembly platform; a PCB may be substituted.
-18,W1,1,Hook-up wire kit,22 AWG solid core,Breadboard wire,true,For breadboard interconnects and power distribution.
+18,W1,1,Wire-wrap wire kit,28 AWG solid insulated; red black green yellow blue white,Wire-wrap compatible,true,Solder one end to each panel-switch terminal and wrap the other end onto a proper wire-wrap post. Reserve red for +5 V black for ground green for clock/control yellow for manual inputs blue for ordinary state/logic and white for active-low signals.
 19,U7,1,Retriggerable monostable multivibrator,74LS123,DIP-16,false,Optional one-shot stage if the debounced pushbutton must guarantee a single fixed-width clock pulse.
