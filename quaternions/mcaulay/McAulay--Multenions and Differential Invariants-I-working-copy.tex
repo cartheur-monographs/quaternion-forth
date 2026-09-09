@@ -631,4 +631,64 @@ where $\nabla'=\sum_{c=1}^ni_cD_{x'_c}$. This is a relation of the kind just men
 
 \indent We scarcely need to analyse the details of the strain after what has already been said. The ordinary notions of curl, $V_2\nabla\sigma$, of an intensity, that is a covariant vector, $\sigma$, are given by (10) of §8. The ordinary notions of convergence of a vector flux, $k\tau$, are given by (11) of §8. [$k\tau$ is a vector flux; $\tau$ is a contravariant vector.] The ordinary notions of the half curl, $\tfrac12V_2\nabla\sigma$, representing the rate of rotation of a fluid whose velocity is $\sigma$, are just the same in $n$ dimensions as in three [see (10) of §4 and what has been said above about infinitesimal rotations]. But more:---it cannot surprise
 
+\newpage\thispagestyle{empty}\begin{center}318\hfill Prof.\ A.\ McAulay.\end{center}
+anybody who has seen fluxes and intensities used as a mathematical method that there is no change in the same uses of the same expressions (curl, convergence, etc.) when we pass to an $n$-manifold of the most general kind. $V_2\nabla\sigma$ and $V_0\nabla(k\tau)$ will have just the same significance in the manifold as in the original Euclidean space; but this is anticipating.
+
+\begin{center}\emph{Synopsis of Notation.}\end{center}
+\begin{center}\begin{tabular}{|l|c|c|}\hline
+& Covariant & Contravariant\\\hline
+(1) Vector & $\sigma$ & $\tau$\\\hline
+(2) Hypervector & $v$ & $u$\\\hline
+(3) Multenion & $s$ & $r$\\\hline
+(4) Multenion linity & $\xi$ & $\xi^{-1}$\\\hline
+\end{tabular}\end{center}
+
+\indent We have given an instance of an invariantive statement in (2). Next, consider the integrals (10) and (7) of §8, which we here reproduce,
+\begin{equation}\left.\begin{aligned}\int V_0\sigma\,d\rho&=\iint V_0d\breve\rho_2V_2\nabla\sigma,\\\int^{(b)}\!\int V_0v\,d\breve\rho_b&=\int^{(b+1)}\!\int V_0d\breve\rho_{b+1}V_{b+1}\nabla v\end{aligned}\right\}.\tag{3}\end{equation}
+When $p'$ is the independent variable, precisely these same integrals are to be expressed in the same form, thus
+\begin{equation}\left.\begin{aligned}\int V_0\sigma'\,d\rho'&=\iint V_0d\breve\rho'_2V_2\nabla'\sigma',\\\int^{(b)}\!\int V_0v'\,d\breve\rho'_b&=\int^{(b+1)}\!\int V_0d\breve\rho'_{b+1}V_{b+1}\nabla'v'\end{aligned}\right\}.\tag{4}\end{equation}
+Now we are compelled to identify our present $dp$ and $d\breve p_b$ with the $dp$ and $d\breve p_b$ of (1), so that $dp'=\chi dp$. Again, $d\breve p_b$ meant $V_bdp_1dp_2\ldots dp_b$, where each $dp_c$ must be identified with the $dp$ of (1), and therefore the corresponding $dp'_c$ with the $dp'$ of (1). Hence
+\begin{equation}d\rho'=\chi d\rho,\qquad d\breve{\rho}'_b=\chi d\breve{\rho}_b.\tag{5}\end{equation}
+When we say that the integrals (4) are the same as the integrals (3), we assert that each of the four elements of integration in (3) is equal to the corresponding element in (4). In other words, we assert the existence of four invariants,
+\begin{equation}\left.\begin{aligned}
+V_0\sigma\,d\rho&=V_0\sigma'\,d\rho',&V_0d\breve\rho_2V_2\nabla\sigma&=V_0d\breve\rho'_2V_2\nabla'\sigma',\\
+V_0v\,d\breve\rho_b&=V_0v'\,d\breve\rho'_b,&V_0d\breve\rho_{b+1}V_{b+1}\nabla v&=V_0d\breve\rho'_{b+1}V_{b+1}\nabla'v'.
+\end{aligned}\right\}.\tag{6}\end{equation}
+From (5) and the fundamental property of the conjugate of $\chi$ these at once give
+\begin{equation}\left.\begin{aligned}\sigma'&=\chi'^{-1}\sigma,&V_2\nabla'\sigma'&=\chi'^{-1}V_2\nabla\sigma,\\v'&=\chi'^{-1}v,&V_{b+1}\nabla'v'&=\chi'^{-1}V_{b+1}\nabla v\end{aligned}\right\}.\tag{7}\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 319\end{center}
+(5) and (7) suggest multenions of types $r,s$, such that
+\begin{equation}r'=\chi r,\qquad s'=\chi'^{-1}s.\tag{8}\end{equation}
+$r$ and $s$ are multenion functions of $p$, and $r'$ and $s'$ are associated functions of $p'$ which produce the same integrals when $p'$ is taken as the independent variable in place of $p$. When (8) gives the rule of the association of the functions, $r$ and $s$ are said to be contravariant and covariant respectively.
+
+\indent It is well to place here the obvious consequence of (8)
+\begin{equation}V_0rs=V_0r's',\tag{9}\end{equation}
+that is, $V_0pq$ is always an invariant if one of the two, $p,q$, is covariant and the other contravariant.
+
+\indent By exactly similar reasoning (a little complicated by the presence of $k$), we may treat of equations (11) and (8) of §8. For the sake of saving space, I merely state the results: $kv$, $kdb$, $kec$, and $kds_a$ are covariant; while $kdb$, $\tau$, $w$, $k^{-1}V_0\nabla(k\tau)$, and $k^{-1}V_1V_1\nabla(kw)$ are contravariant. $kdb$ is both covariant and contravariant: it is invariant.
+
+\indent Remembering that $\nabla'h=\chi'^{-1}\nabla h$ when $h$ is a scalar, (8) shows at once that, for a scalar, covariance and contravariance both mean precisely the same as invariance. The persistent manner in which $k$ thrusts itself into these results tempts one to wonder whether covariant and contravariant terminology is superior to intensity and flux terminology. After some experience of using both, I am inclined to believe that the accepted covariant and contravariant standard scheme is superior to the other.
+
+\indent It is not difficult to show that $kv$ satisfies the test of (8) for covariance. If in (2) and (3) of §6 we read $\chi$ in place of $\phi$ we get theorems closely connected with multiplication and composition in the absolute differential calculus. Let $v_a,v_b$ be covariant multenions of homogeneities $a,b$. Then
+\begin{equation}v_{a+b}=V_{a+b}v_av_b\tag{9}\end{equation}
+is covariant (multiplication). If $u_a,u_b$ are similar contravariants, then
+\begin{equation}u_{a+b}=V_{a+b}u_au_b\tag{10}\end{equation}
+is contravariant (multiplication).
+If $u$ is contravariant (homogeneity $a$) and $v$ is covariant (homogeneity $b$), then
+\begin{equation}u_{a-b}=V_{a-b}uv\tag{11}\end{equation}
+is contravariant (composition) when $a>b$. Also
+\begin{equation}v_{b-a}=V_{b-a}uv\tag{12}\end{equation}
+is covariant (composition) when $b>a$. Lastly, when $a=b$, each is invariant, which is a special case of (9). A special case arises when we put the larger of the two, $a,b$, equal to $n$.
+
+\indent $\xi$, any multenion linity, is said to be covariant when it produces a covariant multenion from a contravariant, thus
+\begin{equation}s=\xi r,\qquad s'=\xi'r'.\tag{13}\end{equation}
+Conversely, since then
+\begin{equation}r=\xi^{-1}s,\qquad r'=\xi'^{-1}s',\tag{14}\end{equation}
+$\xi^{-1}$ is said to be contravariant. From (8) we at once get the associated transformation rules. From this, when $\xi$ is covariant, its conjugate $\xi'$ is also covariant, and therefore both the self-conjugate part and the skew part of $\xi$ are covariant. Similarly for $\xi^{-1}$ and contravariance. Also, when $\xi$ is self-conjugate, $\chi$ is self-conjugate. If $\xi$ is a covariant vector linity, the extended linity is also covariant. Also, in this case, the rotation-$V_2$ linity $V_2\xi\chi\xi'$ is covariant.
+
+\indent Let $\sigma_1,\sigma_2,\ldots,\sigma_n$ be $n$ independent covariant vectors. [They might be taken as $\nabla h_1,\nabla h_2,\ldots,\nabla h_n$ where the Jacobian of the quantities $h$ does not vanish.] From the reciprocal relations it at once follows that the corresponding reciprocal vectors are $n$ independent contravariant vectors. Any covariant or contravariant vector can be expressed at once in terms of these and invariants. Also, from the $2^n$ vectoriums formed from each set,
+
+\end{document}
+
 \end{document}
