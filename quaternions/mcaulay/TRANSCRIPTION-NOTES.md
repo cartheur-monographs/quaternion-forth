@@ -186,3 +186,13 @@ relation in equation (14).
 P. 172 derives the material contribution to the displacement variation. Keep
 the dot-marked material variables $\dot m$ and $\dot\mu$ distinct from their
 undotted counterparts in equations (16)--(19).
+
+## Philosophical Magazine supporting extract
+
+`../McAulay--Philosophical-Magazine--journal-pp-146-162.pdf` is a page-faithful
+extract of journal pp. 146--162 from the July 1923 *Philosophical Magazine*
+issue. It contains McAulay's ``Poisson's and Green's Theorems in Riemann's
+$n$-manifold'' (pp. 146--155) and ``The Mechanical Forces indicated by
+Relativity in an Electromagnetic Field'' (pp. 156--162). Keep this extract as
+supporting reference material when checking the transformed Part III pp. 169
+and 171.
