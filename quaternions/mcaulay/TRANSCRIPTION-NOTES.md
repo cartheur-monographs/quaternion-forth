@@ -55,3 +55,10 @@ on p. 309 equation (4) ends with a comma and equation (5) with a period.
 Part I has been transcribed and source-checked through its final journal page,
 p. 324. The transcription ends at the article rule; the following Newman
 article is deliberately excluded.
+
+## Part II handoff status (2026-09-12)
+
+`McAulay--Multenions and Differential Invariants-II-working-copy.tex` is the
+active, source-checked transcription of Part II. It covers journal p. 210;
+resume at p. 216, checking every word, symbol, display, brace, equation number,
+and page break against the source PDF.

@@ -1,0 +1,182 @@
+% Source-checked typeset transcription of Part II, beginning at journal p. 210.
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{mathptmx}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}\textit{Multenions and Differential Invariants.---II.}\end{center}
+\begin{center}\textsc{By Alex. McAulay, Professor of Mathematics in the University of Tasmania.}\end{center}
+\begin{center}(Communicated by W. B. Hardy, Sec.R.S.\quad Received June 22, 1921.)\end{center}
+
+\noindent\textsc{§ 11. \emph{The fundamental covariant vector linity, $\eta$.}}---The meaning of a manifold as based on a quadratic differential form is here taken for granted, and this, whether, in the ordinary terminology, all or only some of its dimensions are real. Let
+\begin{equation}\left.\begin{aligned}
+\iota_a&=i_a, &&(a=1,2,\ldots,c),\\
+\iota_b&=i_b\sqrt{-1}, &&(b=c+1,c+2,\ldots,n),\\
+\rho&=\sum_{h=1}^n x_h\iota_h.
+\end{aligned}\right\}\tag{1}\end{equation}
+$c$ having any given value from $1$ to $n$. In the present paper we shall deal with multenions and multenion linities based on a system of vectors $\rho$ for which all the co-ordinates $x_h$ and the similar scalars are real. In the case of relativity $n=4$, $c=3$.
+
+\indent The fundamental quadratic form is taken to be
+\begin{equation}ds^2=V_0d\rho\eta d\rho=V_0d\rho'\eta'd\rho',\tag{2}\end{equation}
+the sign which is given to $ds^2$, a scalar, being convenient in applications to relativity, but inconvenient in applications to pure geometry. $\eta$, a self-conjugate vector linity, is a given function of position, $\rho$; $\rho'$, a vector, an arbitrary function of $\rho$; and since the transformation from $\eta$ to $\eta'$ is given by (2) the fundamental linity $\eta$ is said to be covariant. [$\eta$ and $ds^2$ are real, but sometimes $ds$ and sometimes $ds\sqrt{-1}$ is real; when $ds$ is real it is ``a time-like interval''; when $ds\sqrt{-1}$ is real it is a length; when the question of reality is left undecided $ds$ is an interval.] At any given position $\rho'$ may be so chosen that $\eta'd\rho'=d\rho'$, that is $\eta'=1$. This imposes that $\eta$ is without singularities; it has $n$ mutually orthogonal principal directions and all its roots are real and positive, excluding zero values. Thus $\eta^{\frac12}$ is assumed to have the same orthogonal system and its roots are taken to be the positive values of the square roots of $\eta$ so that $\eta^{\frac12}$ is real and without ambiguity.
+
+\indent We may, and from here on shall, take our previously introduced scalar $k$ (§8) to be $|\eta^{\frac12}|$, the determinant of $\eta^{\frac12}$. [We have
+\[
+\eta=\chi'\eta'\chi
+\]
+so that
+\[
+|\eta|=|\eta'|\times|\chi|^2=|\eta'|\times(k/k')^2,
+\]
+because $k/k'$ was defined by
+\[
+kdb=k'db'\qquad\text{or}\qquad k/k'=|\chi|.\quad\text{]}
+\]
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 211\end{center}
+It will be seen that when, in the usual notation of relativity, it is said that with Galilean co-ordinates
+\[
+(g_{11},g_{22},g_{33},g_{44})=(-1,-1,-1,+1),
+\]
+we have not that $\eta(\iota_1,\iota_2,\iota_3,\iota_4)=(-\iota_1,-\iota_2,-\iota_3,+\iota_4)$ but instead the simpler statement that $\eta=\eta^{\frac12}=1$ or
+\[
+\eta(\iota_1,\iota_2,\iota_3,\iota_4)=(\iota_1,\iota_2,\iota_3,\iota_4),
+\]
+for it will be observed that this gives
+\[
+ds^2=-dx_1^2-dx_2^2-dx_3^2+dx_4^2.
+\]
+\indent A little care is required in expressing a linity, its conjugate, reciprocal, etc., by scalars or co-ordinates. It seems sufficient to illustrate from vector linities. When we say that $\phi$ is given by the square array of $16$ scalars
+\[
+\left|\begin{array}{cccc}a&b&c&d\\e&f&g&h\\l&m&n&p\\q&r&s&t\end{array}\right|
+\]
+we imply that the co-ordinates of $\phi\iota_1$ are found in the first \emph{column} thus
+\[
+\phi\iota_1=a\iota_1+e\iota_2+l\iota_3+q\iota_4
+\]
+and so for the other columns. In the square array of $n^2$ scalars specifying $\phi$, let $a_{xy}$ be the scalar in the $x$th row and $y$th column. Thus $\phi\iota_y=\sum_{x=1}^n a_{xy}\iota_x$, or more conveniently
+\begin{equation}a_{xy}=V_0\iota_x^{-1}\phi\iota_y.\tag{3}\end{equation}
+Except when $c=n$ the square array of a self-conjugate linity is not symmetrical about the principal diagonal. Let $a_{xy},a'_{xy}$ be the square arrays of $\phi$ and its conjugate $\phi'$. By the meaning of conjugate we have
+\[
+V_0\iota_x\phi\iota_y=V_0\iota_y\phi'\iota_x.
+\]
+Thus instead of $a'_{yx}=a_{xy}$ (as we have when $c=n$) we have by (3)
+\begin{equation}a'_{yx}=\iota_x^2\iota_y^2a_{xy},\tag{4}\end{equation}
+and in particular, when $\phi$ is self-conjugate $a_{yx}=\iota_x^2\iota_y^2a_{xy}$. If we would retain the $16$ scalars $g_{ab}$ with their usual meanings as in treatises on relativity we may use $g_{(ab)}$ for the corresponding scalars specifying $\eta$. Thus from the fact that $ds^2=\sum g_{ab}dx_adx_b$ and from (3)
+\[
+g_{ab}=V_0\iota_a\eta\iota_b,\qquad g_{(ab)}=V_0\iota_a^{-1}\eta\iota_b,
+\]
+whence
+\begin{equation}g_{ab}=\iota_a^2g_{(ab)}.\tag{5}\end{equation}
+More details with regard to these notations and the theory of tensors will be found below in §17.
+
+\newpage\thispagestyle{empty}\begin{center}212\hfill Prof.\ A.\ McAulay.\end{center}
+\indent \emph{Note on Notations in the Present Paper.}---There will be many exceptions below to the conventions here to be described. Especially do exceptions occur in very frequently recurring symbols. Thus none of the following receive the ``cross'' notation although they should do according to the conventions,
+\[
+\lambda,\ E_a,\ \bar E_a,\ C_\omega,\ C.
+\]
+$\lambda$ is a covariant vector, and of the other four $C_\omega,C$ are contramixt linities while $E_a,\bar E_a$ are portions of contramixt linities. The explanations of the technical terms will be made as they come to be used below.
+
+\indent (1) Contravariant multenions will have no distinguishing mark. Covariant multenions will usually be distinguished by a ``cross'' (which, because of its position, is scarcely likely to be confused with a sign of multiplication), thus
+\[
+\alpha^\times,\ u^\times,\ p^\times,\ q^\times,
+\]
+read ``alpha cross,'' etc.
+
+\indent (2) Covariant and comixt linities will have no distinguishing mark. Contravariant and contramixt linities will usually be distinguished by a cross.
+
+\indent (3) Contravariant and covariant linities will be denoted by Greek letters; contramixt and comixt linities by Roman capitals.
+
+\indent (4) $\alpha,\beta,\gamma,\alpha^\times,\beta^\times,\gamma^\times$, will generally denote ``dummy'' vectors. (Eddington uses ``dummy'' in an analogous sense for a positive integer.) Dummies are always (below, though not of necessity) treated as constants in that they are not affected by the differentiations of $\nabla$.
+
+\indent The duty of a dummy contravariant or covariant multenion may be generally described as ``to occupy, and thereby indicate, a situation into which an actual, previously defined, contravariant or covariant multenion, may legitimately be inserted.''
+
+\noindent\textsc{§ 12. \emph{The Invariant Forms of any Multenion Expression.}}---$\eta$ has been defined as a fundamental vector linity. It is also used for the corresponding extensive linity, a multenion linity; and similarly for $\eta^{\frac12}$. Since in (2), of §11, $ds^2=(\eta^{\frac12}d\rho)^2$, $\eta^{\frac12}d\rho$ in our manifold takes the place of the $d\rho$ of multenions in a Galilean manifold. [In a Euclidean manifold all the dimensions are real. In a Galilean manifold some are imaginary.] More generally, at a given position of the manifold, $\eta^{\frac12}q$ where $q$ is a contravariant multenion, or $\eta^{-\frac12}q^\times$ where $q^\times$ is a covariant multenion, takes the place of $q$ in a Galilean manifold. $\eta^{\frac12}q$ and $\eta^{-\frac12}q^\times$ will be spoken of as the neutral forms of $q$ and $q^\times$. Indeed, the three $q$ (contravariant), $\eta q$ (covariant) and $\eta^{\frac12}q$ (neutral), are to be regarded as only different mathematical representations of the same intrinsic property, of the manifold; just as in an ordinary dynamical system, the whole system of velocities or instead the whole system of momenta equally will serve to specify the instantaneous motion.
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 213\end{center}
+Corresponding to any multenion expression such as $V_a\cdot pqV_b(rs)$ which has a Galilean interpretation there are always the three forms ($p,q,r,s$ now being contravariant) in our manifold (contra., co., neut.).
+\[
+\eta^{-\frac12}V_a\cdot[\eta^{\frac12}p\eta^{\frac12}qV_b(\eta^{\frac12}r\eta^{\frac12}s)],\qquad \eta^{\frac12}V_a\cdot[\ ],\qquad V_a\cdot[\ ].
+\]
+The first and second of these three can \emph{always} be expressed in such a shape that only $\eta$ and not $\eta^{\frac12}$ occurs explicitly; though the expression may be very complicated as in the example chosen. It is these final forms from which $\eta^{\frac12}$ has been explicitly banished, that are regarded as invariantive.
+
+\indent To show this, first note as an example, that the product $pqr$ can be first modified by expressing $qr$ as a sum of terms such as $V_{a+b-2c}\cdot V_aqV_br$ and then $p\cdot qr$ can be similarly modified. We have then merely to find the invariant forms (two, namely, covariant and contravariant) of $V_{a+b-2c}uv$. [The reader is reminded that in our notation $u,v,w$, have homogeneities $a,b,c$, respectively, or have the forms $u=V_ap,\ v=V_bq,\ w=V_cr$.]
+
+\indent Let $a$ be greater or equal to $b$ and let $u,v$ be contravariant. Then most frequently all we require to note are the two cases $c=0,c=b$:
+\[
+\eta^{-\frac12}V_{a+b}\eta^{\frac12}u\eta^{\frac12}v=V_{a+b}uv,\qquad \eta^{\frac12}V_{a+b}\eta^{\frac12}u\eta^{\frac12}v=V_{a+b}\eta u\eta v,
+\]
+\[
+\eta^{-\frac12}V_{a-b}\eta^{\frac12}u\eta^{\frac12}v=V_{a-b}u\eta v,\qquad \eta^{\frac12}V_{a-b}\eta^{\frac12}u\eta^{\frac12}v=V_{a-b}\eta u v.
+\]
+and here of course we may have $u=\eta^{-1}u^\times$ or $v=\eta^{-1}v^\times$ in each of the forms.
+
+\indent To deal with the general value of $c$ in $V_{a+b-2c}uv$ we use $\zeta$. Now we know that if $\tau_1,\tau_2,\ldots\tau_n$ are $n$ independent contravariant vectors at a point, then their normal reciprocals $\hat{\tau}_1,\hat{\tau}_2,\ldots\hat{\tau}_n$ are $n$ independent covariant vectors. Also we know that if $(\alpha,\beta^\times)$ is any expression---bilinear in two vectors
+\[
+(\zeta,\zeta)=-\sum_{a=1}^n(\tau_a,\hat{\tau}_a).
+\]
+Hence if we insert $\zeta,\zeta$ into two places in an invariant form, of which one is occupied by a contravariant vector and the other by a covariant vector, the resulting expression will be invariantive (meaning, ``of invariant form''). Now it is easy to see by reduction to primitive units that
+\begin{equation}V_{a+b-2c}uv=[(-1)^{\frac12c(c+1)}/c!]V_{a+b-2c}\cdot V_{a-c}u\zeta^{(c)}V_{b-c}\zeta^{(c)}v,\tag{1}\end{equation}
+where as usual $\zeta^{(c)}$ stands for $\zeta_1\zeta_2\ldots\zeta_c$ and $\zeta_c^{(c)}$ for $V_c\zeta^{(c)}$. Hence the contravariant form of $V_{a+b-2c}uv$ is
+\begin{equation}[(-1)^{\frac12c(c+1)}/c!]V_{a+b-2c}\cdot V_{a-c}u\zeta_c^{(c)}V_{b-c}\zeta_c^{(c)}v,\tag{2}\end{equation}
+from which the covariant form may be written down, and either $u^\times=\eta u$ or $v^\times=\eta v$ or both may be used in place of $u$ and $v$. In my MS. work I
+
+\newpage\thispagestyle{empty}\begin{center}214\hfill Prof.\ A.\ McAulay.\end{center}
+am in the habit of using $\zeta_K^{(c)},\zeta_Q^{(c)}$ for $K\zeta_c^{(c)},Q\zeta_c^{(c)}$. Thus (2) would be $(c!)^{-1}V_{a+b-2c}\cdot V_{a-c}u\zeta_c^{(c)}V_{b-c}\eta\zeta_K^{(c)}v$. A special case of (2) often required is that the contravariant form of $V_2\omega\omega'$ where $\omega$ and $\omega'$ are contravariant and ${}_nV_2$ is
+\begin{equation}V_2(V_1\zeta\omega)(V_1\eta\zeta\omega').\tag{3}\end{equation}
+or more generally, for infinitesimal rotations generally, the contravariant form of $V_a\omega\iota$ is
+\begin{equation}V_a(V_1\zeta\omega)(V_{a-1}\eta\zeta\iota).\tag{4}\end{equation}
+\noindent\textsc{§ 13. \emph{Normal and Incident Components in Invariant Form.}}---These components occur very frequently in relativity. Thus the energy-momentum linity is density multiplied by an incident component, at any rate in its kinetic or primitive form. Normal and incident components serve to separate: (1) vector potential from electrostatic potential; (2) momentum from energy; (3) force from power; (4) current density from charge density; (5) magnetic induction from electrostatic force; (6) magnetic field strength from displacement. One should always be prepared to recognise these resolutions.
+
+\indent In quaternions if $\alpha$ is a given vector and $\sigma$ an arbitrary one, $\sigma$ has two components with reference to $\alpha$, namely the normal component
+\[
+N_0\sigma=\alpha^{-1}V\alpha\sigma=\alpha V\alpha\sigma/\alpha^2
+\]
+and the incident component
+\[
+I_0\sigma=\alpha^{-1}S\alpha\sigma=\alpha S\alpha\sigma/\alpha^2.
+\]
+As will be familiar to users of the quaternion method, it is these components each multiplied by $\alpha^2$, rather than the components themselves, which we shall expect to meet with frequently in analytical expressions. The two
+\[
+N_\alpha\sigma=N\sigma=\alpha V\alpha\sigma,\qquad I_\alpha\sigma=I\sigma=\alpha S\alpha\sigma,
+\]
+may be referred to as the normal and incident \emph{expressions} of $\sigma$ with reference to $\alpha$. With regard to these four linities $N_0,I_0,N,I$ we have as follows
+\begin{equation}\left.\begin{aligned}N_0^2&=N_0,&I_0^2&=I_0,&N_0I_0&=0=I_0N_0,\\N_0'&=N_0,&I_0'&=I_0,&N_0+I_0&=1=N_0'+I_0'\end{aligned}\right\},\tag{1}\end{equation}
+\begin{equation}\left.\begin{aligned}N^2&=\alpha^2N,&I^2&=\alpha^2I,&NI&=0=IN,\\N'&=N,&I'&=I,&N+I&=\alpha^2=N'+I'\end{aligned}\right\}.\tag{2}\end{equation}
+Similarly in a Galilean manifold any multenion $q$ has two components $N_0q,I_0q$ normal and incident to a given vector $\alpha$. Let
+\[
+q=\sum_{c=1}^n w,\qquad\text{where}\quad w=V_cq;
+\]
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 215\end{center}
+then when the linities $Nw,N_0w$, etc., have been defined, $Nq,N_0q$ have also been defined. We have
+\begin{equation}\left.\begin{aligned}Nw&=\alpha V_{c+1}\alpha w,&Iw&=\alpha V_{c-1}\alpha w,\\N_0w&=\alpha^{-1}V_{c+1}\alpha w,&I_0w&=\alpha^{-1}V_{c-1}\alpha w\end{aligned}\right\}.\tag{3}\end{equation}
+[If $\epsilon$ is a vectorium of homogeneity $b$, a vector $\sigma$ has a normal component $\epsilon^{-1}V_{b+1}\epsilon\sigma$ and an incident component $\epsilon^{-1}V_{b-1}\epsilon\sigma$ with reference to $\epsilon$. With reference to $\epsilon$, $w$ has many, not merely two, components given by
+\[
+w=\epsilon^{-1}V_{b+c}\epsilon w+\epsilon^{-1}V_{b+c-2}\epsilon w+\cdots.
+\]
+The terms on the right of this equation are all, separately, but not obviously, of homogeneity $c$.]
+
+\indent Next let $\alpha$ be a given contravariant vector at a given position $\rho$ of our manifold and $q$ an arbitrary contravariant multenion at the same position and let $w=V_cq$. Also let $\alpha_v,q_v,w_v$ be the neutral forms and $\alpha^\times,q^\times,w^\times$ the covariant forms of $\alpha,q,w$ respectively, that is to say,
+\begin{equation}\left.\begin{aligned}\eta^{\frac12}\alpha&=\alpha_v=\eta^{-\frac12}\alpha^\times,\\\eta^{\frac12}w&=w_v=\eta^{-\frac12}w^\times,\\\eta^{\frac12}q&=q_v=\eta^{-\frac12}q^\times\end{aligned}\right\}.\tag{4}\end{equation}
+The invariant form of $\alpha^2$ is $\alpha_v^2$ or
+\begin{equation}V_0\alpha\eta\alpha=\alpha_v^2=V_0\alpha^\times\eta^{-1}\alpha^\times.\tag{5}\end{equation}
+With our present meanings (3) is not invariant in form. There are four modes of choosing the invariant forms of $N$ and $I$, $N_0$ and $I_0$ and generally of any multenion linities, (1) covariant, (2) contravariant, (3) comixt, (4) contramixt. We will take number (3) of these for the basis of the notation in connection with $N$ and $I$. A comixt linity means one which acting on a covariant multenion produces a covariant multenion. For this type of linity it is obvious that the invariant forms of (3) are given by
+\begin{equation}\left.\begin{aligned}
+Nw^\times&=V_c\alpha V_{c+1}\eta\alpha w^\times=V_c\eta^{-1}\alpha^\times V_{c+1}\alpha^\times w^\times,\\
+Iw^\times&=V_c\eta\alpha V_{c-1}\alpha w^\times=V_c\alpha^\times V_{c-1}\eta^{-1}\alpha^\times w^\times,\\
+N_0w^\times&=Nw^\times/V_0\alpha\eta\alpha=Nw^\times/V_0\alpha^\times\eta^{-1}\alpha^\times,\\
+I_0w^\times&=Iw^\times/V_0\alpha\eta\alpha=Iw^\times/V_0\alpha^\times\eta^{-1}\alpha^\times
+\end{aligned}\right\}.\tag{6}\end{equation}
+(2) comes with this notation to be modified in two ways only; $\alpha^2$ is replaced by $V_0\alpha\eta\alpha$ or $V_0\alpha^\times\eta^{-1}\alpha^\times$ and in place of $N'$ and $I'$ we have a new kind of conjugate $\eta N'\eta^{-1},\eta I'\eta^{-1}$ involving the fundamental linity $\eta$. Thus we now have
+\begin{equation}\left.\begin{aligned}
+N^2&=V_0\alpha\eta\alpha\cdot N,&I^2&=V_0\alpha\eta\alpha\cdot I,&NI&=0=IN,\\
+\eta N'\eta^{-1}&=N,&\eta I'\eta^{-1}&=I,&N+I&=V_0\alpha\eta\alpha=\eta(N'+I')\eta^{-1}
+\end{aligned}\right\}.\tag{7}\end{equation}
+\end{document}
