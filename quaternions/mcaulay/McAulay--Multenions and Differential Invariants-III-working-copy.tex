@@ -1,0 +1,68 @@
+% Source-checked typeset transcription of Part III, beginning at journal p. 162.
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{iftex}
+\usepackage{mathptmx}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+% Part III's inverse variance mark is the explicit U+0254 open-o/reversed-c.
+% XeLaTeX renders it from DejaVu Serif; pdfLaTeX retains a rotated-c fallback.
+\ifPDFTeX
+  \newcommand{\invc}{\mathord{\rotatebox[origin=c]{180}{$c$}}}
+\else
+  \usepackage{fontspec}
+  \newfontfamily\invcfont{DejaVu Serif}
+  \newcommand{\invc}{\mathord{\text{\invcfont ɔ}}}
+\fi
+% A linity's paired variance indicators are two literal parentheses in a left superscript.
+\newcommand{\markpair}[3]{{}^{#1#2}#3}
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}\textit{Multenions and Differential Invariants.---III.}\end{center}
+\begin{center}\textsc{By Alex. McAulay, Professor of Mathematics in the University of Tasmania.}\end{center}
+\begin{center}(Communicated by W. B. Hardy, Sec.R.S.\quad Received July 20, 1921.)\end{center}
+
+\noindent\textsc{§ 19. \emph{Suggested Improvement of Some Notations and Terms.}}---The reader has probably found that the terminology for multenion linities, adopted hitherto because of the writer's timid reluctance to depart from accepted meanings, is too inexpressive of the intended signification. A covariant linity fabricates a covariant multenion out of a contravariant. Let us call it a $c/\invc$ or a coexcontra (co-ex-contra); and similarly let us now denote a contravariant, comixt or contramixt linity by the name contraexco, coexco or contraexcontra, and by the symbol $\invc/c$, $c/c$ or $\invc/\invc$ respectively. Let us also use parenthesis marks\footnote{Intended by author to be \emph{commas}, upright and inverted. In future printing the author still thinks commas would be preferable to the bracket substitute.} before a letter such as $\phi$, of the same general shapes as $c$ and $\invc$ (omitting the solidus), to indicate the type of invariance, thus---let us say that
+\[
+  \phi=\markpair{(}{)}{\phi},\ \markpair{)}{(}{\phi},\ \markpair{(}{(}{\phi}\ \text{or}\ \markpair{)}{)}{\phi}
+\]
+indicates that $\phi$ is a
+\[
+  c/\invc,\quad \invc/c,\quad c/c\ \text{or}\ \invc/\invc
+\]
+respectively. Similarly, $p={}^{(}p$ indicates that $p$ is a covariant multenion and $q={}^{)}q$ indicates that $q$ is a contravariant multenion. If we actually insert all these indicating parenthesis marks, which we shall do but rarely, their mode of combination is simple. Thus
+\[
+  {}^{)}p=\markpair{)}{)}{\phi}\ \markpair{)}{(}{\psi}\ {}^{(}q
+\]
+is an invariant equation. The features that render it so are (1) that the second mark of one letter, $\phi$ or $\psi$, is identical with the first mark of the next; these two marks virtually cancel one another; and (2) the proper mark of the resultant symbol $p$, of the whole operation, is the first written mark of the compound symbol $\phi\psi q$.
+
+\indent When with these notations we use the dash which indicates conjugacy, there is, unless we insert brackets, ambiguity in the meanings of $\markpair{(}{(}{F'}$ and $\markpair{)}{)}{F'}$ (the two mixed types as we have hitherto called them), because $(\markpair{(}{(}{F})'$ is not of the same type $c/c$ as $\markpair{(}{(}{F}$, but of the type $\invc/\invc$. There is no such ambiguity with $\markpair{(}{)}{\phi'}$ and $\markpair{)}{(}{\phi'}$ nor with $f\markpair{(}{(}{F}$ and $f\markpair{)}{)}{F}$, where $fx$ is a rational function of $x$. [Remember that $f^{(}\phi$ and $f^{)}\phi$ have no invariantive meaning. I think it
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 163\end{center}
+best to adhere to the general rule, not rigidly prescribed, that $c/\invc$ and $\invc/c$ should be denoted by Greek letters and $c/c$ and $\invc/\invc$ by Roman capitals.]
+
+\indent Our new notations and terms apply to other symbols than invariantive; for instance, to $\Gamma_\beta$. Thus
+\[
+  \Gamma_\beta={}^{)}\Gamma_\beta,\qquad E_\beta'=\markpair{(}{(}{(E_\beta')}.
+\]
+We shall retain the ``cross'' notation to indicate different symbols, and generally restrict it, without rigid prescription, to the same meanings as hitherto.
+
+\indent Our former $\bar\Gamma_\beta$ and $\bar E_\beta$ will henceforth not be used, because we have in §18 a new notation, according to which ${}^aE_\beta$ would have reference to a Weyl manifold, and would indicate that ${}^aE_\beta$ was the part of $E_\beta$ not containing terms in $\lambda$; and if $\lambda$ is actually everywhere zero so that the manifold becomes a Riemann manifold, §18 provides the use of $F_\beta$ in place of $E_\beta$. In the present paper we occupy ourselves exclusively with a Riemann manifold, and use the letters $\theta$, $l$, $F_\beta$, $\Theta_\beta$, $\Omega$, $C\ (=\markpair{(}{(}{C}=\Omega\theta^{-1})$ provided for that case.
+
+\indent A thick dot\footnote{It is necessary, because of papers despatched to England in the early months of 1922, to state that this dot replaced a \emph{bar} placed over the symbol affected. The replacement was made in August, 1922, at the suggestion of the printers. It seems now (August) too late to replace the bar in the papers just mentioned.} will be used to denote that a symbol is a ``density,'' though occasionally, as with $W$ (action density), and $f$ a part of $W$ below, we shall not consider it necessary to use the dot. Once for all, we define $\dot\eta'$ and $\dot\theta$ by the equations
+\begin{equation}
+  \dot\eta'=k\eta^{-1},\qquad \dot\theta=l\theta^{-1}.
+\tag{1}
+\end{equation}
+but we may regard it as a rule, unless the contrary is definitely stated, as here with $\dot\eta'$ and $\dot\theta$, that the dot attached to a symbol means that the undotted symbol has been multiplied by $l$ (by $k$ if we were dealing with a Weyl manifold). Thus $\dot C$, $\dot G$ stand for $lC$, $lG$, and again, if we introduce $\dot\kappa$ as a contravariant vector density, then $\kappa$ will mean $l^{-1}\dot\kappa$.
+
+\indent With regard to $\dot\theta$ in (1), we shall use it as applied to a general multenion, say, to $w^\times=V_aq^\times$, but not exactly with the extensive meaning. Thus $\dot\theta u^\times$ means $l\theta^{-1}u^\times$ where $\theta^{-1}$ but not $l$ is used in the extensive meaning. Thus, for instance, $\dot\theta V_3\alpha^\times\beta^\times\gamma^\times$ means {\small$lV_3\theta^{-1}\alpha^\times\theta^{-1}\beta^\times\theta^{-1}\gamma^\times$}, and not {\small$l^3V_3\theta^{-1}\alpha^\times\theta^{-1}\beta^\times\theta^{-1}\gamma^\times$}.
+
+\noindent\textsc{§ 20. \emph{Maxwell's Equations for Matter in Bulk.}}---It is fully time to show how the special requirements of Relativity are met in detail in our method. In now introducing Maxwell's equations, let us throughout keep in mind the application to matter in bulk. If for no other reason this is desirable because thereby we are prepared to accept the beautiful
+
+\end{document}

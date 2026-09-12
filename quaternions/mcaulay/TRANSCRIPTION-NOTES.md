@@ -124,3 +124,30 @@ In particular, $\alpha$ is a subscript and $A$, $0$, and $I$ are superscripts
 on $d$; the terminal $d_{\alpha}^{I}$ is an operator term, not an omitted
 operand. Revisit the expression's meaning, rather than changing the
 source-faithful rendering, when auditing the mathematics.
+
+## Part III handoff status (2026-09-12)
+
+`McAulay--Multenions and Differential Invariants-III-working-copy.tex` is the
+active, source-checked transcription of Part III. It currently covers journal
+pp. 162--163 (PDF pp. 1--2), through the opening sentence of §20 on p. 163.
+
+### Part III variance marks
+
+Part III uses two distinct mark families. The $c$ and inverted,
+upside-down $c$ (rendered as `\invc`, Unicode U+0254) occur in the printed
+type labels, such as $c/\invc$. They do not occur in the variance indicators.
+Those indicators are literal parentheses in left superscript position. The
+source calls them substitutes for upright and inverted commas. Preserve their
+number and order literally; for example, it prints
+`$\phi=\markpair{(}{)}{\phi},\ \markpair{)}{(}{\phi},\ \markpair{(}{(}{\phi}\ \text{or}\ \markpair{)}{)}{\phi}$`.
+`\markpair` renders both parentheses together as a left superscript. They are
+meaningful notation, not grouping parentheses.
+
+Compile the Part III working copy with `xelatex`: this renders `\invc` as the
+explicit Unicode open-o/reversed-c glyph (U+0254). The `pdflatex` fallback is
+only for source portability and is visually less distinct.
+
+The p. 163 ``thick dot'' density notation is provisionally represented by
+LaTeX `\dot{}`. The source says this dot had replaced a bar in 1922. Retain the
+distinction between a density-marked symbol, such as $\dot\theta$, and an
+ordinary multiplication dot when extending this transcription.
