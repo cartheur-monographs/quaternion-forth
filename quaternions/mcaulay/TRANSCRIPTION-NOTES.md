@@ -129,7 +129,8 @@ source-faithful rendering, when auditing the mathematics.
 
 `McAulay--Multenions and Differential Invariants-III-working-copy.tex` is the
 active, source-checked transcription of Part III. It currently covers journal
-pp. 162--168 (PDF pp. 1--7), through equations (1)--(2) of §21 on p. 168.
+pp. 162--172 (PDF pp. 1--11), through the vacuum stress-energy consequence,
+equation (19), on p. 172.
 
 ### Part III variance marks
 
@@ -169,3 +170,19 @@ expressions such as $\dot\phi'$ and $\dot\psi^{-1}$.
 
 The p. 168 stationary-action setup likewise uses density-marked mass and mass
 density ($d\dot M$ and $\dot m$); retain the marks in the volume relation.
+
+P. 169 introduces the density-marked momentum $\dot\mu$ and defines the
+stationary-action density $W$. Its display (4), like p. 168 equation (2), is
+introduced by a separate left-aligned ``and.''
+
+P. 170's constrained field variation preserves the dot-marked $\omega$ and
+$\kappa$; its differential-operator definition of $\omega^\times$ should not
+be confused with an ordinary product by $\nabla$.
+
+P. 171 distinguishes the quoted co-ordinate change $\delta'$ from the
+post-displacement change $\delta$. Preserve both definitions and their grouped
+relation in equation (14).
+
+P. 172 derives the material contribution to the displacement variation. Keep
+the dot-marked material variables $\dot m$ and $\dot\mu$ distinct from their
+undotted counterparts in equations (16)--(19).
