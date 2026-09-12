@@ -129,7 +129,7 @@ source-faithful rendering, when auditing the mathematics.
 
 `McAulay--Multenions and Differential Invariants-III-working-copy.tex` is the
 active, source-checked transcription of Part III. It currently covers journal
-pp. 162--163 (PDF pp. 1--2), through the opening sentence of §20 on p. 163.
+pp. 162--168 (PDF pp. 1--7), through equations (1)--(2) of §21 on p. 168.
 
 ### Part III variance marks
 
@@ -151,3 +151,21 @@ The p. 163 ``thick dot'' density notation is provisionally represented by
 LaTeX `\dot{}`. The source says this dot had replaced a bar in 1922. Retain the
 distinction between a density-marked symbol, such as $\dot\theta$, and an
 ordinary multiplication dot when extending this transcription.
+
+The p. 164 Maxwell forms apply the same density mark to $\omega$, $\kappa$,
+and $v$; these are rendered as `\dot\omega`, `\dot\kappa`, and `\dot v`.
+
+The p. 165 digression explicitly applies the paired parenthesis variance marks
+to $N$ and $I$. Use `\markpair` for both marks, rather than treating them as
+ordinary parentheses or apostrophes.
+
+On p. 166, the same variance marks attach to linities including $\dot\psi$.
+The notation for the normal/incident components uses true primes ($N'$ and
+$I'$) in addition to the paired marks; retain both distinctions.
+
+P. 167 continues the dot-marked linities $\dot\phi$ and $\dot\psi$, including
+their inverse-density form. Preserve the dot and the true prime separately in
+expressions such as $\dot\phi'$ and $\dot\psi^{-1}$.
+
+The p. 168 stationary-action setup likewise uses density-marked mass and mass
+density ($d\dot M$ and $\dot m$); retain the marks in the volume relation.

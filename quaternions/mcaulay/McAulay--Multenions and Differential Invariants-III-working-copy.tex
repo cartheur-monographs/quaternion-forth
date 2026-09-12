@@ -65,4 +65,188 @@ but we may regard it as a rule, unless the contrary is definitely stated, as her
 
 \noindent\textsc{§ 20. \emph{Maxwell's Equations for Matter in Bulk.}}---It is fully time to show how the special requirements of Relativity are met in detail in our method. In now introducing Maxwell's equations, let us throughout keep in mind the application to matter in bulk. If for no other reason this is desirable because thereby we are prepared to accept the beautiful
 
+\newpage\thispagestyle{empty}\begin{center}164\hfill \textit{Prof. A. McAulay.}\end{center}
+explanation that Maxwell's theory affords of the known behaviour of light in uniaxal and biaxal crystals. When we compare results with Maxwell's we shall speak as if $n=4$. Nevertheless, in the general argument, we shall continue to suppose $n$ to have any positive integral value. When with $n=4$ we put
+\[
+  \rho=xl_1+yl_2+zl_3+tl_4
+\]
+we shall speak of $x$, $y$, $z$ as the spatial co-ordinates and $t$ as the time, even when by transformation of all four co-ordinates $t$ may mean something very different from the time as ordinarily understood.
+
+\indent Let Maxwell's vector potential be $\mathbf{A}=(A_1,A_2,A_3)$, electrostatic potential $=A_4$, magnetic induction $\mathbf{B}=(B_1,B_2,B_3)$, electric intensity $\mathbf{E}=(E_1,E_2,E_3)$, magnetic field strength $\mathbf{H}=(H_1,H_2,H_3)$, dielectric displacement $\mathbf{D}=(D_1,D_2,D_3)$, conduction current $\mathbf{K}=(K_1,K_2,K_3)$, electrostatic density $=K_4$, force per unit volume $\mathbf{F}=(F_1,F_2,F_3)$, power $(-S\mathbf{E}\mathbf{K})$ per unit volume $=F_4$.
+
+\indent Also let $\lambda$ be a covariant vector (better use $\lambda^\times$ in the future) given by
+\[
+  \lambda=\sum A_cl_c\quad(c=1,2,3,4),
+\]
+$\omega^\times$ a covariant ${}_nV_2$ given by
+\[
+  \omega^\times=\sum B_1l_2l_3+\sum E_1l_4l_1
+\]
+(the meaning of each summation, of three terms, being sufficiently obvious), $\dot\omega$ a contravariant ${}_nV_2$ density given by
+\[
+  \dot\omega=\sum H_1l_2l_3+\sum D_1l_4l_1,
+\]
+$\dot\kappa$ a contravariant vector density given by
+\[
+  \dot\kappa=\sum K_cl_c\quad(c=1,2,3,4),
+\]
+and $\dot v^\times$ a covariant vector density given by
+\[
+  \dot v^\times=\sum F_cl_c\quad(c=1,2,3,4).
+\]
+Maxwell's quaternion equations
+\begin{alignat}{3}
+  \mathbf{B}&=V\nabla\mathbf{A}, &\qquad \mathbf{E}&=-\nabla A_4-\partial\mathbf{A}/c\partial t, &\tag{1}\\
+  \mathbf{K}&=V\nabla\mathbf{H}-\partial\mathbf{D}/\partial t, & \mathbf{K}_4&=-S\nabla\mathbf{D}, &\tag{2}\\
+  \mathbf{F}&=V\mathbf{K}\mathbf{B}+K_4\mathbf{E}, & \mathbf{F}_4&=-S\mathbf{K}\mathbf{E}, &\tag{3}
+\end{alignat}
+are identical with the multenion equations\footnote{For a convenient, simple, systematic method of converting all $(n=4)$ multenion formulae to corresponding quaternion formulae, see a paper by the author (despatched a month ago, viz., November, 1922, to England), ``The Mechanical Forces \ldots\ in an Electromagnetic Field.''}
+\begin{alignat}{2}
+  \omega^\times&=V_2\nabla\lambda, &\tag{1a}\\
+  \dot\kappa&=V_1\nabla\dot\omega, &\tag{2a}\\
+  \dot v^\times&=V_1\dot\kappa\omega^\times. &\tag{3a}
+\end{alignat}
+The equations (1a), (2a), (3a) are all invariantive.
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 165\end{center}
+
+\noindent [A digression. In Maxwell's presentation of the fundamental aspects of the electromagnetic field $V\nabla\mathbf{H}$ in equation (2) is looked upon as \emph{the} electric current, consisting of two parts, conduction current $\mathbf{K}$ and dielectric current $\partial\mathbf{D}/\partial t$. In the new Relativity scheme, as given by (2a), we naturally interchange the \emph{r\^oles} of $V\nabla\mathbf{H}$ and $\mathbf{K}$; that is to say, we look upon $\mathbf{K}$ as \emph{the} current, consisting of two parts, a magnetic part, $V\nabla\mathbf{H}$, and an electric part, $-\partial\mathbf{D}/\partial t$. In the multenion presentation (see below for $N$ and $I$) $V\nabla\mathbf{H}$ is $V_1\nabla(N\dot\omega)$, $-\partial\mathbf{D}/\partial t$ is $NV_1\nabla(I\dot\omega)$, and $K_4$ (multiplied into $l_4$) is $IV_1\nabla(I\dot\omega)$. [In the last sentence $N$ and $I$ are used as if $N=\markpair{)}{)}{N}$, $I=\markpair{)}{)}{I}$; if, as usual, we take $N=\markpair{(}{(}{N}$, $I=\markpair{(}{(}{I}$, then in the last sentence each $N$ should be $N'$ and each $I$ should be $I'$ .] In the future, then, when we use the term current, Maxwell's conduction current will be meant. Maxwell does not put $\mathbf{F}=V\mathbf{K}\mathbf{B}$ as we have asserted in (3), but instead $\mathbf{F}=V(V\nabla\mathbf{H})\mathbf{B}$.]
+
+\indent Before speaking of the relations between Maxwell's $(\mathbf{B},\mathbf{E})$ and $(\mathbf{H},\mathbf{D})$, that is, between $\omega^\times$ and $\dot\omega$, let us derive Lorentz's generalizations of Maxwell's equations to bodies in motion from the general principle of Relativity. The generalisations in nowise alter (1a), (2a), (3a). Put $N_4$ and $I_4$ for the normal and incident components with reference to $l_4$, when the co-ordinates are Galilean. In reality we have
+\begin{equation}
+  \left.\begin{aligned}
+    \mathbf{A}&\text{ is }N_4\lambda, &\qquad l_4A_4&\text{ is }I_4\lambda\\
+    \mathbf{B}&\text{ is }N_4\omega^\times, & \mathbf{E}&\text{ is }I_4\omega^\times
+  \end{aligned}\right\}
+  \tag{1b}
+\end{equation}
+\begin{equation}
+  \left.\begin{aligned}
+    \mathbf{H}&\text{ is }N_4\dot\omega, &\qquad \mathbf{D}&\text{ is }I_4\dot\omega\\
+    \mathbf{K}&\text{ is }N_4\dot\kappa, & l_4K_4&\text{ is }I_4\dot\kappa
+  \end{aligned}\right\}
+  \tag{2b}
+\end{equation}
+\begin{equation}
+  \mathbf{F}\text{ is }N_4\dot v^\times,\qquad l_4F_4\text{ is }I_4\dot v^\times.
+  \tag{3b}
+\end{equation}
+In the general $\theta$ (Riemann) manifold
+\[
+  \iota=dp/ds=dp/\sqrt{(V_0dp\theta dp)}
+\]
+degenerates when Galilean co-ordinates are used $(\theta=1)$ to
+\[
+  (l_1dx+l_2dy+l_3dz+l_4dt)/\sqrt{(-dx^2-dy^2-dz^2+dt^2)}
+\]
+\[
+  =(1-\sum\dot x^2)^{-\frac12}\cdot(l_1\dot x+l_2\dot y+l_3\dot z+l_4),
+\]
+of which we say nothing more here than that when the co-ordinates are so chosen that the particle is at rest $\iota$ (the contravariant world unit tangent vector to the world locus of a particle), degenerates to $l_4$. Maxwell's equations, as given above, are to be supposed true only when the medium is at rest. The generalisations of $N_4$ and $I_4$ are thus $N$ and $I$ (or $N'$ and $I'$), the normal and incident components with reference to $\iota$; normal \emph{component} and normal \emph{expression}, in this case, meaning the same, because
+
+\newpage\thispagestyle{empty}\begin{center}166\hfill \textit{Prof. A. McAulay.}\end{center}
+$V_0\iota\theta\iota=1$. \emph{Below $N$ and $I$ will always mean what has just been described with reference to $\iota$,} unless explicit exception is made; (1b), (2b), (3b), become like (1a), (2a), (3a), all invariantive when we read $\iota$, $N$ and $I$ in place of $l_4$, $N_4$, and $I_4$, in (1a) and (3a); and in (2a), $\iota$, $N'$ and $I'$ in place of $l_4$, $N_4$, and $I_4$. [Remember that $N=\markpair{(}{(}{N}$, $N'=\markpair{)}{(}{N'}$, and similarly for $I$.]
+
+\indent \emph{The equations this process gives when a body is moving, and we are using Galilean co-ordinates, are Lorentz's well-known generalizations of Maxwell's quaternion equations} (not of our multenion equations, which have been in no way altered by what has been said).
+
+\indent From (1a) and (2a) we have of course
+\begin{alignat}{2}
+  V_3\nabla\omega^\times&=0, &\tag{4}\\
+  V_0\nabla\dot\kappa&=0. &\tag{5}
+\end{alignat}
+These must be implicitly contained in (1) and (2) and indeed are found to be
+\begin{alignat}{3}
+  S\nabla\mathbf{B}&=0, &\qquad V\nabla\mathbf{E}+\partial\mathbf{B}/\partial t&=0, &\tag{4a}\\
+  S\nabla\mathbf{K}&=\partial K_4/\partial t. & & &\tag{5a}
+\end{alignat}
+
+\indent Maxwell's relations between $(\mathbf{B},\mathbf{E})$ and $(\mathbf{H},\mathbf{D})$ are that $\mathbf{H}$ is a self-conjugate linity of $\mathbf{B}$, (permeability)$^{-1}$; and $\mathbf{D}$ a similar function of $\mathbf{E}$, capacity. In our case
+\begin{equation}
+  \left.\begin{aligned}
+    \dot\omega&=\dot\psi\omega^\times, &\qquad \dot\psi&=\dot\psi'=\markpair{)}{(}{\dot\psi}\\
+    I'\dot\psi N&=0=N'\dot\psi I
+  \end{aligned}\right\}
+  \tag{6}
+\end{equation}
+Here $\dot\psi$ is a ${}_nV_2$ linity concerning which, $\dot\psi=\dot\psi'$ asserts that $\dot\psi$ is self-conjugate, $\dot\psi=\markpair{)}{(}{\dot\psi}$ asserts that it is contraexco, the dot implies that it is a density, and the two equations in the second line assert that $\dot\psi$ consists of two parts $N'\dot\psi N+I'\dot\psi I$, of which the first is confined to normal components with reference to $\iota$, and the other to incident components.
+
+\indent [Any $c/c$, say $\phi$, may be expressed uniquely as the sum of four parts thus
+\[
+  \phi=(N+I)\phi(N+I)=N\phi N+I\phi I+N\phi I+I\phi N.
+\]
+With a $\invc/c$ the four parts are obtained from $(N+I)'\ (\ )\ (N+I)$, and in the case of $\dot\psi$ two of these parts are asserted in (6) to be zero.
+
+\indent \emph{Digression on I and N.}---I have forgotten to point out earlier that $I'$, $I$, $N'$ and $N$ all have subextensive significance, and that $(I-N)$ also has a close connection with extensive interpretation. In the neutral form we virtually deal with a Galilean manifold. If in such a manifold $I$, $N$ are the incident and normal components with reference to $a$, we can, by a rotation, bring $a$ to coincidence with $l_1$, or some $l_a$, and then $(I-N)$ becomes the capital linity $P_1$ (which reverses the sign of $l_1$ in every term of $q$), introduced at the outset of our subject. The properties of $I$, $N$, $(I-N)$, may be based on this connection
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 167\end{center}
+with $P_1$, through neutral to invariant forms. However, it is perfectly easy to prove directly that, say, $I'$, has subextensive significance, for we have defined thus
+\[
+  I'\beta=\alpha V_0\eta\alpha\beta,\qquad I'u=V_{a\alpha}V_{a-1}\eta\alpha u,
+\]
+and to show that $I'$ has subextensive significance we have to prove that
+\[
+  I'u=-V_aI'\xi V_{a-1}\xi u,
+\]
+which is obvious as soon as stated.]
+
+\indent Maxwell's scheme also connects $\mathbf{K}$ with $\mathbf{E}$ by the self-conjugate linity conductivity. In our case express this first with Galilean co-ordinates. We have
+\[
+  \sum_{a=1}^{3}E_al_a=V_1l_4\omega^\times=RN_4\dot\kappa
+\]
+where $R$ is put for resistivity. This generalizes to
+\begin{equation}
+  N'\dot\kappa=\dot\phi V_1I\omega^\times,\qquad
+  \dot\phi=N'\dot\phi N=\dot\phi'=\markpair{)}{(}{\dot\phi}.
+  \tag{7}
+\end{equation}
+where $\dot\phi$ is conductivity, a vector linity.
+
+\indent It appears to me an impressive fact that Maxwell's analysis of the electromagnetic field was so wonderfully true to the nature of things, that not one single feature of his scheme, so far considered, requires the slightest revision when examined with the powerful searchlight of Relativity. Only when the structure perforce comes into contact with Newtonian mechanics, as is the case in what we are about to consider, does it require, along with classical mechanics, to be amended.
+
+\indent For stress put
+\begin{equation}
+  \dot M\alpha^\times=-\tfrac12\alpha^\times V_0\dot\omega\omega^\times+V_1(V_1\alpha^\times\dot\omega')\omega^\times.
+  \tag{8}
+\end{equation}
+We have
+\[
+  \dot M_9\nabla_9=-\tfrac12\nabla V_0\dot\omega'\omega^\times+V_1(V_1\nabla_9\dot\omega')\omega_9^\times+v^\times
+\]
+by (2a) and (3a). Now
+\[
+  V_1(V_1\nabla_9\dot\omega')\omega_9^\times
+  =\nabla_9V_0\dot\omega'\omega_9^\times-V_1\dot\omega'V_3\nabla\omega^\times
+\]
+of which the last term is zero by (4). Hence
+\begin{equation}
+  \left.\begin{aligned}
+    v^\times&=\dot M_9\nabla_9+\tfrac12(\nabla_8-\nabla_9)V_0\dot\omega_8'\omega_9^\times\\
+    &=\dot M_9\nabla_9+\tfrac12\nabla_9V_0\omega^\times\dot\psi_9^{-1}\omega^\times
+  \end{aligned}\right\}
+  \tag{9}
+\end{equation}
+by (5). By using $\dot\omega$ instead of $\omega^\times$ the last term on the right becomes $-\tfrac12\nabla_9V_0\omega^\times\dot\psi_9^{-1}\omega^\times$. Because of the factor $l^{-1}$ in $\dot\psi^{-1}=l^{-1}\psi^{-1}$ we may speak of $\dot\psi^{-1}$ as an \emph{anti}-density.
+
+\noindent\textsc{§ 21. \emph{Stationary Action in a Riemann Manifold.}}---In our theorems of integration $d\dot p_c$ being equal to $V_cd p_1d p_2\ldots d p_c$ is contravariant. But since
+\[
+  ldb=lV_0d\alpha d p_n
+\]
+
+\newpage\thispagestyle{empty}\begin{center}168\hfill \textit{Prof. A. McAulay.}\end{center}
+is an invariant, $d\alpha$, must be a covariant vector anti-density, and, similarly, $d\dot p_c$ in general (including $db$) is a covariant multenion anti-density.
+
+\indent (8) and (9) of §20 are unsatisfactory in that $\dot M\theta$ is not apparently self-conjugate, and from the second term on the right of (9) the force (cum power), per unit volume, cannot be expressed as a stress even of the non self-conjugate kind. But the pioneers of Relativity have developed a principle of stationary action which has for consequence that all of the equations of §20 may be retained, and that $\dot M$ of (8) \emph{is} self-conjugate; and by what seems little more than a bold assumption as to the nature of things, they conclude that the intractable last term of (9) need not trouble us, because force generated by the field need not be begotten by stress; they give us something else instead, as will appear below. [I think I have here credited the pioneers with just a little more than they have set forth, but no more than such as, by small additions, can be included.]
+
+\indent Although in the main we copy their procedure, yet in two important respects we depart from it, and in doing so return much more nearly than they do to Maxwell's outlook. First, we keep in mind the application to matter in bulk; and, secondly, we abjure the use of $\lambda$ \emph{in toto}. Probably Heaviside, among those who studied these matters in the days before the advent of Relativity, as we know it to-day, emphasised as much as any writer the view that the potentials of $\lambda$ have nothing to do with actualities, unless among such are to be reckoned the imperfections of our mathematics. In returning to the procedure I adopted in 1892,\footnote{``On the Mathematical Theory of Electromagnetism,'' `Phil. Trans.,' 1893.} of taking Maxwell's $\mathbf{H}$ and $\mathbf{D}$ as the fundamental (three-dimensional) vectors of the field, instead of any of $\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$, $\mathbf{K}$, or $\mathbf{E}$, I find that the potentials can be completely ignored, that they are not wanted even as a mathematical crutch, and that the ignoring of them considerably simplifies the preliminary organising plans of our exploration. The electro-magnetic terms are all dependent on a single arbitrary scalar function of the ${}_nV_2$ called $\dot\omega$ in §20.
+
+\indent Let us recall that a particle of matter, with three dimensional extension, occupies a four-dimensional tube in the space-time continuum. The strength of this tube is the invariant constant (static) mass $d\dot M=ldM$ of the particle. The three dimensional anti-density covariant cross-section being $d\alpha$, an element of ``length'' of the tube being the proper time $ds$, corresponding to the contravariant vector $dp$, where $d\alpha$ and $dp$ are both time-like, $\iota$ being the unit tangent vector $dp/ds$, $db$ the four-dimensional volume of the element, we have
+\begin{alignat}{3}
+  ds^2&=V_0dp\theta dp, &\qquad \iota&=dp/ds, &\qquad db&=V_0d\alpha dp. \tag{1}
+\end{alignat}
+and
+\begin{equation}
+  d\dot M\mathbin{\cdot}ds=\dot m\,db,
+  \tag{2}
+\end{equation}
+
 \end{document}
