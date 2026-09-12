@@ -129,8 +129,8 @@ source-faithful rendering, when auditing the mathematics.
 
 `McAulay--Multenions and Differential Invariants-III-working-copy.tex` is the
 active, source-checked transcription of Part III. It currently covers journal
-pp. 162--172 (PDF pp. 1--11), through the vacuum stress-energy consequence,
-equation (19), on p. 172.
+pp. 162--173 (PDF pp. 1--12), through the total-energy derivation, equation
+(25), on p. 173.
 
 ### Part III variance marks
 
@@ -186,6 +186,10 @@ relation in equation (14).
 P. 172 derives the material contribution to the displacement variation. Keep
 the dot-marked material variables $\dot m$ and $\dot\mu$ distinct from their
 undotted counterparts in equations (16)--(19).
+
+P. 173 introduces the self-conjugate operator $\theta\Pi$ and the total-energy
+linity $T^{\bullet(t)}$. Keep its differential-operator use distinct from
+ordinary multiplication in equations (20)--(25).
 
 ## Philosophical Magazine supporting extract
 
