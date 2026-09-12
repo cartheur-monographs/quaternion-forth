@@ -59,7 +59,37 @@ article is deliberately excluded.
 ## Part II handoff status (2026-09-12)
 
 `McAulay--Multenions and Differential Invariants-II-working-copy.tex` is the
-active, source-checked transcription of Part II. It covers journal pp. 210--219;
-resume at p. 220, checking every word, symbol, display, brace, equation number,
+active, source-checked transcription of Part II. It covers journal pp. 210--222;
+resume at p. 223, checking every word, symbol, display, brace, equation number,
 and page break against the source PDF. The calibration-factor notation on p. 218
 is $h^c$, and p. 219 equation (9) retains its grouped right brace.
+
+### Follow-up: p. 220 variation identity
+
+The closing display after ``It is thus easy to prove that'' on p. 220 has been
+transcribed directly from the scan, including the repeated subscripted symbols
+$\nabla_\eta$ and $\epsilon_\eta$. Its combination of terms appears potentially
+inconsistent or otherwise unusual. Preserve the source transcription for now;
+return to the identity for a mathematical and contextual check after the
+surrounding derivation has been completed.
+
+The same review must cover the increment definitions as a chain: p. 220 defines
+$d_{\alpha}^{0}\tau$ and $d_{\alpha}^{A}\tau$ using
+$d_{\alpha}^{T}\tau$, while p. 221 introduces the invariantive increment
+$d_{\alpha}^{I}$ and sets $d_{\alpha}^{I}\tau=d_{\alpha}^{T}\tau$ for a
+contravariant vector. The transcription preserves these source forms, but their
+mathematical relation should be checked together before any editorial
+normalization is attempted.
+
+The supplied source rendering of p. 221 equation (8), to be treated as the
+authoritative visual reference for this review, is
+\[
+d_{\alpha}^{A}=d_{\alpha}^{0}-d_{\alpha}^{I}=-V_{0\alpha}\nabla\mathbin{\cdot}-d_{\alpha}^{I}.
+\]
+
+![Source reference for p. 221 increment operator placement](sub-supscript-placements.png)
+
+In particular, $\alpha$ is a subscript and $A$, $0$, and $I$ are superscripts
+on $d$; the terminal $d_{\alpha}^{I}$ is an operator term, not an omitted
+operand. Revisit the expression's meaning, rather than changing the
+source-faithful rendering, when auditing the mathematics.

@@ -230,18 +230,18 @@ After the fundamental linity $\eta$, of type $\xi$, has presented itself the oth
 \]
 \noindent\textsc{§ 14. \emph{Riemann's and Weyl's Manifolds.}}---Suppose $\rho,\rho+\alpha,\rho+\beta$ are for our manifold the position vectors of three infinitesimally near points, P, A, B. We assume that for such small regions the metrics are intrinsically the same as in a Galilean system, and in particular that there is a definite shift of PA along PB, and of PB along PA, each called a translation, by which if A in the first shift comes to C, B also in the second shift will come to C. With arbitrary co-ordinates we cannot of course affirm that C will have the position vector $\rho+\alpha+\beta$, but instead that it will have
 \[
-\rho+\alpha+\beta+d_\alpha^\tau\beta
+\rho+\alpha+\beta+d_\alpha^T\beta
 \]
-where $d_\alpha^\tau$ is to be regarded, not as a symbol of operation, but merely as the abbreviation of the words
-\begin{equation}d_\alpha^\tau=\text{``increment due to translation along }\alpha\text{.''}\tag{1}\end{equation}
+where $d_\alpha^T$ is to be regarded, not as a symbol of operation, but merely as the abbreviation of the words
+\begin{equation}d_\alpha^T=\text{``increment due to translation along }\alpha\text{.''}\tag{1}\end{equation}
 From these preliminaries it is clear that
-\begin{equation}d_\alpha^\tau\beta=d_\beta^\tau\alpha=-E_a\beta,\tag{2}\end{equation}
+\begin{equation}d_\alpha^T\beta=d_\beta^T\alpha=-E_a\beta,\tag{2}\end{equation}
 where $E_a$ is a vector linity which is a function of the position vector $\rho$, and is also a function of $\alpha$, linear in the latter; also $E_a\beta$ is symmetrical in $\alpha$ and $\beta$.
 \newpage\thispagestyle{empty}\begin{center}218\hfill Prof.\ A.\ McAulay.\end{center}
 The word translation implies something about constancy or otherwise in interval or in ``the square measure'' $ds^2$ of equation (2) of §11. In Weyl's view we are to assume that in general a \emph{translation} is such that it is impossible for the square measure to remain unaltered when by successive steps a closed path has been traced. In such a closed path beginning and ending at a given point, there will appear a change in the square measure depending on the point and the path.
 
 \indent The square measure then is assumed to change according to the equation
-\begin{equation}d_\alpha^\tau V_0\beta\eta\beta=-V_0\beta\eta\beta\cdot V_0\lambda\alpha,\tag{3}\end{equation}
+\begin{equation}d_\alpha^T V_0\beta\eta\beta=-V_0\beta\eta\beta\cdot V_0\lambda\alpha,\tag{3}\end{equation}
 where $\alpha$ and $\beta$ are arbitrary and with the same meanings as before, and $\lambda$ is a vector, a given function of $\rho$. Thus $\alpha,\beta$ must be contravariant, and $\lambda$ covariant. $E_a\beta$ is a vector neither covariant nor contravariant, which need not surprise us, because more than one position of the manifold has been used in its description.
 
 \indent It is clear that $\eta$ is arbitrary as to a scalar factor and $\lambda$ correspondingly arbitrary. More definitely, nothing is altered in the meanings given if (1) $\eta$ is multiplied by a positive scalar $h$, any function of position, and (2) $\lambda$ is altered to $\lambda+\nabla\log h$, as appears from equation (3).
@@ -251,8 +251,8 @@ where $\alpha$ and $\beta$ are arbitrary and with the same meanings as before, a
 \indent ``Into all expressions or formulae, which exhibit analytically true metrical properties of the manifold, $\eta$ and $\lambda$ must enter in such a manner that invariance subsists (1) when there is arbitrary transformation of co-ordinates ($\rho$ replaced by $\rho'$); and (2) when $\eta,\lambda$ are replaced by $h\eta,\lambda+\nabla\log h$, whatever positive scalar function of $\rho,h$ may be.''\footnote{Weyl, \emph{Raum, Zeit, Materie}, 3rd ed., p. 110. English translation, 1922, of 4th ed. (Brose), last sentence of p. 123.}
 
 Since (3) is true, and also what (3) becomes both when $\beta$ is changed to $\gamma$ and when changed to $\beta+\gamma$, we get the corresponding bilinear form
-\begin{equation}d_\alpha^\tau V_0\beta\eta\gamma=-V_0\beta\eta\gamma\cdot V_0\lambda\alpha,\tag{4}\end{equation}
-where $\alpha,\beta,\gamma$ are all arbitrary. In the translation denoted by $d_\alpha^\tau$, $\eta$ suffers the increment $-V_0\alpha\nabla\cdot\eta$ and $\beta$ and $\gamma$ the increments $-E_a\beta,-E_a\gamma$. Hence
+\begin{equation}d_\alpha^T V_0\beta\eta\gamma=-V_0\beta\eta\gamma\cdot V_0\lambda\alpha,\tag{4}\end{equation}
+where $\alpha,\beta,\gamma$ are all arbitrary. In the translation denoted by $d_\alpha^T$, $\eta$ suffers the increment $-V_0\alpha\nabla\cdot\eta$ and $\beta$ and $\gamma$ the increments $-E_a\beta,-E_a\gamma$. Hence
 \[
 -V_0\alpha\nabla\eta\cdot V_0\beta\eta\gamma-V_0E_a\beta\eta\gamma-V_0\beta\eta E_a\gamma=-V_0\beta\eta\gamma\cdot V_0\lambda\alpha.
 \]
@@ -290,4 +290,125 @@ showing that $Y_\alpha'\beta$ is self-conjugate with respect to $\alpha$. Each $
 \indent\textsc{§ 15. \emph{Absolute Differentiation.}}---Let $\tau$ be a contravariant vector given over an assigned path or over a region of $n$ or fewer dimensions. If the region is of fewer than $n$ dimensions, we may still assign arbitrary values over a region of $n$ dimensions containing the given region, so that we can continue to apply $\nabla$ to it.
 
 \indent In passing from the point $\rho$ to the point $\rho+\alpha$, where $\alpha$ is infinitesimal, the
+\newpage\thispagestyle{empty}\begin{center}220\hfill Prof.\ A.\ McAulay.\end{center}
+\emph{ordinary} increment $-V_0\alpha\nabla\cdot\tau$ will be denoted by $d_\alpha^0\tau$, and the excess of this above $d_\alpha^T\tau$ will be called the absolute increment and denoted by $d_\alpha^A\tau$. Thus we have
+\begin{equation}\left.\begin{aligned}
+d_\alpha^A\tau&=d_\alpha^0\tau-d_\alpha^T\tau=d_\alpha^0\tau+E_a\tau\\
+&=-V_0\alpha\nabla\cdot\tau+E_a\tau
+\end{aligned}\right\}.\tag{1}\end{equation}
+We are about to show, as might be expected, that this absolute increment, $d_\alpha^A\tau$, is contravariant. If
+\begin{equation}\chi=-V_0(\ )\nabla\cdot\rho',\tag{2}\end{equation}
+and the change from $\rho$ to $\rho'$ causes the multenion function $q$ of position to change to $q'$, and the multenion linity $\phi$ to change to $\phi'$; then the necessary and sufficient conditions that $q$ should be (1) contravariant, (2) covariant, are
+\[
+(1)\quad q'=\chi q,\qquad (2)\quad q'=\chi'^{-1}q.
+\]
+The necessary and sufficient conditions that $\phi$ should be (1) covariant, (2) contravariant, (3) comixt, (4) contramixt, are that $\phi'$ should be equal to
+\[
+(1)\quad\chi'^{-1}\phi\chi^{-1},\qquad (2)\quad\chi\phi\chi',\qquad (3)\quad\chi'^{-1}\phi\chi',\qquad (4)\quad\chi\phi\chi^{-1}.
+\]
+All these may be put in infinitesimal forms which are generally easier to apply. Let
+\[
+\rho'=\rho+\delta\rho=\rho+\epsilon,\qquad \chi'=1+\delta\chi=1+\chi_0,
+\]
+\[
+q'=q+\delta q,\qquad \phi'=\phi+\delta\phi.
+\]
+Then the above six conditions (necessary and sufficient) for the several types of invariance become
+\[
+(1)\quad\delta q=\chi_0q,\qquad (2)\quad\delta q=-\chi_0'q,
+\]
+and in the case of $\phi$, $\delta\phi$ is equal to
+\[
+(1)\ -\chi_0'\phi-\phi\chi_0,\qquad (2)\ \chi_0\phi+\phi\chi_0',\qquad (3)\ -\chi_0'\phi+\phi\chi_0',\qquad (4)\ \chi_0\phi-\phi\chi_0;
+\]
+and in order to make the tests we have
+\begin{equation}\chi_0=-V_0(\ )\nabla\cdot\epsilon,\qquad \chi_0'=-\nabla\eta V_0(\ )\epsilon\eta.\tag{3}\end{equation}
+[\,$\chi$ is applied to general multenions by the rules applicable to extensives; $\chi_0$ by those applicable to subextensives.\,]
+
+\indent First apply the test to $E_a\tau$; is $\delta E_a\tau=\chi_0E_a\tau$? Instead of working this directly it will be found easier first to find $\delta V_0\alpha\Gamma_\beta\gamma$ from the equation preceding (6) of §14, in which observe that, since $V_0\alpha\nabla=V_0\alpha'\nabla'$, $\delta$ has no effect on $V_0\alpha\nabla,V_0\beta\nabla,V_0\gamma\nabla$. Further for $\alpha,\beta,\gamma$,
+\[
+\delta(\alpha,\beta,\gamma)=\chi_0(\alpha,\beta,\gamma),
+\]
+and for $\eta$
+\[
+\delta\eta=-\chi_0'\eta-\eta\chi_0.
+\]
+It is thus easy to prove that
+\[
+\delta V_0\alpha\Gamma_\beta\gamma=-V_0\beta\nabla_\eta\cdot V_0\gamma\nabla_\eta\cdot V_0\eta\alpha\epsilon_\eta,
+\]
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 221\end{center}
+and thence that
+\begin{equation}\delta E_\beta\gamma=\chi_0E_\beta\gamma-V_0\beta\nabla\cdot V_0\gamma\nabla\cdot\epsilon,\tag{4}\end{equation}
+so that $E_a\tau$ is not contravariant. Next we have
+\[
+\begin{aligned}
+\delta\cdot d_{\alpha}^{0}\tau-\chi_0d_{\alpha}^{0}\tau&=-\delta(V_0\alpha\nabla\cdot\tau)+\chi_0(V_0\alpha\nabla\cdot\tau)\\
+&=-V_0\alpha\nabla\cdot\chi_0\tau+\chi_0(V_0\alpha\nabla\cdot\tau)
+\end{aligned}
+\]
+because $\delta$ does not affect $V_0\alpha\nabla$, and $\delta\tau=\chi_0\tau$. Thus
+\[
+\delta\cdot d_{\alpha}^{0}\tau=\chi_0d_{\alpha}^{0}\tau+V_0\alpha\nabla_\eta\cdot V_0\tau\nabla_\eta\cdot\epsilon_\eta
+\]
+whence finally
+\[
+\delta d_{\alpha}^{A}\tau=\chi_0d_{\alpha}^{A}\tau,
+\]
+or $d_{\alpha}^{A}\tau$ is contravariant.
+
+\indent In one respect our taking of equation (1) to define $d_{\alpha}^{A}\tau$ has been misleading. If we follow on from it and equation (4) §14 in a natural manner to define $d_{\alpha}^{A}\sigma^\times$ where $\sigma^\times$ is a covariant vector, the meaning arrived at will be on the whole inconvenient. For the moment we may take it as a sufficient reason for this statement that if equation (4) §14 is to hold for any scalar invariant function of position, $x$, then $d_{\alpha}^{T}x$ being different from zero, if $d_{\alpha}^{A}x$ is to be equal to $d_{\alpha}^{0}x-d_{\alpha}^{T}x$, absolute and ordinary increments of invariants must differ. We reject the suggestion of equation (1), then, except for the increment of a \emph{contravariant} vector. It is convenient to introduce a new increment, the invariantive increment, $d_{\alpha}^{I}q$. For $\tau$ we will take
+\begin{equation}d_{\alpha}^{I}\tau=d_{\alpha}^{T}\tau=-E_a\tau,\tag{5}\end{equation}
+but to fix the meaning for other cases we will take that
+\begin{equation}d_{\alpha}^{I}x=0\tag{6}\end{equation}
+when $x$ is an invariant scalar function of position. This gives
+\[
+0=d_{\alpha}^{I}V_0\sigma^\times\tau=V_0(d_{\alpha}^{I}\sigma^\times)\tau-V_0\sigma^\times E_a\tau.
+\]
+Since $\tau$ is arbitrary we get
+\begin{equation}d_{\alpha}^{I}\sigma^\times=E_a'\sigma^\times.\tag{7}\end{equation}
+Finally in all cases we put
+\begin{equation}d_{\alpha}^{A}=d_{\alpha}^{0}-d_{\alpha}^{I}=-V_0\alpha\nabla\cdot-d_{\alpha}^{I}.\tag{8}\end{equation}
+The strongest reason for this meaning of $d_{\alpha}^{A}$ remains to be given. It is the only increment of the kind which is \emph{truly} invariantive for \emph{truly} contravariant and covariant vectors; vectors which besides their usual relations to change of co-ordinates are also invariant for change of gauge. If $\tau$ is thus truly contravariant $\eta\tau$ cannot be truly covariant, and therefore we ought not to base our conception of the standard increment of $\sigma^\times$ on supposing it possible to put $\sigma^\times=\eta\tau$.
+
+\indent Nevertheless the following up of the meaning of $d_{\alpha}^{A}\sigma^\times$ from equation (4)
+\newpage\thispagestyle{empty}\begin{center}222\hfill Prof.\ A.\ McAulay.\end{center}
+of §14 has its uses, and we shall make one important application of it when later we consider curvature. It is not difficult to show that
+\begin{equation}d_{\alpha}^{I}\sigma^\times=E_a'\sigma^\times-\sigma^\times V_0\alpha\lambda,\qquad d_{\alpha}^{I}\eta=d_{\alpha}^{0}\eta=-V_0\alpha\nabla\cdot\eta.\tag{9}\end{equation}
+(so that if we had continued to take $d_{\alpha}^{A}=d_{\alpha}^{0}-d_{\alpha}^{I}$ we should have found, as in the Riemann manifold, that $d_{\alpha}^{A}\eta=0).$ With the meaning of (8) above $d_{\alpha}^{A}\eta$ is not zero, as in a Riemann manifold, but instead
+\[
+d_{\alpha}^{A}\eta=-V_0\alpha\lambda\cdot\eta
+\]
+when $\eta$ is used in its primitive sense as a vector linity. When used as an extensive linity in $\eta w$ we get
+\begin{equation}d_{\alpha}^{A}\eta\cdot w=-cV_0\alpha\lambda\cdot\eta w.\tag{10}\end{equation}
+We will now find the absolute increments of the two kinds of multenions and the four of multenion linities. Mixed linities interpreted as subextensive, have invariant meanings, but not the other two types. Thus if $\phi$ is contramixt
+\[
+\phi V_3\alpha\beta\gamma=V_3\phi\alpha\beta\gamma+V_3\alpha\phi\beta\gamma+V_3\alpha\beta\phi\gamma
+\]
+is of invariant form, because then $\phi\alpha,\beta,\gamma$ are of one type, and is not of such form when $\phi$ is covariant, because then $\phi\alpha,\beta,\gamma$ are not all of one type.
+
+\indent Let $E_a$ and $E_a'$ have the subextensive meanings as well as their primitive vector linity meanings. Thus
+\begin{equation}E_aw=-V_cE_a\xi V_{c-1}\xi w,\qquad E_a'w=-V_cE_a'\xi V_{c-1}\xi w.\tag{11}\end{equation}
+We at once have
+\begin{equation}d_{\alpha}^{A}p=d_{\alpha}^{0}p-d_{\alpha}^{I}p=-V_0\alpha\nabla\cdot p+E_ap,\tag{12}\end{equation}
+\begin{equation}d_{\alpha}^{A}q^\times=d_{\alpha}^{0}q^\times-d_{\alpha}^{I}q^\times=-V_0\alpha\nabla\cdot q^\times-E_a'q^\times.\tag{13}\end{equation}
+For the four linities $\xi,\xi^\times,X,X^\times$, treat of the first as an example of all four. The meaning of $d_{\alpha}^{A}\xi$ is given by
+\[
+d_{\alpha}^{A}\xi\cdot p=d_{\alpha}^{A}(\xi p)-\xi d_{\alpha}^{A}p.
+\]
+Here $\xi p$ is a $q^\times$ so that
+\[
+d_{\alpha}^{A}(\xi p)=-V_0\alpha\nabla\cdot(\xi p)-E_a'\xi p.
+\]
+Hence
+\[
+d_{\alpha}^{A}\xi\cdot p=-V_0\alpha\nabla_\eta\cdot\xi\eta p-E_a'\xi p-\xi E_ap.
+\]
+Thus
+\begin{equation}\left.\begin{aligned}
+d_{\alpha}^{A}\xi&=-V_0\alpha\nabla\cdot\xi-E_a'\xi-\xi E_a\\
+d_{\alpha}^{A}\xi^\times&=-V_0\alpha\nabla\cdot\xi^\times+E_a\xi^\times+\xi^\times E_a'\\
+d_{\alpha}^{A}X&=-V_0\alpha\nabla\cdot X-E_a'X+XE_a'\\
+d_{\alpha}^{A}X^\times&=-V_0\alpha\nabla\cdot X^\times+E_aX^\times-X^\times E_a
+\end{aligned}\right\}.\tag{14}\end{equation}
 \end{document}
