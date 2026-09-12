@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1.05in]{geometry}
 \usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
 \usepackage{mathptmx}
 \setlength{\parindent}{1.5em}
 \setlength{\parskip}{0pt}
@@ -858,4 +860,60 @@ Putting here $V_{1\omega}\nabla=\alpha V_0\beta\nabla-\beta V_0\alpha\nabla$ and
 The first, third and fourth terms on the right are all self-conjugate because $E_\alpha\beta=E_\beta\alpha$. Hence the skew part of $\Omega\alpha$ is $-\tfrac12V_1\alpha V_2\nabla E_\zeta'\zeta$.
 
 \indent By its original meaning $C_\omega\gamma$ is the difference of two truly contravariant, or as Eddington says in-contra variant (would not \emph{preter}-contravariant, be better?) vectors at the same point. Hence $C_\omega$, $C_\omega'$, $\Omega$ and $V_2\nabla E_\zeta'\zeta$ all have the ``in-'' property and $\tfrac12(\Omega+\Omega')$ is fitted for serving as the fundamental $\eta$ of a Riemann manifold. Prof. Eddington, therefore, identifies
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 237\end{center}
+$\tfrac12cV_0d\rho(\Omega+\Omega')d\rho$ with Einstein's quadratic form, the squared interval; $c$ being an absolute constant. I do not propose to follow him in this respect, but to show instead, that as soon as it is recognized that ``lengths'' can be compared (even in Weyl's limited sense that equality of lengths can be postulated \emph{at} a point only), then Eddington's theory is mathematically equivalent to Weyl's; and instead of merely one simple quadratic form there are several available to identify with Einstein's.
+
+\indent It is now necessary to distinguish between Weyl's and Eddington's meanings of $E_a,C_\omega,\Omega$ and related symbols. For Eddington's meanings we shall use ${}^E E_a,{}^E C_\omega,{}^E\Omega$. For Weyl's we shall use ${}^W E_a,{}^W C_\omega,{}^W\Omega$.
+
+\indent The following three modifications of notations occurring in \S\S14 to 16 above are desirable; (1) The letter $G$ will be used in place of the letter $F$, because $F$ is wanted below for another purpose; (2) the ``contraction'' to pass from $C_\omega$ to $\Omega$ (both of power zero), will be altered in meaning as already described; (3) the symbols $2,1,0,a,b,c$, used as suffixes to $C_\omega,\Omega_\omega,C,\Omega,\omega,G$ (former $F$), will be shifted from the right-hand bottom corner of the letter affected to the left-hand top corner. The following scheme will probably be helpful:---
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center),x=1cm,y=.62cm,
+  every node/.style={font=\small,inner sep=1pt}]
+  \node (e) at (1.15,4) {${}^E C_\omega$};
+  \node (four) at (-3.45,2.35) {${}^4 C_\omega$};
+  \node at (-3.45,1.5) {$(144)$};
+  \node (three) at (0,2.35) {${}^3 C_\omega$};
+  \node at (0,1.5) {$(36)$};
+  \node (w) at (3.45,2.35) {${}^W C_\omega$};
+  \node (two) at (2,0.7) {${}^2 C_\omega$};
+  \node (one) at (4.175,0.7) {${}^1 C_\omega$};
+  \node (zero) at (6.35,0.7) {${}^0 C_\omega$};
+  \node (a) at (4.1,-1.28) {${}^a C_\omega$};
+  \node (b) at (7,-1.28) {${}^b C_\omega$};
+  \node (c) at (10.3,-1.28) {${}^c C_\omega$};
+  \draw (e.south) -- (1.15,3.25);
+  \draw (-3.45,3.25) -- (3.45,3.25);
+  \draw (-3.45,3.25) -- (-3.45,2.8);
+  \draw (3.45,3.25) -- (3.45,2.8);
+  \draw (0,3.25) -- (0,2.8);
+  \draw (w.south) -- (3.45,1.6);
+  \draw (2,1.6) -- (6.35,1.6);
+  \draw (2,1.6) -- (2,1.15);
+  \draw (6.35,1.6) -- (6.35,1.15);
+  \draw (3.45,1.6) -- (3.45,1.15);
+  \draw (4.175,1.6) -- (4.175,1.15);
+  \draw[decorate,decoration={brace,amplitude=4pt,mirror}] (two.south) -- (one.south)
+    node[midway,below=7pt] {$(6)$};
+  \node (twenty) at (6.35,-.05) {$(20)$};
+  \draw (twenty.south) -- (6.35,-.5);
+  \draw (4.1,-.5) -- (10.3,-.5);
+  \draw (4.1,-.5) -- (4.1,-.95);
+  \draw (10.3,-.5) -- (10.3,-.95);
+  \draw (7,-.5) -- (7,-.95);
+\end{tikzpicture}
+\]
+
+\indent [In each of these four lines there is one symbol equivalent to a tensor of Eddington's, or to a tensor of Weyl's. ${}^E C_\omega$ is equivalent to Eddington's ${}^*B_{abc}^{\ h}$, ${}^W C_\omega$ to Weyl's $F_{abc}^{\ h}$, ${}^0 C_\omega$ to Weyl's ${}^*F_{abc}^{\ h}$, and ${}^a C_\omega$ to both Eddington's $B_{abc}^{\ h}$ and Weyl's $R_{abc}^{\ h}$.] In the scheme the $E$ of ${}^E C_\omega$ implies ``in Eddington's sense''; the $W$ of ${}^W C_\omega$ implies ``in Weyl's sense''; further, the scheme implies the following three defining equations:---
+\[
+{}^E C_\omega={}^4 C_\omega+{}^3 C_\omega+{}^W C_\omega,
+\]
+\[
+{}^W C_\omega={}^2 C_\omega+{}^1 C_\omega+{}^0 C_\omega,
+\]
+\[
+{}^0 C_\omega={}^a C_\omega+{}^b C_\omega+{}^c C_\omega.
+\]
+We may write $x$ for any one of the ten symbols $E,W,4,3,2,1,0,a,b,c$. For seven out of the ten meanings of ${}^xC_\omega$, namely, for all except ${}^aC_\omega,{}^bC_\omega,{}^cC_\omega$, it is true that ${}^xC_\omega$ is of zero power as meant by Weyl. The three ${}^aC_\omega,{}^bC_\omega,{}^cC_\omega$, are invariantive for change of co-ordinates but not for change of gauge.
+
+\indent The numbers in brackets $(144)$, etc., imply that ${}^E C_\omega$ involves, when $n=4$, $206(=144+36+6+20)$, independent scalars, that ${}^W C_\omega$ involves $26(=6+20)$, independent scalars, and so on. [It is explained below that
 \end{document}

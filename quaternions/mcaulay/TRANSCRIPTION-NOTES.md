@@ -63,10 +63,14 @@ article is deliberately excluded.
 ## Part II handoff status (2026-09-12)
 
 `McAulay--Multenions and Differential Invariants-II-working-copy.tex` is the
-active, source-checked transcription of Part II. It covers journal pp. 210--236;
-resume at p. 237, checking every word, symbol, display, brace, equation number,
+active, source-checked transcription of Part II. It covers journal pp. 210--237;
+resume at p. 238, checking every word, symbol, display, brace, equation number,
 and page break against the source PDF. The calibration-factor notation on p. 218
 is $h^c$, and p. 219 equation (9) retains its grouped right brace.
+
+Page 237's four-level notation scheme is reproduced as a TikZ diagram; its
+superscript labels are significant and the bracketed count labels are $(144)$,
+$(36)$, $(6)$, and $(20)$.
 
 On p. 223 the source uses the literal glyph $9$ only as a subscript in the
 displays following (12a)--(14a). It is transcribed as printed; its meaning must
