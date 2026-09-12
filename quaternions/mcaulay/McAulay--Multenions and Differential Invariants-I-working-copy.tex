@@ -10,8 +10,6 @@
 \begin{document}
 \thispagestyle{empty}
 
-\begin{center}292\hfill Prof.\ A.\ McAulay.\end{center}
-
 \begin{center}\rule{0.34\textwidth}{0.5pt}\end{center}
 \begin{center}\textit{Multenions and Differential Invariants.}\end{center}
 \begin{center}\textsc{By Alex. McAulay, M.A., Professor of Mathematics, University of Tasmania.}\end{center}
@@ -717,11 +715,11 @@ Now
 as required.
 
 \indent Let $\sigma_1,\sigma_2,\ldots,\sigma_n$ be $n$ independent covariant vectors. [They might be taken as $\nabla h_1,\nabla h_2,\ldots,\nabla h_n$ where the Jacobian of the quantities $h$ does not vanish, that is, where $V_n(\nabla h)^{(n)}\ne0$.] From the relations
-\begin{equation}\left.\begin{aligned}1&=V_0\sigma_1\bar\sigma_1=V_0\sigma_2\bar\sigma_2=\cdots,\\0&=V_0\sigma_1\bar\sigma_2=V_0\sigma_1\bar\sigma_3=\cdots\end{aligned}\right\},\tag{16}\end{equation}
-it at once follows that $\bar\sigma_1,\bar\sigma_2,\ldots,\bar\sigma_n$ are $n$ independent contravariant vectors, and $\sigma_c,\bar\sigma_c$ might just as properly have been denoted by $\bar\tau_c,\tau_c$. Any covariant or contravariant vector can be expressed at once in terms of these and invariants. Also, from the $2^n$ vectoriums formed from each set,
+\begin{equation}\left.\begin{aligned}1&=V_0\sigma_1\hat{\sigma}_1=V_0\sigma_2\hat{\sigma}_2=\cdots,\\0&=V_0\sigma_1\hat{\sigma}_2=V_0\sigma_1\hat{\sigma}_3=\cdots\end{aligned}\right\},\tag{16}\end{equation}
+it at once follows that $\hat{\sigma}_1,\hat{\sigma}_2,\ldots,\hat{\sigma}_n$ are $n$ independent contravariant vectors, and $\sigma_c,\hat{\sigma}_c$ might just as properly have been denoted by $\hat{\tau}_c,\tau_c$. Any covariant or contravariant vector can be expressed at once in terms of these and invariants. Also, from the $2^n$ vectoriums formed from each set,
 \newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 321\end{center}
 any covariant or contravariant multenion may be similarly expressed. Thus the expressions for $\sigma,\tau,v,u$ are [see (2) of §5]
-\begin{equation}\left.\begin{aligned}\sigma&=\sum_{c=1}^n\sigma_cV_0\sigma\bar\sigma_c,&\tau&=\sum_{c=1}^n\bar\sigma_cV_0\tau\sigma_c,\\v&=\sum V_b\sigma^{(b)}\cdot V_0v\,\bar\sigma^{(b)},&u&=\sum V_a\bar\sigma^{(a)}\cdot V_0uV_a\sigma^{(a)}\end{aligned}\right\}.\tag{17}\end{equation}
+\begin{equation}\left.\begin{aligned}\sigma&=\sum_{c=1}^n\sigma_cV_0\sigma\hat{\sigma}_c,&\tau&=\sum_{c=1}^n\hat{\sigma}_cV_0\tau\sigma_c,\\v&=\sum V_b\sigma^{(b)}\cdot V_0v\,\hat{\sigma}^{(b)},&u&=\sum V_a\hat{\sigma}^{(a)}\cdot V_0uV_a\sigma^{(a)}\end{aligned}\right\}.\tag{17}\end{equation}
 \noindent\textsc{§ 10. Differentiation.}---Our integration theorems have suggested certain systematisations, now to be given in the use of $\nabla$. We have
 \[\nabla w=V_{c+1}\nabla w+V_{c-1}\nabla w.\]
 If $w$ is covariant, one part on the right, viz., the first, is covariant and the other not. A similar statement applies to contravariance. We cannot, as seems desirable, resolve the symbolic vector $\nabla$ into two parts, to which each of these two discordant parts on the right belong. But we can so resolve the symbolic linity $\nabla()$. The first part of the linity, connected with $V_{c+1}\nabla w$ produces a part of $\nabla w$ of homogeneity one unit higher than that of $w$, and may be thought of as the ascending derivative linity, and will be denoted by $H$. The other part, $L$, produces a lower homogeneity, and may be thought of as the descending derivative. Thus, formally, we define the linities $H$ and $L$ thus
@@ -730,25 +728,131 @@ Otherwise
 \begin{equation}\left.\begin{aligned}\nabla w&=Hw+Lw\\Hw&=V_{c+1}\nabla w,&Lw&=V_{c-1}\nabla w\end{aligned}\right\}.\tag{2}\end{equation}
 There are two, wholly separate, aspects of $H$ and $L$ as operators. Each is both a linear operator and a differential operator. In (2) the subject of these two operations is the one symbol $w$, but in (4), below (where $H'$ is the conjugate of $H$), in $\phi_gH'_gd\breve\rho_{b+1}$, $H'$ as linear operator affects the immediately succeeding symbol $d\breve\rho_{b+1}$, while as differential operator it affects $\phi$, and this is indicated by suffixes in the usual manner. This example illustrates some of the facilities of operation provided by $H$.
 
-\indent In considering the fundamental properties of $H$ and $L$, think of replacing $\nabla$, $\nabla w$, $V_{c+1}\nabla w$, $V_{c-1}\nabla w$, by $\alpha$, $\alpha w$, $V_{c+1}\alpha w$, $V_{c-1}\alpha w$, where $\alpha$ is an ordinary vector instead of a symbolic vector. Let $H',L'$
+\indent In considering the fundamental properties of $H$ and $L$, think of replacing
+\[
+\begin{array}{r@{\qquad}c@{\qquad}c@{\qquad}c}
+  \nabla & \nabla w & V_{c+1}\nabla w & V_{c-1}\nabla w \\
+  \text{by}\quad\alpha & \alpha w & V_{c+1}\alpha w & V_{c-1}\alpha w,
+\end{array}
+\]
+where $\alpha$ is an ordinary vector instead of a symbolic vector. Let $H',L'$
+
 \newpage\thispagestyle{empty}\begin{center}322\hfill Prof.\ A.\ McAulay.\end{center}
-be the conjugates of $H,L$ as usual. From the fundamental relation $V_a p\phi q=V_a q\phi'p$, we at once have
+be the conjugates of $H,L$ as usual. From the fundamental relation,
+\[
+V_a p\phi q=V_a q\phi'p,
+\]
+we at once have
 \begin{equation}H'w=V_{c-1}w\nabla,\qquad L'w=V_{c+1}w\nabla.\tag{3}\end{equation}
 Thus the integration theorems (1) and (4) of §8 read
-\begin{equation}\int_{(b)}\!\int\phi\,d\breve\rho_b=\int_{(b+1)}\!\int\phi_gH'_gd\breve\rho_{b+1}\,g.\tag{4}\end{equation}
+\begin{align}
+\int^{(b)}\!\int\phi\,d\breve\rho_b
+  &=\int^{(b+1)}\!\int\phi_gH'_g\,d\breve\rho_{b+1},\tag{4}\\
+\int^{(n-a)}\!\int\psi\,ds_a
+  &=\int^{(n-a+1)}\!\int\psi_gL'_g\,ds_{a-1},\tag{5}
+\end{align}
 and (7) and (8) of §8 read
-\begin{equation}\int^{(b)}\!\int V_0wk\,d\breve\rho_b=\int^{(b+1)}\!\int V_0d\breve\rho_{b+1}H w,\tag{6}\end{equation}
-\begin{equation}\int^{(n-a)}\!\int V_0wk\,ds_a=\int^{(n-a+1)}\!\int V_0ds_{a-1}L(kw).\tag{7}\end{equation}
+\begin{align}
+\int^{(b)}\!\int V_0v\,d\breve\rho_b
+  &=\int^{(b+1)}\!\int V_0d\breve\rho_{b+1}Hv,\tag{6}\\
+\int^{(n-a)}\!\int V_0uk\,ds_a
+  &=\int^{(n-a+1)}\!\int V_0ds_{a-1}L(ku).\tag{7}
+\end{align}
 Further we have
 \begin{equation}H^2=0=L^2,\tag{8}\end{equation}
-and by taking conjugates we have $H'^2=0=L'^2$. From (8) consider the various powers $\nabla^2(),\nabla^3()$ of $\nabla()$. Clearly we get
-\begin{equation}\nabla^2()=HL+LH,\qquad \nabla^3()=HLH+LHL,\ \text{etc.}\tag{9}\end{equation}
-Otherwise $\nabla w=Hw+Lw$ where
-\begin{equation}\left.\begin{aligned}Hw&=V_{c+1}\nabla w,\\Lw&=V_{c-1}\nabla w\end{aligned}\right\}.\tag{2}\end{equation}
-There are two, wholly separate, aspects of $H$ and $L$ as operators. Each is both a linear operator and a differential operator. In (2) the subject of these two operations is the one symbol, $w$, but in (4), below (where $H'$ is the conjugate of $H$), in $\phi_gH'_g d\breve\rho_{b+1}$, $H'$, as linear operator, affects the immediately succeeding symbol, $d\breve\rho_{b+1}$, while as differential operator it affects $\phi$, and this is indicated by suffixes in the usual manner. This example illustrates some of the facilities of operation provided by $H$.
+and by taking conjugates we have
+\[
+H'^2=0=L'^2.
+\]
+From (8) consider the various powers $\nabla^2(),\nabla^3()$ of $\nabla()$. Clearly we get
+\begin{equation}\left.\begin{aligned}
+\nabla^2()&=HL+LH,\\
+\nabla^3()&=HLH+LHL,\ \text{etc.}
+\end{aligned}\right\},\tag{9}\end{equation}
+and in (9) we may take conjugates [noting that, since the conjugate of $\nabla()$ is $()\nabla$, the conjugate of $\nabla^2()$ is $()\nabla^2$, etc.].
 
-\end{document}
+\indent Notice that $H'$ \emph{lowers} the homogeneity, while $L'$ \emph{heightens} it, so that we have the following Table:---
+\begin{center}
+\begin{tabular}{|l|c|c|}\hline
+& \begin{tabular}{c}Heightens\\homogeneity.\end{tabular}
+& \begin{tabular}{c}Lowers\\homogeneity.\end{tabular}\\\hline
+Prefixes $\nabla\ldots\ldots\ldots\ldots\ldots\ldots$ & $H$ & $L$\\
+Postfixes $\nabla\ \ldots\ldots\ldots\ldots\ldots\ldots$ & $L'$ & $H'$\\\hline
+\end{tabular}
+\end{center}
 
-\end{document}
+\indent Either of the two, $H$ and $L$, can be expressed in terms of the other thus
+\begin{equation}Lq=H(q\breve{\upsilon})\cdot\breve{\upsilon}^{-1},\qquad Hq=L(q\breve{\upsilon})\cdot\breve{\upsilon}^{-1}.\tag{10}\end{equation}
+Certain identities satisfied by $H$ and $L$ are given by the theorems of integration. As an example, $\int dp'=0$ for a closed curve. This can be expressed in terms of $p$ thus:
+\[
+0=\int\chi\,dp=\iint\chi_gV_1d\breve p_2\nabla_g.
+\]
+Since the whole tract may be taken as the element $d\breve p_2$ we get
+\begin{equation}\chi_gV_1d\breve p_2\nabla_g=0.\tag{11}\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 323\end{center}
+If we operate by $V_0\gamma()$ we get
+\[
+V_0d\breve p_2V_2\nabla\chi'\gamma,
+\]
+or since $d\breve\rho_2$ is arbitrary,
+\begin{equation}V_2\nabla\chi'\gamma=0.\tag{12}\end{equation}
+Both (11) and (12) are simple enough to be established directly from the form of $\chi$, namely, $\chi\gamma=-V_0\gamma\nabla\cdot p'$, but the method of deriving them, just given, suggests how to prove other results not nearly so easy to establish directly. Instead of $\int dp'=0$ we may take either of
+\[
+\int^{(b)}\!\int d\breve p'_b=0,\qquad
+\int^{(n-a)}\!\int ds'_a=0,
+\]
+and modify them in the same way. Thus from the first,
+\[
+0=\int^{(b+1)}\!\int\chi_gH'_g\,d\breve p_{b+1}.
+\]
+From this and by taking conjugates we get
+\begin{equation}\chi_gH'_gq=0,\qquad H_g\chi'_gq=0,\tag{13}\end{equation}
+where $q$ is an arbitrary multenion. If we put $q=w$ (13) becomes
+\begin{equation}\chi_gV_{c-1}w\nabla_g=0,\qquad V_{c+1}\nabla_g\chi'_gw=0.\tag{14}\end{equation}
+Similarly we have
+\[
+0=\int^{(n-a)}\!\int ds'_a
+ =\int^{(n-a)}\!\int m\chi'^{-1}\,ds_a.
+\]
+$m$ is here $k/k'$, \emph{i.e.}, it is the Jacobian of $p'$, or by (11) of §7
+\[
+m=n'V_0V_n\nabla^{(n)}V_n\epsilon^{(n)}.
+\]
+Thus
+\[
+0=\int^{(n-a+1)}\!\int(m\chi'^{-1})_gL'_g\,ds_{a-1}.
+\]
+Hence, and by taking conjugates
+\begin{equation}(m\chi'^{-1})_gL'_gq=0,\qquad L_g(m\chi'^{-1})_gq=0.\tag{15}\end{equation}
+Putting $q=w$ we get
+\begin{equation}(m\chi'^{-1})_gV_{c+1}w\nabla_g=0,\qquad V_{c-1}\nabla_g(m\chi'^{-1})_gw=0.\tag{16}\end{equation}
+
+\indent Let us now find expressions explicitly giving $\nabla',H',L'$ in terms involving $\nabla,H,L$. By (2), §(9), $\nabla$ is a symbolic covariant vector, so that
+\begin{equation}\nabla'=\chi'^{-1}\nabla,\tag{17}\end{equation}
+where on the right the differentiations are not to affect $\chi'^{-1}$.
+
+\indent For $H$ we have that $Hs$ is covariant when $s$ is. Hence
+\[
+H's'=\chi'^{-1}Hs=\chi'^{-1}H(\chi's').
+\]
+Now, by the second of (13) in this expression we may show the differentiations of $H$ explicitly as affecting or as not affecting the immediately following $\chi'$, because the terms implied by those differentiations are identically zero. Hence we may write
+\begin{equation}H'=\chi'^{-1}\cdot H\cdot\chi',\tag{18}\end{equation}
+bearing this permissibility of interpretation in mind. The relations between
+
+\newpage\thispagestyle{empty}\begin{center}324\hfill Prof.\ A.\ McAulay.\end{center}
+$H'$ and $\chi$, on the one hand, and $H'$ and $\chi^{-1}$, on the other, are precisely the same, so that we may write
+\begin{equation}H=\chi'\cdot H'\cdot\chi'^{-1},\tag{19}\end{equation}
+with permissibility of interpretation as in (18).
+
+\indent Similarly from (18) and (19) by means of (5) of §7
+\begin{align}
+L'&=(m^{-1}\chi)\cdot L\cdot(m\chi^{-1}),\tag{20}\\
+L&=(m\chi^{-1})\cdot L'\cdot(m^{-1}\chi),\tag{21}
+\end{align}
+with the same permissible interpretation as to the incidence of the application of the differentiations of $L$ and $L'$ on the right; they may be supposed to affect the immediately following $(m\chi^{-1})$ and $(m^{-1}\chi)$ or not, at our pleasure.
+
+\vspace{1.5cm}
+\begin{center}\rule{0.28\textwidth}{0.8pt}\end{center}
 
 \end{document}

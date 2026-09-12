@@ -50,11 +50,8 @@ on p. 309 equation (4) ends with a comma and equation (5) with a period.
 
 ![Source crop showing grouped braces and punctuation](grouped-equations-braces-punctuation.png)
 
-## Current handoff status (2026-09-09)
+## Current handoff status (2026-09-12)
 
-The committed working copy is reliable through journal p. 318 (`Good till 318`).
-Uncommitted work has begun on pp. 319--322. Before it is retained or committed,
-recheck every word, symbol, display, brace, equation number, and page break
-against the source PDF. In particular, p. 321 must receive a full source
-correction pass; it ends mid-sentence at “Let $H',L'$”, whose continuation
-belongs at the top of p. 322.
+Part I has been transcribed and source-checked through its final journal page,
+p. 324. The transcription ends at the article rule; the following Newman
+article is deliberately excluded.
