@@ -63,18 +63,37 @@ article is deliberately excluded.
 ## Part II handoff status (2026-09-12)
 
 `McAulay--Multenions and Differential Invariants-II-working-copy.tex` is the
-active, source-checked transcription of Part II. It covers journal pp. 210--237;
-resume at p. 238, checking every word, symbol, display, brace, equation number,
-and page break against the source PDF. The calibration-factor notation on p. 218
+active, source-checked transcription of Part II. It covers its complete journal
+span, pp. 210--240, ending at the article rule on p. 240. The calibration-factor notation on p. 218
 is $h^c$, and p. 219 equation (9) retains its grouped right brace.
 
 Page 237's four-level notation scheme is reproduced as a TikZ diagram; its
 superscript labels are significant and the bracketed count labels are $(144)$,
 $(36)$, $(6)$, and $(20)$.
 
-On p. 223 the source uses the literal glyph $9$ only as a subscript in the
-displays following (12a)--(14a). It is transcribed as printed; its meaning must
-be determined only in a later mathematical review.
+### Follow-up: p. 238 non-contractile symbol
+
+The symbol in equations (5)--(6), transcribed provisionally as
+$\mathfrak{T}_{\beta\gamma}$, has a single stem and a blackletter-like form in
+the scan. It is not a Greek capital Pi. Its exact historical typeface/character
+identity should be established in a later typography review; preserve the
+current transcription unless that review resolves it differently.
+
+![Source crop showing the unidentified single-stem symbol](different-symbol.png)
+
+### Correction checked: p. 239 equation (8)
+
+The left-hand side has the Eddington bold base but no left superscript:
+$\mathbf{E}_{\beta\gamma}=E_{\beta\gamma}+Y_{\beta\gamma}$. The right-hand
+E is Weyl's and is not bold. The same distinction applies to the E symbols in
+equation (12), which are all unbolded.
+
+On p. 223 the source uses the literal glyph $9$ as a subscript in the displays
+following (12a)--(14a); the same literal glyph occurs in p. 239 equations
+(11)--(12), as $E_9$ and $\nabla_9$. It is transcribed as printed; its meaning
+must be determined only in a later mathematical review.
+
+![Source crop showing the bold E and literal 9 subscripts](bold-E-9s.png)
 
 ### Follow-up: p. 220 variation identity
 
