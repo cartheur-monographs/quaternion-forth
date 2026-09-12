@@ -6,6 +6,10 @@ journal pages 293--296 (PDF pages 2--5).
 
 ## Clean rendering workflow
 
+- The primary responsibility is truth-faithfulness to the source. Transcribe
+  what the scan prints, including ambiguous, unusual, or apparently
+  inconsistent notation; record questions for later mathematical analysis, but
+  do not silently interpret, correct, or normalize the source.
 - Work from the page image, not the OCR text alone. OCR is useful for prose but
   loses equation structure, accents, and the placement of equation numbers.
 - Retain the journal-page sequence: use one LaTeX page per source journal page,
@@ -59,16 +63,20 @@ article is deliberately excluded.
 ## Part II handoff status (2026-09-12)
 
 `McAulay--Multenions and Differential Invariants-II-working-copy.tex` is the
-active, source-checked transcription of Part II. It covers journal pp. 210--222;
-resume at p. 223, checking every word, symbol, display, brace, equation number,
+active, source-checked transcription of Part II. It covers journal pp. 210--223;
+resume at p. 224, checking every word, symbol, display, brace, equation number,
 and page break against the source PDF. The calibration-factor notation on p. 218
 is $h^c$, and p. 219 equation (9) retains its grouped right brace.
+
+On p. 223 the source uses the literal glyph $9$ only as a subscript in the
+displays following (12a)--(14a). It is transcribed as printed; its meaning must
+be determined only in a later mathematical review.
 
 ### Follow-up: p. 220 variation identity
 
 The closing display after ``It is thus easy to prove that'' on p. 220 has been
 transcribed directly from the scan, including the repeated subscripted symbols
-$\nabla_\eta$ and $\epsilon_\eta$. Its combination of terms appears potentially
+$\nabla_9$ and $\epsilon_9$. Its combination of terms appears potentially
 inconsistent or otherwise unusual. Preserve the source transcription for now;
 return to the identity for a mathematical and contextual check after the
 surrounding derivation has been completed.

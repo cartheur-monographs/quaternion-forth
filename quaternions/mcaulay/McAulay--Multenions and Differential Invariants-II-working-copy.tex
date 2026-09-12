@@ -322,7 +322,7 @@ and in the case of $\phi$, $\delta\phi$ is equal to
 (1)\ -\chi_0'\phi-\phi\chi_0,\qquad (2)\ \chi_0\phi+\phi\chi_0',\qquad (3)\ -\chi_0'\phi+\phi\chi_0',\qquad (4)\ \chi_0\phi-\phi\chi_0;
 \]
 and in order to make the tests we have
-\begin{equation}\chi_0=-V_0(\ )\nabla\cdot\epsilon,\qquad \chi_0'=-\nabla\eta V_0(\ )\epsilon\eta.\tag{3}\end{equation}
+\begin{equation}\chi_0=-V_0(\ )\nabla\cdot\epsilon,\qquad \chi_0'=-\nabla_9V_0(\ )\epsilon_9.\tag{3}\end{equation}
 [\,$\chi$ is applied to general multenions by the rules applicable to extensives; $\chi_0$ by those applicable to subextensives.\,]
 
 \indent First apply the test to $E_a\tau$; is $\delta E_a\tau=\chi_0E_a\tau$? Instead of working this directly it will be found easier first to find $\delta V_0\alpha\Gamma_\beta\gamma$ from the equation preceding (6) of §14, in which observe that, since $V_0\alpha\nabla=V_0\alpha'\nabla'$, $\delta$ has no effect on $V_0\alpha\nabla,V_0\beta\nabla,V_0\gamma\nabla$. Further for $\alpha,\beta,\gamma$,
@@ -335,7 +335,7 @@ and for $\eta$
 \]
 It is thus easy to prove that
 \[
-\delta V_0\alpha\Gamma_\beta\gamma=-V_0\beta\nabla_\eta\cdot V_0\gamma\nabla_\eta\cdot V_0\eta\alpha\epsilon_\eta,
+\delta V_0\alpha\Gamma_\beta\gamma=-V_0\beta\nabla_9\cdot V_0\gamma\nabla_9\cdot V_0\eta\alpha\epsilon_9,
 \]
 \newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 221\end{center}
 and thence that
@@ -349,7 +349,7 @@ so that $E_a\tau$ is not contravariant. Next we have
 \]
 because $\delta$ does not affect $V_0\alpha\nabla$, and $\delta\tau=\chi_0\tau$. Thus
 \[
-\delta\cdot d_{\alpha}^{0}\tau=\chi_0d_{\alpha}^{0}\tau+V_0\alpha\nabla_\eta\cdot V_0\tau\nabla_\eta\cdot\epsilon_\eta
+\delta\cdot d_{\alpha}^{0}\tau=\chi_0d_{\alpha}^{0}\tau+V_0\alpha\nabla_9\cdot V_0\tau\nabla_9\cdot\epsilon_9
 \]
 whence finally
 \[
@@ -411,4 +411,39 @@ d_{\alpha}^{A}\xi^\times&=-V_0\alpha\nabla\cdot\xi^\times+E_a\xi^\times+\xi^\tim
 d_{\alpha}^{A}X&=-V_0\alpha\nabla\cdot X-E_a'X+XE_a'\\
 d_{\alpha}^{A}X^\times&=-V_0\alpha\nabla\cdot X^\times+E_aX^\times-X^\times E_a
 \end{aligned}\right\}.\tag{14}\end{equation}
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 223\end{center}
+It is instructive to re-write in the present notation the four kinds of $\delta\phi$ above
+\begin{equation}\left.\begin{aligned}
+\delta\xi&=-\chi_0'\xi-\xi\chi_0\\
+\delta\xi^\times&=\chi_0\xi^\times+\xi^\times\chi_0'\\
+\delta X&=-\chi_0'X+X\chi_0'\\
+\delta X^\times&=\chi_0X^\times-X^\times\chi_0
+\end{aligned}\right\}.\tag{15}\end{equation}
+Doubtless the complete parallelism between (14) and (15) has some simple explanation. Of the four results in each set, the second follows from the first by putting $\xi^\times=\xi^{-1}$ and the fourth from the third by putting $X^\times=X'$.
+
+\indent We obtain six very general formulae showing how to convert such expressions as $(\nabla_9,q_9^\times)$ or $(\nabla_9,p_9)$ to invariant form [provided $(\alpha^\times,q^\times)$ or $(\alpha^\times,p)$ are already bilinear and invariantive] by one common process. Introduce a second notation for $d_\alpha^A$, thus
+\[
+d_\alpha^Aq=q_\alpha,\qquad d_\alpha^A\phi=\phi_\alpha,\quad\text{etc.}
+\]
+Put $\zeta$ in place of $\alpha$ in (12), (13), and (14). Thus
+\begin{equation}(\zeta,p_\zeta)=(\nabla_9,p_9)+(\zeta,E_\zeta p),\tag{12a}\end{equation}
+\begin{equation}(\zeta,q_\zeta^\times)=(\nabla_9,q_9^\times)-(\zeta,E_\zeta'q^\times),\tag{13a}\end{equation}
+\begin{equation}
+\left.\begin{aligned}
+(\zeta,\xi_\zeta)&=(\nabla_9,\xi_9)+(\zeta,-E_\zeta'\xi-\xi E_\zeta)\\
+(\zeta,\xi_\zeta^\times)&=(\nabla_9,\xi_9^\times)+(\zeta,E_\zeta\xi^\times+\xi^\times E_\zeta')\\
+(\zeta,X_\zeta)&=(\nabla_9,X_9)+(\zeta,-E_\zeta'X+XE_\zeta')\\
+(\zeta,X_\zeta^\times)&=(\nabla_9,X_9^\times)+(\zeta,E_\zeta X^\times-X^\times E_\zeta)
+\end{aligned}\right\}.\tag{14a}
+\end{equation}
+(12), (13), (14) are particular cases of (12a), (13a), (14a).
+
+\indent As an example of the use of these equations let us suppose we have with Galilean co-ordinates established the equation $T_9\nabla_9=0$ where $T$ is the (complete) energy momentum linity; a linity which in the general manifold is best taken as comixt; a self-conjugate \emph{vector} linity (self-conjugacy means for a \emph{comixt} linity $T=\eta T'\eta^{-1}$, that is $\eta^{-1}T$ or $T\eta$ is self-conjugate in the ordinary sense). The (truly) invariant form of $T_9\nabla_9$ is given as $T_\zeta\zeta$ by the third of (14a). For generality we will at first not assume $T$ to be self-conjugate. We have
+\[
+T_\zeta\zeta=T_9\nabla_9-E_\zeta'T\zeta+TE_\zeta'\zeta.
+\]
+To evaluate $E_\zeta'T\zeta$, write down $E_\alpha'\beta^\times=\Gamma_\alpha'\eta^{-1}\beta^\times$ from (6) of §14, change $\alpha,\beta^\times$ to $\zeta,T\zeta$, and simplify. Thus
+\begin{equation}E_\zeta'T\zeta=\tfrac12\eta_9(\eta^{-1}T-T'\eta^{-1})(\nabla_9-\lambda)-\tfrac12(\nabla_9-\lambda)V_0\zeta\eta_9\eta^{-1}T\zeta.\tag{16}\end{equation}
+When $\eta^{-1}T$ is self-conjugate we get
+\begin{equation}E_\zeta'T\zeta=-\tfrac12(\nabla_9-\lambda)V_0\zeta\eta_9\eta^{-1}T\zeta.\tag{17}\end{equation}
 \end{document}
