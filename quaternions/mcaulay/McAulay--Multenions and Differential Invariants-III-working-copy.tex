@@ -672,4 +672,222 @@ $G$ and $G^\bullet(=lG)$ are functions of $\theta$ and its first and second deri
 \]
 The great similarity between these equations is connected with the fact that the second term on the right of (28) is a function homogeneous and
 
+\newpage\thispagestyle{empty}\begin{center}178\hfill \textit{Prof. A. McAulay.}\end{center}
+quadratic in the derivatives $(\nabla_9,\theta^\bullet_9)$, and also homogeneous and of degree $-1$ in $\theta^\bullet$; (28) may, as a matter of fact, be derived from (29) by means of this property if attention is paid to symmetry in $\nabla_9$, $\theta^\bullet_9$, and $\nabla_8$, $\theta^\bullet_8$, in the quadratic terms of the form $(\nabla_9,\theta^\bullet_9,\nabla_8,\theta^\bullet_8)$. The proof of (29) is here outlined, and the proof of (28) is similar and simpler. From (24) of \S\,16 (remember $F_\zeta'\zeta=l^{-1}\nabla l$)
+\[
+  \begin{aligned}
+  -V_0\Omega\zeta\delta\theta^\bullet\zeta={}&-V_0\nabla(F_\zeta\delta\theta^\bullet\zeta-\delta\theta^\bullet F_\zeta'\zeta)
+    -V_0\delta\theta^\bullet_9\nabla_9F_\zeta'\zeta+V_0\delta\theta^\bullet_9\zeta F_\zeta'\nabla_9\\
+   &{}-V_0\delta\theta^\bullet\zeta(-F_{\zeta1}'F_\zeta'+F_\zeta'F_{\zeta1}')\zeta_1.
+  \end{aligned}
+\]
+Comparing this with (29), putting $F_\zeta'\zeta=\sigma$, and noting that
+\[
+  F_\zeta\theta^\bullet\zeta=-\theta^\bullet_9\nabla_9,\qquad
+  \delta(F_\zeta\theta^\bullet\zeta)=-(\delta\theta^\bullet)_9\nabla_9
+  \tag{30}
+\]
+it will be seen that we still have to prove that
+\[
+  \begin{aligned}
+  -\delta\mathbin{\cdot}V_0\zeta\theta^\bullet(F_{\zeta1}'F_\zeta'\zeta_1-F_\zeta'\sigma)
+  ={}&V_0\sigma\delta(F_\zeta\theta^\bullet\zeta)\\
+   &{}+V_0\delta\theta^\bullet_9\zeta F_\zeta'\nabla_9
+    +V_0\delta\theta^\bullet\zeta(F_{\zeta1}'F_\zeta'\zeta_1-F_\zeta'\sigma).
+  \end{aligned}
+\]
+The only term that gives any trouble is the first on the left. In it $F_\zeta'\zeta_1$ and $\zeta$ may be interchanged because $F_\zeta'\zeta_1$ is self-conjugate in $\zeta$. Thus the term is
+\[
+  -\delta\mathbin{\cdot}V_0F_\zeta'\zeta_1\delta(\theta^\bullet F_{\zeta1}')\zeta
+  =-2V_0F_\zeta'\zeta_1\delta(\theta^\bullet F_{\zeta1}')\zeta+V_0F_\zeta'\zeta_1(\delta\theta^\bullet)F_{\zeta1}'\zeta.
+\]
+Here, in the first term on the right, we need only consider the self-conjugate part of $\delta(\theta^\bullet F_{\zeta1}')$ because $F_\zeta'\zeta_1$ is self-conjugate in $\zeta$. This self-conjugate part is simple for
+\[
+  \theta^\bullet F_\beta'+F_\beta\theta^\bullet=lV_0\beta\nabla\mathbin{\cdot}\theta^{-1}=V_0\beta\nabla\mathbin{\cdot}\theta^\bullet-\theta^\bullet V_0\beta\sigma.
+\]
+When this is used the rest of the reduction is straightforward.
+
+\indent The first of (30) may be used to modify three terms in (28) and (29). Similarly, $F_\zeta'\zeta=l^{-1}\nabla l$ may be used to modify four terms.
+
+\indent Assuming now the truth of (28) and (29) the gravitational part of the action in (6) may be put
+\[
+  \int^n\!\int(cl-\tfrac12G^\bullet)\,db=-\tfrac12\int^{n-1}\!\int V_0(\theta^\bullet_9\nabla_9+l^{-1}\nabla l)\,d\alpha+\int^n\!\int g^\bullet\,db
+  \tag{31}
+\]
+where
+\[
+  g^\bullet=cl+\tfrac12V_0\zeta\theta^\bullet(F_{\zeta1}'F_\zeta'-F_\zeta'F_{\zeta1}')\zeta_1.
+  \tag{32}
+\]
+Using (27) and (29), the last for preparing $\delta g^\bullet$ for integration by parts, we have since
+\[
+  l^{-1}\delta l=-\tfrac12V_0\zeta\theta_0\theta^{-1}\zeta,\qquad
+  \delta\theta^\bullet=-\theta^\bullet(\theta_0\theta^{-1}+\tfrac12V_0\zeta\theta_0\theta^{-1}\zeta)
+  \tag{33}
+\]
+that
+\[
+  0=\delta\int^n\!\int Wdb=-\tfrac12\int^n\!\int db\,V_0\theta^\bullet\theta_0\zeta\{T^{(t)}+(C+\tfrac12V_0\zeta_1C\zeta_1)+c\}\zeta
+\]
+where $C$ stands for $\Omega\theta^{-1}$ and not for the conjugate $\theta^{-1}\Omega$ (we have in either case $V_0\zeta C\zeta=-G$). Hence
+\[
+  T^{(t)}+(C+\tfrac12V_0\zeta C\zeta)+c=0.
+  \tag{34}
+\]
+Since $T_{(\zeta)}^{(t)}\zeta=0$ by (22) it follows that
+\[
+  (C-\tfrac12G)_{(\zeta)}\zeta=C_{(\zeta)}\zeta+\tfrac12V\nabla V_0\zeta C\zeta=0.
+  \tag{35}
+\]
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 179\end{center}
+\indent (35) has appeared incidentally in our application of stationary action, but it is really an identity satisfied by $C$ that has nothing to do with stationary action. That this is the case is proved by help of (28) and (29), from the fact that $G$ is an invariant in just the same manner as the identity (26), satisfied by $f$, was proved. Conversely, if we had chosen to establish this identity in the manner indicated (34) would furnish us with a second proof that $T_{(\zeta)}^{(t)}\zeta=0$.
+
+\indent From (29) we get another identity of importance in connection with the conservation of energy. Let the $\delta$ of (29) stand for $-V_0\alpha\nabla\mathbin{\cdot}(\ )$, and let (29) thus come to read $V_0\alpha\sigma^\times=0$. We have, of course, $\sigma^\times=0$. If the reader will write out in full the meaning of this identity he will find it can be expressed thus. [Contrary to the conventions of these papers, $t^\bullet$ is here used to denote a vector linity, because $t$ is similarly used by writers on Relativity for the corresponding ``pseudo-tensor.''] If
+\[
+  2t^\bullet\alpha^\times=-\nabla_9V_0\alpha^\times(F_\zeta\theta^\bullet_9\zeta-\theta^\bullet_9F_\zeta'\zeta)-\alpha^\times V_0\zeta\theta^\bullet(F_{\zeta1}'F_\zeta'-F_\zeta'F_{\zeta1}')\zeta_1
+  \tag{36}
+\]
+we have the identity
+\[
+  2t^\bullet_9\nabla_9=\nabla_9V_0\zeta\theta^\bullet\theta^{-1}(C-\tfrac12G^\bullet)\zeta=-2(C-\tfrac12G^\bullet)_9\nabla_9
+  \tag{37}
+\]
+by (35) just written, and (19) \S\,15.
+
+\indent The conservation of energy is regarded as the interpretation of the equation
+\[
+  0=(T^{\bullet(t)}+t^\bullet)_9\nabla_9=(T^\bullet+2\theta\thetaPi f+t^\bullet)_9\nabla_9
+  \tag{38}
+\]
+where $T^\bullet$ comes from $\dot m$ (matter), $2\theta\thetaPi f$ comes from $f$ (the electromagnetic field), and $t^\bullet$ comes from the gravitational field. $t^\bullet$ is the only one of our many symbols which is not invariantive. [The reader might suppose that the terms in (19a) above, which involve $\nabla_9$, are not invariantive, but it is not difficult to show directly that they are.]
+
+\indent A little reflection will show that \emph{the two identities (35) and (37) hold in Weyl's manifold} as well as in Riemann's. For $C$, $G$ and $F_\beta$ we have, in the notation of \S\,18, to read ${}^aC$, ${}^aG$ and ${}^aE_\beta$.
+
+\indent \textsc{\S 22. \emph{A Matter that has been Overlooked.}}---I forgot to describe in the second paper a process I frequently use in my MS. work. It may prove useful to others, and is especially convenient when $n=4$. I am reminded of it by the $w^\bullet(=V_3w^\bullet)$ of (9) \S\,21. The use of $w^\bullet$, a contravariant \emph{density} may be replaced by a complementary (${}_nV_a$ replaced by a ${}_nV_{n-a}$) covariant multenion (not density); and, similarly, a covariant anti-density may be replaced by a complementary contravariant multenion; this latter is the replacement we are already familiar with of $d p_a$ by $d s_{n-a}$ and conversely.
+
+\indent $l\dot v$ (where $\dot v=\iota_1\iota_2\ldots\iota_n$) is a covariant multenion. More generally, $xl\dot v$ where $x$ is invariant is a covariant multenion; and its reciprocal (of form
+
+\newpage\thispagestyle{empty}\begin{center}180\hfill \textit{Prof. A. McAulay.}\end{center}
+$yl^{-1}\dot v$ where $y$ is any invariant) is a contravariant multenion. It easily follows that the two linities
+\[
+  \Upsilon=l\dot v(\ ),\qquad \Upsilon^{-1}=l^{-1}\dot v^{-1}(\ )
+  \tag{1}
+\]
+are the one a $c/\invc$ and the other a $\invc/c$, that is, of the same types as $\theta$ and $\theta^{-1}$. As an example, $\Upsilon\omega^\bullet$ above ($n=4$) is a covariant vector density; multiplying by $l^{-1}$, $\dot v\omega^\bullet$ or $\omega^\bullet\dot v^{-1}$ is a covariant vector, $=\sigma^\times$ say. Thus, in (9),
+\[
+  \delta\omega^\bullet=V_2\nabla\omega^\bullet=V_2\nabla(\sigma^\times\dot v)=V_2\nabla\sigma^\times\mathbin{\cdot}\dot v.
+\]
+[When $n=4$ the complement of a ${}_4V_2$ is a second ${}_4V_2$.] This serves to indicate that our use of $V_2\nabla w^\bullet$ is not far different from the usual use of $\omega^\times=V_2\nabla\lambda$, $\delta\omega^\times=V_2\nabla\delta\lambda$. [As a matter of fact, the $f(\omega^\bullet,\theta)$ used above, and the corresponding usual expression involving $\lambda$, can be shown to be ``reciprocal'' functions in Routh's sense.]
+
+\indent [\emph{Added August, 1922.}---Let us illustrate both the methods of the present section and those of the ``digression'' in \S\,18 at the end of the second paper by considering the contractions of a certain identity,\footnote{``A New Identity affecting Questions in Relativity; and some Cognate Matters.'' A paper despatched to the \emph{Phil. Mag.}, in January, 1922, which as yet I have not seen in print.} namely,
+\[
+  V_3\zeta\varpi_\zeta'\omega=0,
+  \tag{2}
+\]
+or as we will here write it
+\[
+  V_3\zeta\varpi_\zeta'\eta^{-1}V_2\gamma^\times\epsilon^\times=0=V_3\zeta(\varpi_\zeta'\eta^{-1})_\zeta V_2\gamma^\times\epsilon^\times.
+  \tag{3}
+\]
+where $\varpi$ has the meaning given in \S\,16 above for a Weyl manifold. (The suffix $\zeta$ denotes absolute differentiation \emph{proper}.) This may be contracted twice, the contractions being obtained from the modification of (3),
+\[
+  V_0(V_3\alpha\beta\delta)(V_3\zeta\varpi_\zeta'\eta^{-1}V_2\gamma^\times\epsilon^\times)=0,
+  \tag{3a}
+\]
+by first setting $\delta,\epsilon^\times=\zeta_1,\zeta_1$, and then setting $\beta,\gamma^\times=\zeta_2,\zeta_2$; finally writing $V_2\zeta_2\zeta_1=\zeta_2''$. The contractions are
+\[
+  V_2\zeta_1V_3\zeta\varpi_\zeta'\eta^{-1}V_2\gamma^\times\zeta_1=0.
+  \tag{4}
+\]
+\[
+  V_1\zeta_2''V_3\zeta\varpi_\zeta'\eta^{-1}\zeta_2''=0.
+  \tag{5}
+\]
+(5) is the well-known identity (known, that is, in a Riemann manifold) numbered (35) in \S\,21 above. (3) asserts that a certain ${}_nV_3/{}_nV_2$ multenion linity (that is, a linity which acts solely on an arbitrary ${}_nV_2$ and converts it to a ${}_nV_3$) vanishes, (4) that a ${}_nV_2/{}_nV_1$ vanishes, and (5) that a vector vanishes.
+
+\indent Consider the number of scalar equations involved in the case of the Riemann manifold. The three identities are relations among the $\tfrac12n^3(n^2-1)$ first differential coefficients of $\varpi$. (3) is equivalent to ${}_nC_3\mathbin{\cdot}{}_nC_2$ scalar equations
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 181\end{center}
+(4) to ${}_nC_2\mathbin{\cdot}n$ such equations; and (5) to $n$ such. The cases of $n=3$ and $n=4$ are particularly instructive. With $n=3$ there are 18 differential coefficients and the other three numbers in order are 3, 9, 3; and when $n=4$ there are 80 differential coefficients, and the three numbers in order are 24, 24, 4.
+
+\indent In the case of $n=3$ there cannot, of course, really be nine independent equations resulting from the first contraction, since only three independent equations are given by (3). The details of this case are not difficult and may be left to the reader.
+
+\indent In the case of $n=4$, the relativity case, the two numbers 24, 24 above suggest that perhaps the original equation (3) and its first contraction (4) are mathematically equivalent to one another, and this proves to be true. Put $F(\ )$ for the $V_3\zeta\varpi_\zeta'\eta^{-1}(\ )$ occurring in (3), (4), (5), so that $F$ is a $(c.{}_nV_3)/(c.{}_nV_2)$, from which we deduce that $F'$ is a $(\invc.{}_nV_2)/(\invc.{}_nV_3)$, that $\Upsilon F'\Upsilon^{-1}$ is a $(c.{}_nV_2)/(c.{}_nV_3)$, and so on.
+
+\indent The contractions (4) and (5) of $F$ are
+\[
+  H\gamma^\times=V_2\zeta FV_2\gamma^\times\zeta,
+  \tag{4a}
+\]
+where $H$ is a $(c.{}_nV_2)/(c.{}_nV_1)$, and
+\[
+  \sigma^\times=V_1\zeta H\zeta=V_1\zeta_2''F\zeta_2'',
+  \tag{5a}
+\]
+$H$ and $\sigma^\times$, which are introduced for brevity, are \emph{defined} by (4a) and (5a).
+
+\indent Now, presumptively, both $F$ and $H$ involve twenty-four independent scalars ($F$ may be supposed by definition to involve the twenty-four, but $H$ might possibly involve fewer, as when above we put $n=3$), so that it appears probable that in the special case $n=4$ (and also $n=3$, but \emph{certainly} not in general for $n>4$) that not only can $H$ be expressed in terms of $F$, but also $F$ can be expressed in terms of $H$. Actually I find that
+\[
+  \Upsilon H'\Upsilon^{-1}\omega^\times=\tfrac12V_3\omega^\times\sigma^\times+F\omega^\times,
+  \tag{6}
+\]
+where $\omega^\times$ is a dummy, and $\sigma^\times$ may be expressed either in terms of $F$ or in terms of $H$. From (6), then, we easily express $F$ in terms of $H$. I do not think I have found the simplest way to (6), namely by aid of a rectangular array of twenty-four scalars specifying $F$. [In the verification of (6) we need not cumber ourselves with the inconvenience of the signs in
+\[
+  \iota_1^2=\iota_2^2=\iota_3^2=-\iota_4^2.
+\]
+It is legitimate to work with $\iota_1$, $\iota_2$, $\iota_3$, $\iota_4$, for which each $\iota_a^2=-1$.]
+
+\indent The following can also be proved. If with $n=4$, $F$ is a $(c.{}_4V_2)/(c.{}_4V_2)$, that is a ${}_4V_3$ coexco linity, and if $H$ is its first contraction and $f$ its second according to the equations
+\[
+  \left.\begin{aligned}
+    H\beta^\times&=V_1\zeta FV_2\beta^\times\zeta,\\
+    f&=-V_0\zeta H\zeta=-V_0\zeta_2''F\zeta_2''
+  \end{aligned}\right\}
+  \tag{7}
+\]
+
+\newpage\thispagestyle{empty}\begin{center}182\hfill \textit{Multenions and Differential Invariants.}\end{center}
+then, putting $C$ for the contractile part of $F$ (so that $F-C$ is the non-contractile part) we have
+\[
+  \left.\begin{aligned}
+    C\omega^\times&=\tfrac12(F-\Upsilon F'\Upsilon^{-1}+\tfrac16f)\omega^\times\\
+      &=\tfrac12V_2\zeta HV_1\omega^\times\zeta-\tfrac16f\mathbin{\cdot}\omega^\times
+  \end{aligned}\right\}
+  \tag{8}
+\]
+where $\omega^\times$ is a dummy. If in (7) and (8) $F$ is put equal to $\varpi\eta^{-1}$, or $\varpi'\eta^{-1}$, or $\varpi\theta^{-1}$, the contractions are the familiar contractions of the curvature.
+
+\indent It should here be stated that throughout the above and also in general work with contractions the contractile parts can always be written down from the following easily verified statements. If $(\beta,\gamma)$, $(\beta,\gamma^\times)$ and $(\beta^\times,\gamma^\times)$ stand for any bilinear invariant forms in two vectors then the contractile parts of the forms are
+\[
+  -n^{-1}(\zeta,\eta^{-1}\zeta)V_0\beta\eta\gamma,\qquad
+  -n^{-1}(\zeta,\zeta)V_0\beta\gamma^\times,\qquad
+  -n^{-1}(\zeta,\eta\zeta)V_0\beta^\times\eta^{-1}\gamma^\times
+\]
+respectively.
+
+\indent With the design of trying to avoid future chaos in notation I venture to recommend a development of notation to users of the present methods.
+
+\indent The single letter symbol $\omega$ is not sufficient provision for the ${}_nV_2$ meaning. Also we have an insufficient supply of letter symbols for scalars. Let us release $p$, $q$, $r$, $s$, $u$, $v$, $w$ for scalar use and provide several letters for the ${}_nV_2$ meaning. I recommend that most of the small letters in Clarendon type be ear-marked as follows. Use
+\[
+  \mathbf{p},\ \mathbf{q},\ \mathbf{r},\ \mathbf{s}
+\]
+for general multenions;
+\[
+  \mathbf{a},\ \mathbf{b},\ \mathbf{c}
+\]
+for the ${}_nV_a$, ${}_nV_b$, ${}_nV_c$ meanings;
+\[
+  \mathbf{f},\ \mathbf{g},\ \mathbf{h},\ \mathbf{i},\ \mathbf{j},\ \mathbf{k}
+\]
+for the ${}_nV_2$ meaning. [With $n=4$ we may take
+\[
+  (\mathbf{i},\mathbf{j},\mathbf{k})=(\iota_2\iota_3,\iota_3\iota_1,\iota_1\iota_2).]
+\]
+Also use $\mathbf{l}$, $\mathbf{m}$, $\mathbf{n}$ for the ${}_nV_3$ meaning. $\mathbf{d}$, $\mathbf{e}$, $\mathbf{t}$, $\mathbf{u}$, $\mathbf{v}$, $\mathbf{w}$, $\mathbf{x}$, $\mathbf{y}$, $\mathbf{z}$ may be left for analogous uses as experience guides. Similarly occasional use may be made of capitals in Clarendon type, or perhaps such capitals had better be reserved for vectors in a quaternion system, as with $\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$, $\mathbf{D}$, $\mathbf{E}$, $\mathbf{F}$, $\mathbf{H}$, $\mathbf{K}$ above (and, in other papers recently forwarded, $\mathbf{V}=$ velocity and $\mathbf{U}=$ unit radial vector).
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 183\end{center}
+{\renewcommand\thefootnote{\fnsymbol{footnote}}\setcounter{footnote}{0}
+\indent Is it a vain hope that the publication of the present papers may encourage some young mathematician to ``cultivate Hamilton's garden,'' his \emph{linear associative vector algebra}, in spite of the genial sneers of Weyl and Eddington who virtually thank the Lord that \emph{their} hands need not be soiled by this ``somewhat forbidding''\footnote{Eddington's \emph{Report on Relativity}, preface to first edition, reproduced in second edition.}---hah---``orgy of''\footnote{English translation by Brose of Weyl's \emph{Space, Time, Matter}, p. 54.} agricultural labour? During 30 years and more I have often glanced over the hedge and wondered sadly why fellow workers should be content to turn over the, perhaps lighter, but incomparably less fertile, patches in the immediate neighbourhood of the garden.}
+
 \end{document}

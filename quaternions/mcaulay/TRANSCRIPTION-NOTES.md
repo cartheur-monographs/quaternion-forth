@@ -208,3 +208,11 @@ $n$-manifold'' (pp. 146--155) and ``The Mechanical Forces indicated by
 Relativity in an Electromagnetic Field'' (pp. 156--162). Keep this extract as
 supporting reference material when checking the transformed Part III pp. 169
 and 171.
+
+## Part III p. 180 footnote
+
+The footnote on p. 180 cites McAulay's ``A New Identity affecting Questions in
+Relativity; and some Cognate Matters,'' described as having been despatched to
+the *Philosophical Magazine* in January 1922. It appears never to have been
+published; retain the footnote as source text, but treat the citation as an
+unpublished paper when researching or cross-referencing it.
