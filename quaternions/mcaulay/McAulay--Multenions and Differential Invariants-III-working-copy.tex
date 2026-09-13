@@ -20,6 +20,8 @@
 \fi
 % A linity's paired variance indicators are two literal parentheses in a left superscript.
 \newcommand{\markpair}[3]{{}^{#1#2}#3}
+\newcommand{\invd}{\mathord{\vcenter{\hbox{\rotatebox[origin=c]{180}{\(\mathrm{D}\)}}}}}
+\newcommand{\thetaPi}{{}_\theta\invd}
 \begin{document}
 \thispagestyle{empty}
 
@@ -427,19 +429,19 @@ We have now fully identified $\omega^\times$ with Maxwell's $\mathbf{B}$ and $\m
 \indent With our present (vacuum) assumption, we shall show that (18) can be added to, thus ($\kappa=l^{-1}\dot\kappa$)
 \begin{equation}
   -T_{(\zeta)}\zeta=V_1\kappa\omega^\times
-  =2\bigl(l^{-1}\theta_\theta(\Pi f)_{(\zeta)}\zeta\bigr).
+  =2\bigl(l^{-1}(\thetaPi f)_{(\zeta)}\zeta\bigr).
   \tag{19}
 \end{equation}
 
 \newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 173\end{center}
-where, as in Quaternions, $\theta\Pi$ means the self-conjugate linity differential operator given by
+where, as in Quaternions, $\thetaPi$ means the self-conjugate linity differential operator given by
 \begin{equation}
-  df=-V_0d\theta\zeta\,\theta\Pi f\zeta
+  df=-V_0d\theta\zeta\,\thetaPi f\zeta
   \tag{20}
 \end{equation}
 where $df$ is the increment in $f$ due to the arbitrary increment $d\theta$ in $\theta$. It is, therefore, not the linity $T^\bullet$, but, instead, the linity $T^{\bullet(t)}$ (= \emph{total energy linity} $=lT^{(t)}$) given by
 \begin{equation}
-  T^{\bullet(t)}=T^\bullet+2\theta_\theta\Pi f
+  T^{\bullet(t)}=T^\bullet+2\thetaPi f
   \tag{21}
 \end{equation}
 which may be supposed to be handed on through space by some kind of contact action, because from (19)
@@ -460,20 +462,20 @@ As a matter of fact, we shall later, when considering gravitation, show that thi
 Since $l^{-1}f$ is invariant, and since, as we saw above, before equation (14), $l^{-1}\delta'l=V_0\nabla\epsilon$, where $\epsilon$ now, as in §15, expresses an infinitesimal change of co-ordinates, we have as with $\delta\dot\omega$ above in the equation following (14)
 \[
   fV_0\nabla\epsilon_9+V_0\epsilon\nabla f=\delta f
-  =V_0\omega^\times\delta\dot\omega'-V_0\delta\theta\zeta\,\theta\Pi f\zeta.
+  =V_0\omega^\times\delta\dot\omega'-V_0\delta\theta\zeta\,\thetaPi f\zeta.
 \]
 $\delta\dot\omega'$ is given in the equation following (14) and $\delta'\theta$ is given in §15 as $-\chi_0'\theta-\theta\chi_0'$. Hence
 \begin{equation}
   \begin{aligned}
     fV_0\nabla\epsilon_9+V_0\epsilon\nabla f
     &=V_0\omega_9^\times\bigl(V_2\nabla_9V_3\dot\omega'\epsilon_9+V_0\epsilon\nabla\mathbin{\cdot}\dot\omega'\bigr)\\
-    &\quad+V_0\bigl(2\epsilon_9\theta_\theta\Pi f\nabla_9-\epsilon\Pi f\zeta\theta_9\zeta\mathbin{\cdot}V_0\epsilon\nabla_9\bigr).
+    &\quad+V_0\bigl(2\epsilon_9\thetaPi f\nabla_9-\epsilon\thetaPi f\zeta\theta_9\zeta\mathbin{\cdot}V_0\epsilon\nabla_9\bigr).
   \end{aligned}
   \tag{24}
 \end{equation}
 Here $\epsilon$ and all the $n^2$ derivatives $(\nabla_9,\epsilon_9)$ of $\epsilon$ are arbitrary, so that we may put arbitrary dummies $\gamma$, $\alpha^\times$, $\beta$ for $\epsilon$, $\nabla_9$, $\epsilon_9$ respectively. From the dummy $\gamma$ we get
 \[
-  \nabla f=\nabla_9V_0\dot\omega'_9\omega^\times-\nabla_9V_0\theta_9\zeta\,\theta\Pi f\zeta.
+  \nabla f=\nabla_9V_0\dot\omega'_9\omega^\times-\nabla_9V_0\theta_9\zeta\,\thetaPi f\zeta.
 \]
 This identity, satisfied by $f$, does not depend on the invariance of $f$. It is easily seen to be a direct consequence of the assumption that $f$ is a function of $\dot\omega$ and $\theta$. A useful result is obtained from it by modifying the first term on the right, thus
 \[
@@ -486,8 +488,188 @@ This identity, satisfied by $f$, does not depend on the invariance of $f$. It is
 \]
 whence
 \begin{equation}
-  \nabla f=-\dot M_9\nabla_9+\tfrac12\nabla V_0\dot\omega'\omega^\times+v^\times-\nabla_9V_0\theta_9\zeta\,\theta\Pi f\zeta.
+  \nabla f=-\dot M_9\nabla_9+\tfrac12\nabla V_0\dot\omega'\omega^\times+v^\times-\nabla_9V_0\theta_9\zeta\,\thetaPi f\zeta.
   \tag{25}
 \end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}174\hfill \textit{Prof. A. McAulay.}\end{center}
+From the dummy $\beta$ above in (24)
+\begin{equation}
+  \left.\begin{aligned}
+    f\alpha^\times&=V_1(V_3\omega^\times\alpha^\times)\dot\omega+2\thetaPi f\alpha^\times,\\
+    f&=-\dot M+\tfrac12V_0\dot\omega\omega^\times+2\thetaPi f
+  \end{aligned}\right\}
+  \tag{26}
+\end{equation}
+This is an identity (remember $\omega^\times$ is defined as $-\omega\mathbin{\cdot}\nabla f$) which we have proved $f$ to satisfy by reason of the invariance of $l^{-1}f$. Putting $\alpha^\times$ in (26) $=\nabla_9$ and subtracting (25), we get (19).
+
+\indent (26) shows that $\theta^{-1}\dot M$ is self-conjugate, which the reader will at first be inclined to claim as a highly satisfactory result. I am not inclined to dispute this so far as empty space is concerned, but for matter in bulk it is precisely what we do \emph{not} desire. If $\theta^{-1}\dot M$ is self-conjugate for matter in bulk, then crystalline transmission of light cannot be explained on Maxwell's theory.
+
+\indent To prove this, choose co-ordinates such that $\iota=\iota_4$; this requires co-ordinates which at the point under consideration reduce the medium to rest. Examine the case when the co-ordinates are Galilean, and Maxwell's equations become (1a), (2a), (3a) of §20. To translate $\dot M\alpha^\times$ into quaternion form, identify the multenion $\iota_2\iota_3$, $\iota_3\iota_1$, $\iota_1\iota_2$ with the quaternion $i$, $j$, $k$ and the multenion
+\[
+  \iota_1\iota_2\iota_3\iota_4=\upsilon
+\]
+with Hamilton's $\sqrt{-1}$ in his bi-quaternion $p+q\sqrt{-1}$. Thus $\dot\omega=\mathbf{H}+\upsilon\mathbf{D}$ and $\omega^\times=\mathbf{B}+\upsilon\mathbf{E}$. Indicate a ${}_nV_1$ such as $\alpha^\times$ by $(\sigma,s_4)$ where
+\[
+  \alpha^\times=\sum s_c\iota_c\quad(c=1,2,3,4),
+  \qquad \sigma=s_1i+s_2j+s_3k,
+\]
+and indicate a ${}_nV_3$ such as $\upsilon\alpha^\times$ by $\upsilon(\sigma,s_4)=(\upsilon\sigma,\upsilon s_4)$. Thus [compare (3) and (3a) of §20]
+\[
+  \begin{aligned}
+    V_1\alpha^\times\dot\omega
+      &=V_1(\sigma,s_4)(\mathbf{H}+\upsilon\mathbf{D})\\
+      &=(V\sigma\mathbf{H}+s_4\mathbf{D},-S\sigma\mathbf{D})=(\text{say})(\sigma',s_4'),\\
+    V_1(V_1\alpha^\times\dot\omega)\omega^\times
+      &=(V\sigma'\mathbf{B}+s_4'\mathbf{E},-S\sigma'\mathbf{E})\\
+      &=(V[V\sigma\mathbf{H}+s_4\mathbf{D}]\mathbf{B}-\mathbf{E}S\sigma\mathbf{D},-S\mathbf{E}[\sigma\mathbf{H}+s_4\mathbf{D}]).
+  \end{aligned}
+\]
+adding $-\tfrac12\alpha^\times V_0\dot\omega\omega^\times$ and making a slight quaternion reduction we obtain
+\[
+  \dot M\alpha^\times=\bigl(-\tfrac12V[\mathbf{H}\sigma\mathbf{B}+\mathbf{E}\sigma\mathbf{D}]+\tfrac12V\sigma V[\mathbf{H}\mathbf{B}+\mathbf{E}\mathbf{D}]+s_4V\mathbf{D}\mathbf{B},\quad S\sigma\mathbf{E}\mathbf{H}-\tfrac12s_4S[\mathbf{B}\mathbf{H}+\mathbf{E}\mathbf{D}]\bigr).
+\]
+\indent In the square array of sixteen scalars representing the linity $\dot M$ the fourth column contains the components of $V\mathbf{D}\mathbf{B}$, the fourth row contains those of $-V\mathbf{E}\mathbf{H}$, and the constituent in the fourth row and fourth column is $-\tfrac12S(\mathbf{B}\mathbf{H}+\mathbf{E}\mathbf{D})$. The other nine scalars are those of the vector linity of $\sigma$ in the expression for $\dot M\alpha^\times$ just written. Thus the conditions that $\theta^{-1}\dot M$ shall be self-conjugate are that
+\[
+  V\mathbf{D}\mathbf{B}=V\mathbf{E}\mathbf{H},\qquad V\mathbf{H}\mathbf{B}=V\mathbf{D}\mathbf{E}.
+\]
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 175\end{center}
+\indent [These, of course, amount to saying that $\mathbf D$ is parallel to $\mathbf E$ and $\mathbf B$ to $\mathbf H$.]
+
+\indent Now in a plane light wave $V\mathbf E\mathbf H$ is parallel to the ray and $V\mathbf D\mathbf B$ is normal to the wave front, so that to say that $V\mathbf D\mathbf B=V\mathbf E\mathbf H$ is to deny the possibility of double and conical refraction.
+
+\indent Our assumption that $f$ is a function of $\dot\omega$ and $\theta$ only is contrary to Maxwell's, which asserts that $N$ and $I$ enter into the relations between $\dot\omega$ and $\omega^\times$, that is $\iota$, as well as $\dot\omega$ and $\theta$ is a constituent variable of $f$. We may take $f$ to be an explicit function of $\dot\omega$, $\dot\phi=I\dot\omega$ and $\theta$. Its general increment $df$, may be written
+\[
+  df=-V_0d\dot\omega\mathbin{\cdot}(\dot\omega\mathbin{\cdot}\nabla)f
+     -V_0d\dot\phi\mathbin{\cdot}(\dot\phi\mathbin{\cdot}\nabla)f
+     -V_0d\theta\zeta\,(\thetaPi)f\zeta.
+\]
+where $(\dot\omega\mathbin{\cdot}\nabla)$, $(\dot\phi\mathbin{\cdot}\nabla)$ and $(\thetaPi)$ are all \emph{partial} differential coefficient operators, whereas $\dot\omega\mathbin{\cdot}\nabla$ and $\thetaPi$ by contrast are \emph{total} differential operators. Thus $\dot\omega\mathbin{\cdot}\nabla f$ comes partly from $(\dot\omega\mathbin{\cdot}\nabla)f$ and partly from $(\dot\phi\mathbin{\cdot}\nabla)f$, and again $\thetaPi f$ comes partly from $(\thetaPi)f$ and partly from $(\dot\phi\mathbin{\cdot}\nabla)f$ (because $\theta$ is involved in $\dot\phi$). However, there is a part of $-V_0d\dot\omega\mathbin{\cdot}(\dot\omega\mathbin{\cdot}\nabla)f$, involving $d\iota$, still standing over.
+
+\indent [In Maxwell's own case $(\dot\phi\mathbin{\cdot}\nabla)f=(-I+N)\omega^\times$ and we might assume this equation to hold in general, though this is not done below.] Writing this outstanding part as $-V_0d\iota\nabla f$ we shall have
+\[
+  df=-V_0d\iota\nabla f-V_0d\dot\omega\,\dot\omega\mathbin{\cdot}\nabla f-V_0d\theta\zeta\,\thetaPi f\zeta.
+\]
+Thus using $d\dot\omega'$, for the moment, to stand for the increment of $\dot\omega$ depending on $d\iota$ we have
+\[
+  \dot\omega'=V_2\iota V_1\theta\iota\dot\omega',
+\]
+\[
+  d\dot\omega'=V_2d\iota V_1\theta\iota\dot\omega'+V_2\iota V_1\theta d\iota\dot\omega',
+\]
+\[
+  -V_0d\iota\nabla f=df=-V_0d\iota\zeta\bigl\{V_1[V_1\theta\iota\dot\omega'](\dot\phi\mathbin{\cdot}\nabla)f+\theta V_1\dot\omega'V_1(\dot\phi\mathbin{\cdot}\nabla)f\zeta\bigr\}.
+\]
+Thus we may understand $\nabla f$ to mean as follows
+\begin{equation}
+  \left.\begin{aligned}
+    \nabla f&=\xi^\bullet\iota
+      =N\bigl\{V_1[V_1\theta\iota\dot\omega](\psi^\bullet\mathbin{\cdot}\nabla)f
+       +\theta V_1\dot\omega V_1(\psi^\bullet\mathbin{\cdot}\nabla)f\iota\bigr\},\\
+    \text{where}\quad \xi^\bullet\alpha&=N(\psi+\psi')\alpha,\qquad
+      \psi\alpha=\theta V_1\dot\omega V_1(\psi^\bullet\mathbin{\cdot}\nabla)f\alpha,\\
+    \text{and}\quad \xi^\bullet\iota&=((\xi^\bullet\iota)).
+  \end{aligned}\right\}
+  \tag{23a}
+\end{equation}
+
+\indent [\emph{Correction added September, 1921.}---$N$ was absent from equation (23a) as given in the original paper. If $N$ is omitted it is not necessarily true, but if $N$ is included it is necessarily true, that $\xi^\bullet\iota=((\xi^\bullet\iota))$. In the original presentation it was tacitly, and erroneously, assumed that $(\dot\omega\mathbin{\cdot}\nabla)f$, $(\psi^\bullet\mathbin{\cdot}\nabla)f$ and $(\thetaPi)f$ are always invariantive. They will doubtless be so when a proper invariantive form of $f$ has been selected, and it is desirable to make such a selection when possible and convenient. We will now show that, whether such a selection has been made or not, $\nabla f$, $\dot\omega\mathbin{\cdot}\nabla f$ and $\thetaPi f$ are always invariantive, that is to say $\nabla f$ is a covariant vector density, $\dot\omega\mathbin{\cdot}\nabla f$ is a covariant ${}_nV_2$, and $\thetaPi f$ is a]
+
+\newpage\thispagestyle{empty}\begin{center}176\hfill \textit{Prof. A. McAulay.}\end{center}
+contraexco vector linity density. Let us put $\tau=x\iota$ where $x$ is an arbitrary invariant scalar function of position which we shall \emph{eventually} take to be $x=1$. Thus
+\begin{equation}
+  f=f(\dot\omega,\dot\psi,\theta)=f(\dot\omega,\Gamma'\dot\omega,\theta)
+  \tag{A}
+\end{equation}
+$\Gamma'$ being that definite explicit function of $\tau$ and $\theta$ which is given by ($\Omega=$ a contravariant ${}_nV_2$ dummy)
+\begin{equation}
+  \Gamma'\Omega=V_2\tau V_1\theta\tau\Omega/V_0\tau\theta\tau.
+  \tag{B}
+\end{equation}
+From this last $d\Gamma'$ can be expressed in terms of $d\theta$ and $d\tau$ (and it may be noticed in passing that since $\Gamma'$ is homogeneous and of degree zero both in $\theta$ and in $\tau$ we have by Euler's theorem for homogeneous functions
+\begin{equation}
+  V_0\tau_\tau\nabla_9\mathbin{\cdot}\Gamma_9'=0=V_0\theta\zeta_\theta\thetaPi_9\mathbin{\cdot}\Gamma_9'.
+  \tag{C}
+\end{equation}
+the first of these explaining the presence of $N$ in (23a), for it leads to $V_0\tau_\tau\nabla f=0$). We now have
+\begin{equation}
+  \left.\begin{aligned}
+    df&=-V_0d\dot\omega\mathbin{\cdot}(\dot\omega\mathbin{\cdot}\nabla)f-V_0d\dot\psi\mathbin{\cdot}(\psi^\bullet\mathbin{\cdot}\nabla)f-V_0d\theta\zeta\,(\thetaPi f)\zeta,\\
+      &=-V_0d\dot\omega\,\dot\omega\mathbin{\cdot}\nabla f-V_0d\tau_\tau\nabla f-V_0d\theta\zeta\,\thetaPi f\zeta
+  \end{aligned}\right\}
+  \tag{D}
+\end{equation}
+the second being derived from the first by finding $d\dot\psi$ from
+\[
+  d\dot\psi=\Gamma'd\dot\omega+d\Gamma'\mathbin{\cdot}\dot\omega,
+\]
+$d\Gamma'$ coming from (B). In the second of (D) $d\dot\omega$, $d\tau$ and $d\theta$ are all \emph{independently, arbitrary and invariantive} and therefore their coefficients,
+\[
+  \dot\omega\mathbin{\cdot}\nabla f,\qquad \tau\nabla f,\qquad \thetaPi f,
+\]
+are \emph{without ambiguity and are invariantive}. These last important deductions have been made possible by using $\tau$ instead of $\iota$. $\tau$ (and therefore $d\tau$) is a general contravariant vector whereas $\iota$ is restricted by the equation $V_0\iota\theta\iota=1$.
+
+\indent From the above we obtain by straightforward filling in of detail that
+\[
+  x_\tau\nabla f=(1-I)(\psi-\psi')\iota=\xi^\bullet\iota
+\]
+as given in equation (23a) above. Since $x_\tau\nabla f$ is independent in meaning of $x$, it is natural as in (23a) to write it in the form $\nabla f$.
+
+\indent I take this opportunity of suggesting what is the proper form of $f$ \emph{in vacuo} and inside matter. \emph{In vacuo} we have
+\[
+  f=V_0\dot\omega\theta^{-1}\dot\omega=l^{-1}V_0\omega^\times\theta\omega^\times.
+\]
+Now $\theta=N\theta N'+I\theta I'$ so that
+\[
+  lf=V_0(N'\omega^\times)\theta(N'\omega^\times)+V_0(I'\omega^\times)\theta(I'\omega^\times).
+\]
+I would suggest that inside matter
+\begin{equation}
+  lf=V_0(N'\omega^\times)\xi(N'\omega^\times)+V_0(I'\omega^\times)\xi(I'\omega^\times)
+  \tag{E}
+\end{equation}
+where $\xi$ is a function of $\theta$ and of position $(p)$ only. Thus
+\begin{equation}
+  lf=V_0\omega^\times(N\xi N'+I\xi I')\omega^\times.
+  \tag{F}
+\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 177\end{center}
+Without loss of generality $\xi$ may be replaced first by its self-conjugate part $\tfrac12(\xi+\xi')$ since (E) is thereby unchanged, and next by the part
+\[
+  \tfrac12[N(\xi+\xi')N'+I(\xi+\xi')I']
+\]
+since (F) is thereby unchanged. With $n=4$ the general $\xi$ would involve 36 scalars, but the part we have finally reached involves only 12 scalars, namely 6 for $N(\xi+\xi')N'$ and 6 for $I(\xi+\xi')I'$. We may, as a special case, take $\xi=A\theta A'$ where $A$ is a coexco linity function of position.]
+
+\indent We have to add to the right of (24), (25), and (26) the following marked (24a), (25a), (26a) respectively:
+\[
+  V_0\epsilon\xi^\bullet\iota\mathbin{\cdot}V_0\iota\nabla_9-V_0\epsilon\nabla_8\mathbin{\cdot}V_0\iota_8\xi^\bullet\iota,\tag{24a}
+\]
+\[
+  -\nabla_8\mathbin{\cdot}V_0\iota_8\xi^\bullet\iota,\tag{25a}
+\]
+\[
+  \xi^\bullet\iota\mathbin{\cdot}V_0\iota\alpha^\times.\tag{26a}
+\]
+(15) and (19) also are modified by $V_1\kappa\omega^\times$ changing to
+\[
+  -lT_{(\zeta)}\zeta=V_1\kappa\omega^\times-\nabla_9V_0\iota_9\xi^\bullet\iota-(\xi^\bullet\iota)_9V_0\iota_9\nabla_9.\tag{15a and 19a}
+\]
+I think there can be no doubt that this amendment is the true expression for the force, cum power, per unit volume. It will be observed that no change occurs in the total energy linity $T^{\bullet(t)}=T^\bullet+2\thetaPi f$.
+
+\indent Pass now to the variation $\delta\theta=\theta_0$. There is no trouble in supplementing (15) and (17) with the $\theta_0$ parts since no integration by parts is here involved. Thus since $\dot m=\sqrt{(V_0\dot\mu\theta\dot\mu)}$, $\delta\dot m=\tfrac12V_0\iota\theta_0\dot\mu$, and
+\begin{equation}
+  (\theta_0\text{ part})\quad\delta(\dot m+f)=-\tfrac12V_0\theta_0\zeta\theta^{-1}T^{\bullet(t)}\zeta.
+  \tag{27}
+\end{equation}
+$G$ and $G^\bullet(=lG)$ are functions of $\theta$ and its first and second derivatives $(\nabla)$, and therefore of $\theta^\bullet$ and its first and second derivatives, where $\theta^\bullet=l\theta^{-1}$. Let $\theta^\bullet$ receive any infinitesimal increment $\delta\theta^\bullet$. At one part of our work we shall assume $\delta\theta^\bullet$ to have the meaning corresponding to $\delta\theta=\theta_0$ of equation (8); at another part $\delta\theta^\bullet$ will mean the actual increment $d\theta^\bullet=-V_0\alpha\nabla\mathbin{\cdot}\theta^\bullet$ of $\theta^\bullet$ on passing from the position $p$ to the position $p+d p=p+\alpha$ in the manifold; on some other occasion it may mean some combination of these; in a word, $\delta\theta^\bullet$ is any conceivable defined infinitesimal increment of $\theta^\bullet$. The following two equations are true:---
+\[
+  G^\bullet=-V_0\Omega\zeta\theta^\bullet\zeta=-V_0\nabla(F_\zeta\theta^\bullet\zeta-\theta^\bullet F_\zeta'\zeta)-V_0\zeta\theta^\bullet(F_{\zeta1}'F_{\zeta}'-F_{\zeta}'F_{\zeta1}')\zeta_1,\tag{28}
+\]
+\[
+  -V_0\Omega\zeta\delta\theta^\bullet\zeta=-V_0\nabla(F_\zeta\delta\theta^\bullet\zeta-\delta\theta^\bullet F_\zeta'\zeta)-\delta\mathbin{\cdot}V_0\zeta\theta^\bullet(F_{\zeta1}'F_{\zeta}'-F_{\zeta}'F_{\zeta1}')\zeta_1.\tag{29}
+\]
+The great similarity between these equations is connected with the fact that the second term on the right of (28) is a function homogeneous and
 
 \end{document}

@@ -191,6 +191,14 @@ P. 173 introduces the self-conjugate operator $\theta\Pi$ and the total-energy
 linity $T^{\bullet(t)}$. Keep its differential-operator use distinct from
 ordinary multiplication in equations (20)--(25).
 
+### Part III self-conjugate linity differential operator
+
+From p. 172 equation (19) through p. 177, the source's
+self-conjugate linity differential operator is rendered in the working copy as
+`\thetaPi`: a rotated, upright capital $D$ with a left subscript $\theta$
+(`{}_\theta\invd`). It is defined by p. 173 equation (20); do not transcribe
+this symbol as a capital $\Pi$.
+
 ## Philosophical Magazine supporting extract
 
 `../McAulay--Philosophical-Magazine--journal-pp-146-162.pdf` is a page-faithful
