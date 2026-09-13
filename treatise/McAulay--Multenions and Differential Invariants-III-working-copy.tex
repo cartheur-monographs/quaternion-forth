@@ -1,0 +1,893 @@
+% Source-checked typeset transcription of Part III, beginning at journal p. 162.
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{iftex}
+\usepackage{mathptmx}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+% Part III's inverse variance mark is the explicit U+0254 open-o/reversed-c.
+% XeLaTeX renders it from DejaVu Serif; pdfLaTeX retains a rotated-c fallback.
+\ifPDFTeX
+  \newcommand{\invc}{\mathord{\rotatebox[origin=c]{180}{$c$}}}
+\else
+  \usepackage{fontspec}
+  \newfontfamily\invcfont{DejaVu Serif}
+  \newcommand{\invc}{\mathord{\text{\invcfont ɔ}}}
+\fi
+% A linity's paired variance indicators are two literal parentheses in a left superscript.
+\newcommand{\markpair}[3]{{}^{#1#2}#3}
+\newcommand{\invd}{\mathord{\vcenter{\hbox{\rotatebox[origin=c]{180}{\(\mathrm{D}\)}}}}}
+\newcommand{\thetaPi}{{}_\theta\invd}
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}\textit{Multenions and Differential Invariants.---III.}\end{center}
+\begin{center}\textsc{By Alex. McAulay, Professor of Mathematics in the University of Tasmania.}\end{center}
+\begin{center}(Communicated by W. B. Hardy, Sec.R.S.\quad Received July 20, 1921.)\end{center}
+
+\noindent\textsc{§ 19. \emph{Suggested Improvement of Some Notations and Terms.}}---The reader has probably found that the terminology for multenion linities, adopted hitherto because of the writer's timid reluctance to depart from accepted meanings, is too inexpressive of the intended signification. A covariant linity fabricates a covariant multenion out of a contravariant. Let us call it a $c/\invc$ or a coexcontra (co-ex-contra); and similarly let us now denote a contravariant, comixt or contramixt linity by the name contraexco, coexco or contraexcontra, and by the symbol $\invc/c$, $c/c$ or $\invc/\invc$ respectively. Let us also use parenthesis marks\footnote{Intended by author to be \emph{commas}, upright and inverted. In future printing the author still thinks commas would be preferable to the bracket substitute.} before a letter such as $\phi$, of the same general shapes as $c$ and $\invc$ (omitting the solidus), to indicate the type of invariance, thus---let us say that
+\[
+  \phi=\markpair{(}{)}{\phi},\ \markpair{)}{(}{\phi},\ \markpair{(}{(}{\phi}\ \text{or}\ \markpair{)}{)}{\phi}
+\]
+indicates that $\phi$ is a
+\[
+  c/\invc,\quad \invc/c,\quad c/c\ \text{or}\ \invc/\invc
+\]
+respectively. Similarly, $p={}^{(}p$ indicates that $p$ is a covariant multenion and $q={}^{)}q$ indicates that $q$ is a contravariant multenion. If we actually insert all these indicating parenthesis marks, which we shall do but rarely, their mode of combination is simple. Thus
+\[
+  {}^{)}p=\markpair{)}{)}{\phi}\ \markpair{)}{(}{\psi}\ {}^{(}q
+\]
+is an invariant equation. The features that render it so are (1) that the second mark of one letter, $\phi$ or $\psi$, is identical with the first mark of the next; these two marks virtually cancel one another; and (2) the proper mark of the resultant symbol $p$, of the whole operation, is the first written mark of the compound symbol $\phi\psi q$.
+
+\indent When with these notations we use the dash which indicates conjugacy, there is, unless we insert brackets, ambiguity in the meanings of $\markpair{(}{(}{F'}$ and $\markpair{)}{)}{F'}$ (the two mixed types as we have hitherto called them), because $(\markpair{(}{(}{F})'$ is not of the same type $c/c$ as $\markpair{(}{(}{F}$, but of the type $\invc/\invc$. There is no such ambiguity with $\markpair{(}{)}{\phi'}$ and $\markpair{)}{(}{\phi'}$ nor with $f\markpair{(}{(}{F}$ and $f\markpair{)}{)}{F}$, where $fx$ is a rational function of $x$. [Remember that $f^{(}\phi$ and $f^{)}\phi$ have no invariantive meaning. I think it
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 163\end{center}
+best to adhere to the general rule, not rigidly prescribed, that $c/\invc$ and $\invc/c$ should be denoted by Greek letters and $c/c$ and $\invc/\invc$ by Roman capitals.]
+
+\indent Our new notations and terms apply to other symbols than invariantive; for instance, to $\Gamma_\beta$. Thus
+\[
+  \Gamma_\beta={}^{)}\Gamma_\beta,\qquad E_\beta'=\markpair{(}{(}{(E_\beta')}.
+\]
+We shall retain the ``cross'' notation to indicate different symbols, and generally restrict it, without rigid prescription, to the same meanings as hitherto.
+
+\indent Our former $\bar\Gamma_\beta$ and $\bar E_\beta$ will henceforth not be used, because we have in §18 a new notation, according to which ${}^aE_\beta$ would have reference to a Weyl manifold, and would indicate that ${}^aE_\beta$ was the part of $E_\beta$ not containing terms in $\lambda$; and if $\lambda$ is actually everywhere zero so that the manifold becomes a Riemann manifold, §18 provides the use of $F_\beta$ in place of $E_\beta$. In the present paper we occupy ourselves exclusively with a Riemann manifold, and use the letters $\theta$, $l$, $F_\beta$, $\Theta_\beta$, $\Omega$, $C\ (=\markpair{(}{(}{C}=\Omega\theta^{-1})$ provided for that case.
+
+\indent A thick dot\footnote{It is necessary, because of papers despatched to England in the early months of 1922, to state that this dot replaced a \emph{bar} placed over the symbol affected. The replacement was made in August, 1922, at the suggestion of the printers. It seems now (August) too late to replace the bar in the papers just mentioned.} will be used to denote that a symbol is a ``density,'' though occasionally, as with $W$ (action density), and $f$ a part of $W$ below, we shall not consider it necessary to use the dot. Once for all, we define $\dot\eta'$ and $\dot\theta$ by the equations
+\begin{equation}
+  \dot\eta'=k\eta^{-1},\qquad \dot\theta=l\theta^{-1}.
+\tag{1}
+\end{equation}
+but we may regard it as a rule, unless the contrary is definitely stated, as here with $\dot\eta'$ and $\dot\theta$, that the dot attached to a symbol means that the undotted symbol has been multiplied by $l$ (by $k$ if we were dealing with a Weyl manifold). Thus $\dot C$, $\dot G$ stand for $lC$, $lG$, and again, if we introduce $\dot\kappa$ as a contravariant vector density, then $\kappa$ will mean $l^{-1}\dot\kappa$.
+
+\indent With regard to $\dot\theta$ in (1), we shall use it as applied to a general multenion, say, to $w^\times=V_aq^\times$, but not exactly with the extensive meaning. Thus $\dot\theta u^\times$ means $l\theta^{-1}u^\times$ where $\theta^{-1}$ but not $l$ is used in the extensive meaning. Thus, for instance, $\dot\theta V_3\alpha^\times\beta^\times\gamma^\times$ means {\small$lV_3\theta^{-1}\alpha^\times\theta^{-1}\beta^\times\theta^{-1}\gamma^\times$}, and not {\small$l^3V_3\theta^{-1}\alpha^\times\theta^{-1}\beta^\times\theta^{-1}\gamma^\times$}.
+
+\noindent\textsc{§ 20. \emph{Maxwell's Equations for Matter in Bulk.}}---It is fully time to show how the special requirements of Relativity are met in detail in our method. In now introducing Maxwell's equations, let us throughout keep in mind the application to matter in bulk. If for no other reason this is desirable because thereby we are prepared to accept the beautiful
+
+\newpage\thispagestyle{empty}\begin{center}164\hfill \textit{Prof. A. McAulay.}\end{center}
+explanation that Maxwell's theory affords of the known behaviour of light in uniaxal and biaxal crystals. When we compare results with Maxwell's we shall speak as if $n=4$. Nevertheless, in the general argument, we shall continue to suppose $n$ to have any positive integral value. When with $n=4$ we put
+\[
+  \rho=xl_1+yl_2+zl_3+tl_4
+\]
+we shall speak of $x$, $y$, $z$ as the spatial co-ordinates and $t$ as the time, even when by transformation of all four co-ordinates $t$ may mean something very different from the time as ordinarily understood.
+
+\indent Let Maxwell's vector potential be $\mathbf{A}=(A_1,A_2,A_3)$, electrostatic potential $=A_4$, magnetic induction $\mathbf{B}=(B_1,B_2,B_3)$, electric intensity $\mathbf{E}=(E_1,E_2,E_3)$, magnetic field strength $\mathbf{H}=(H_1,H_2,H_3)$, dielectric displacement $\mathbf{D}=(D_1,D_2,D_3)$, conduction current $\mathbf{K}=(K_1,K_2,K_3)$, electrostatic density $=K_4$, force per unit volume $\mathbf{F}=(F_1,F_2,F_3)$, power $(-S\mathbf{E}\mathbf{K})$ per unit volume $=F_4$.
+
+\indent Also let $\lambda$ be a covariant vector (better use $\lambda^\times$ in the future) given by
+\[
+  \lambda=\sum A_cl_c\quad(c=1,2,3,4),
+\]
+$\omega^\times$ a covariant ${}_nV_2$ given by
+\[
+  \omega^\times=\sum B_1l_2l_3+\sum E_1l_4l_1
+\]
+(the meaning of each summation, of three terms, being sufficiently obvious), $\dot\omega$ a contravariant ${}_nV_2$ density given by
+\[
+  \dot\omega=\sum H_1l_2l_3+\sum D_1l_4l_1,
+\]
+$\dot\kappa$ a contravariant vector density given by
+\[
+  \dot\kappa=\sum K_cl_c\quad(c=1,2,3,4),
+\]
+and $\dot v^\times$ a covariant vector density given by
+\[
+  \dot v^\times=\sum F_cl_c\quad(c=1,2,3,4).
+\]
+Maxwell's quaternion equations
+\begin{alignat}{3}
+  \mathbf{B}&=V\nabla\mathbf{A}, &\qquad \mathbf{E}&=-\nabla A_4-\partial\mathbf{A}/c\partial t, &\tag{1}\\
+  \mathbf{K}&=V\nabla\mathbf{H}-\partial\mathbf{D}/\partial t, & \mathbf{K}_4&=-S\nabla\mathbf{D}, &\tag{2}\\
+  \mathbf{F}&=V\mathbf{K}\mathbf{B}+K_4\mathbf{E}, & \mathbf{F}_4&=-S\mathbf{K}\mathbf{E}, &\tag{3}
+\end{alignat}
+are identical with the multenion equations\footnote{For a convenient, simple, systematic method of converting all $(n=4)$ multenion formulae to corresponding quaternion formulae, see a paper by the author (despatched a month ago, viz., November, 1922, to England), ``The Mechanical Forces \ldots\ in an Electromagnetic Field.''}
+\begin{alignat}{2}
+  \omega^\times&=V_2\nabla\lambda, &\tag{1a}\\
+  \dot\kappa&=V_1\nabla\dot\omega, &\tag{2a}\\
+  \dot v^\times&=V_1\dot\kappa\omega^\times. &\tag{3a}
+\end{alignat}
+The equations (1a), (2a), (3a) are all invariantive.
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 165\end{center}
+
+\noindent [A digression. In Maxwell's presentation of the fundamental aspects of the electromagnetic field $V\nabla\mathbf{H}$ in equation (2) is looked upon as \emph{the} electric current, consisting of two parts, conduction current $\mathbf{K}$ and dielectric current $\partial\mathbf{D}/\partial t$. In the new Relativity scheme, as given by (2a), we naturally interchange the \emph{r\^oles} of $V\nabla\mathbf{H}$ and $\mathbf{K}$; that is to say, we look upon $\mathbf{K}$ as \emph{the} current, consisting of two parts, a magnetic part, $V\nabla\mathbf{H}$, and an electric part, $-\partial\mathbf{D}/\partial t$. In the multenion presentation (see below for $N$ and $I$) $V\nabla\mathbf{H}$ is $V_1\nabla(N\dot\omega)$, $-\partial\mathbf{D}/\partial t$ is $NV_1\nabla(I\dot\omega)$, and $K_4$ (multiplied into $l_4$) is $IV_1\nabla(I\dot\omega)$. [In the last sentence $N$ and $I$ are used as if $N=\markpair{)}{)}{N}$, $I=\markpair{)}{)}{I}$; if, as usual, we take $N=\markpair{(}{(}{N}$, $I=\markpair{(}{(}{I}$, then in the last sentence each $N$ should be $N'$ and each $I$ should be $I'$ .] In the future, then, when we use the term current, Maxwell's conduction current will be meant. Maxwell does not put $\mathbf{F}=V\mathbf{K}\mathbf{B}$ as we have asserted in (3), but instead $\mathbf{F}=V(V\nabla\mathbf{H})\mathbf{B}$.]
+
+\indent Before speaking of the relations between Maxwell's $(\mathbf{B},\mathbf{E})$ and $(\mathbf{H},\mathbf{D})$, that is, between $\omega^\times$ and $\dot\omega$, let us derive Lorentz's generalizations of Maxwell's equations to bodies in motion from the general principle of Relativity. The generalisations in nowise alter (1a), (2a), (3a). Put $N_4$ and $I_4$ for the normal and incident components with reference to $l_4$, when the co-ordinates are Galilean. In reality we have
+\begin{equation}
+  \left.\begin{aligned}
+    \mathbf{A}&\text{ is }N_4\lambda, &\qquad l_4A_4&\text{ is }I_4\lambda\\
+    \mathbf{B}&\text{ is }N_4\omega^\times, & \mathbf{E}&\text{ is }I_4\omega^\times
+  \end{aligned}\right\}
+  \tag{1b}
+\end{equation}
+\begin{equation}
+  \left.\begin{aligned}
+    \mathbf{H}&\text{ is }N_4\dot\omega, &\qquad \mathbf{D}&\text{ is }I_4\dot\omega\\
+    \mathbf{K}&\text{ is }N_4\dot\kappa, & l_4K_4&\text{ is }I_4\dot\kappa
+  \end{aligned}\right\}
+  \tag{2b}
+\end{equation}
+\begin{equation}
+  \mathbf{F}\text{ is }N_4\dot v^\times,\qquad l_4F_4\text{ is }I_4\dot v^\times.
+  \tag{3b}
+\end{equation}
+In the general $\theta$ (Riemann) manifold
+\[
+  \iota=dp/ds=dp/\sqrt{(V_0dp\theta dp)}
+\]
+degenerates when Galilean co-ordinates are used $(\theta=1)$ to
+\[
+  (l_1dx+l_2dy+l_3dz+l_4dt)/\sqrt{(-dx^2-dy^2-dz^2+dt^2)}
+\]
+\[
+  =(1-\sum\dot x^2)^{-\frac12}\cdot(l_1\dot x+l_2\dot y+l_3\dot z+l_4),
+\]
+of which we say nothing more here than that when the co-ordinates are so chosen that the particle is at rest $\iota$ (the contravariant world unit tangent vector to the world locus of a particle), degenerates to $l_4$. Maxwell's equations, as given above, are to be supposed true only when the medium is at rest. The generalisations of $N_4$ and $I_4$ are thus $N$ and $I$ (or $N'$ and $I'$), the normal and incident components with reference to $\iota$; normal \emph{component} and normal \emph{expression}, in this case, meaning the same, because
+
+\newpage\thispagestyle{empty}\begin{center}166\hfill \textit{Prof. A. McAulay.}\end{center}
+$V_0\iota\theta\iota=1$. \emph{Below $N$ and $I$ will always mean what has just been described with reference to $\iota$,} unless explicit exception is made; (1b), (2b), (3b), become like (1a), (2a), (3a), all invariantive when we read $\iota$, $N$ and $I$ in place of $l_4$, $N_4$, and $I_4$, in (1a) and (3a); and in (2a), $\iota$, $N'$ and $I'$ in place of $l_4$, $N_4$, and $I_4$. [Remember that $N=\markpair{(}{(}{N}$, $N'=\markpair{)}{(}{N'}$, and similarly for $I$.]
+
+\indent \emph{The equations this process gives when a body is moving, and we are using Galilean co-ordinates, are Lorentz's well-known generalizations of Maxwell's quaternion equations} (not of our multenion equations, which have been in no way altered by what has been said).
+
+\indent From (1a) and (2a) we have of course
+\begin{alignat}{2}
+  V_3\nabla\omega^\times&=0, &\tag{4}\\
+  V_0\nabla\dot\kappa&=0. &\tag{5}
+\end{alignat}
+These must be implicitly contained in (1) and (2) and indeed are found to be
+\begin{alignat}{3}
+  S\nabla\mathbf{B}&=0, &\qquad V\nabla\mathbf{E}+\partial\mathbf{B}/\partial t&=0, &\tag{4a}\\
+  S\nabla\mathbf{K}&=\partial K_4/\partial t. & & &\tag{5a}
+\end{alignat}
+
+\indent Maxwell's relations between $(\mathbf{B},\mathbf{E})$ and $(\mathbf{H},\mathbf{D})$ are that $\mathbf{H}$ is a self-conjugate linity of $\mathbf{B}$, (permeability)$^{-1}$; and $\mathbf{D}$ a similar function of $\mathbf{E}$, capacity. In our case
+\begin{equation}
+  \left.\begin{aligned}
+    \dot\omega&=\dot\psi\omega^\times, &\qquad \dot\psi&=\dot\psi'=\markpair{)}{(}{\dot\psi}\\
+    I'\dot\psi N&=0=N'\dot\psi I
+  \end{aligned}\right\}
+  \tag{6}
+\end{equation}
+Here $\dot\psi$ is a ${}_nV_2$ linity concerning which, $\dot\psi=\dot\psi'$ asserts that $\dot\psi$ is self-conjugate, $\dot\psi=\markpair{)}{(}{\dot\psi}$ asserts that it is contraexco, the dot implies that it is a density, and the two equations in the second line assert that $\dot\psi$ consists of two parts $N'\dot\psi N+I'\dot\psi I$, of which the first is confined to normal components with reference to $\iota$, and the other to incident components.
+
+\indent [Any $c/c$, say $\phi$, may be expressed uniquely as the sum of four parts thus
+\[
+  \phi=(N+I)\phi(N+I)=N\phi N+I\phi I+N\phi I+I\phi N.
+\]
+With a $\invc/c$ the four parts are obtained from $(N+I)'\ (\ )\ (N+I)$, and in the case of $\dot\psi$ two of these parts are asserted in (6) to be zero.
+
+\indent \emph{Digression on I and N.}---I have forgotten to point out earlier that $I'$, $I$, $N'$ and $N$ all have subextensive significance, and that $(I-N)$ also has a close connection with extensive interpretation. In the neutral form we virtually deal with a Galilean manifold. If in such a manifold $I$, $N$ are the incident and normal components with reference to $a$, we can, by a rotation, bring $a$ to coincidence with $l_1$, or some $l_a$, and then $(I-N)$ becomes the capital linity $P_1$ (which reverses the sign of $l_1$ in every term of $q$), introduced at the outset of our subject. The properties of $I$, $N$, $(I-N)$, may be based on this connection
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 167\end{center}
+with $P_1$, through neutral to invariant forms. However, it is perfectly easy to prove directly that, say, $I'$, has subextensive significance, for we have defined thus
+\[
+  I'\beta=\alpha V_0\eta\alpha\beta,\qquad I'u=V_{a\alpha}V_{a-1}\eta\alpha u,
+\]
+and to show that $I'$ has subextensive significance we have to prove that
+\[
+  I'u=-V_aI'\xi V_{a-1}\xi u,
+\]
+which is obvious as soon as stated.]
+
+\indent Maxwell's scheme also connects $\mathbf{K}$ with $\mathbf{E}$ by the self-conjugate linity conductivity. In our case express this first with Galilean co-ordinates. We have
+\[
+  \sum_{a=1}^{3}E_al_a=V_1l_4\omega^\times=RN_4\dot\kappa
+\]
+where $R$ is put for resistivity. This generalizes to
+\begin{equation}
+  N'\dot\kappa=\dot\phi V_1I\omega^\times,\qquad
+  \dot\phi=N'\dot\phi N=\dot\phi'=\markpair{)}{(}{\dot\phi}.
+  \tag{7}
+\end{equation}
+where $\dot\phi$ is conductivity, a vector linity.
+
+\indent It appears to me an impressive fact that Maxwell's analysis of the electromagnetic field was so wonderfully true to the nature of things, that not one single feature of his scheme, so far considered, requires the slightest revision when examined with the powerful searchlight of Relativity. Only when the structure perforce comes into contact with Newtonian mechanics, as is the case in what we are about to consider, does it require, along with classical mechanics, to be amended.
+
+\indent For stress put
+\begin{equation}
+  \dot M\alpha^\times=-\tfrac12\alpha^\times V_0\dot\omega\omega^\times+V_1(V_1\alpha^\times\dot\omega')\omega^\times.
+  \tag{8}
+\end{equation}
+We have
+\[
+  \dot M_9\nabla_9=-\tfrac12\nabla V_0\dot\omega'\omega^\times+V_1(V_1\nabla_9\dot\omega')\omega_9^\times+v^\times
+\]
+by (2a) and (3a). Now
+\[
+  V_1(V_1\nabla_9\dot\omega')\omega_9^\times
+  =\nabla_9V_0\dot\omega'\omega_9^\times-V_1\dot\omega'V_3\nabla\omega^\times
+\]
+of which the last term is zero by (4). Hence
+\begin{equation}
+  \left.\begin{aligned}
+    v^\times&=\dot M_9\nabla_9+\tfrac12(\nabla_8-\nabla_9)V_0\dot\omega_8'\omega_9^\times\\
+    &=\dot M_9\nabla_9+\tfrac12\nabla_9V_0\omega^\times\dot\psi_9^{-1}\omega^\times
+  \end{aligned}\right\}
+  \tag{9}
+\end{equation}
+by (5). By using $\dot\omega$ instead of $\omega^\times$ the last term on the right becomes $-\tfrac12\nabla_9V_0\omega^\times\dot\psi_9^{-1}\omega^\times$. Because of the factor $l^{-1}$ in $\dot\psi^{-1}=l^{-1}\psi^{-1}$ we may speak of $\dot\psi^{-1}$ as an \emph{anti}-density.
+
+\noindent\textsc{§ 21. \emph{Stationary Action in a Riemann Manifold.}}---In our theorems of integration $d\dot p_c$ being equal to $V_cd p_1d p_2\ldots d p_c$ is contravariant. But since
+\[
+  ldb=lV_0d\alpha d p_n
+\]
+
+\newpage\thispagestyle{empty}\begin{center}168\hfill \textit{Prof. A. McAulay.}\end{center}
+is an invariant, $d\alpha$, must be a covariant vector anti-density, and, similarly, $d\dot p_c$ in general (including $db$) is a covariant multenion anti-density.
+
+\indent (8) and (9) of §20 are unsatisfactory in that $\dot M\theta$ is not apparently self-conjugate, and from the second term on the right of (9) the force (cum power), per unit volume, cannot be expressed as a stress even of the non self-conjugate kind. But the pioneers of Relativity have developed a principle of stationary action which has for consequence that all of the equations of §20 may be retained, and that $\dot M$ of (8) \emph{is} self-conjugate; and by what seems little more than a bold assumption as to the nature of things, they conclude that the intractable last term of (9) need not trouble us, because force generated by the field need not be begotten by stress; they give us something else instead, as will appear below. [I think I have here credited the pioneers with just a little more than they have set forth, but no more than such as, by small additions, can be included.]
+
+\indent Although in the main we copy their procedure, yet in two important respects we depart from it, and in doing so return much more nearly than they do to Maxwell's outlook. First, we keep in mind the application to matter in bulk; and, secondly, we abjure the use of $\lambda$ \emph{in toto}. Probably Heaviside, among those who studied these matters in the days before the advent of Relativity, as we know it to-day, emphasised as much as any writer the view that the potentials of $\lambda$ have nothing to do with actualities, unless among such are to be reckoned the imperfections of our mathematics. In returning to the procedure I adopted in 1892,\footnote{``On the Mathematical Theory of Electromagnetism,'' `Phil. Trans.,' 1893.} of taking Maxwell's $\mathbf{H}$ and $\mathbf{D}$ as the fundamental (three-dimensional) vectors of the field, instead of any of $\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$, $\mathbf{K}$, or $\mathbf{E}$, I find that the potentials can be completely ignored, that they are not wanted even as a mathematical crutch, and that the ignoring of them considerably simplifies the preliminary organising plans of our exploration. The electro-magnetic terms are all dependent on a single arbitrary scalar function of the ${}_nV_2$ called $\dot\omega$ in §20.
+
+\indent Let us recall that a particle of matter, with three dimensional extension, occupies a four-dimensional tube in the space-time continuum. The strength of this tube is the invariant constant (static) mass $d\dot M=ldM$ of the particle. The three dimensional anti-density covariant cross-section being $d\alpha$, an element of ``length'' of the tube being the proper time $ds$, corresponding to the contravariant vector $dp$, where $d\alpha$ and $dp$ are both time-like, $\iota$ being the unit tangent vector $dp/ds$, $db$ the four-dimensional volume of the element, we have
+\begin{alignat}{3}
+  ds^2&=V_0dp\theta dp, &\qquad \iota&=dp/ds, &\qquad db&=V_0d\alpha dp. \tag{1}
+\end{alignat}
+and
+\begin{equation}
+  d\dot M\mathbin{\cdot}ds=\dot m\,db,
+  \tag{2}
+\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 169\end{center}
+where $\dot m$ or sometimes $m$ is called the material density. The momentum is
+\begin{equation}
+  \iota d\dot M=\iota\dot m\,(db/ds),
+  \tag{3}
+\end{equation}
+and
+\begin{equation}
+  \iota\dot m=\dot\mu,
+  \tag{4}
+\end{equation}
+is called the momentum per unit volume. It is this vector whose magnitude multiplied by the cross-section yields the constant invariant strength, the quantity $d\dot M$. [In invariants we should say $m\times(ldb\div ds)=d\dot M$; so that perhaps $m\iota=\dot\mu$ rather than $\dot\mu$ should be called the momentum per unit volume.] We may note from the integration theorems, first for a finite portion of a tube, and next for a finite region of four dimensions, that
+\begin{equation}
+  V_0\nabla\dot\mu=0.
+  \tag{5}
+\end{equation}
+This ``equation of continuity'' or ``equation of conservation'' of matter is given by Weyl, but seems nowhere to appear in Eddington's Report.\footnote{For a more critical examination of equation (5) see the later paper by the author: ``The Mechanical Forces \ldots\ Field'' referred to above, footnote p. 164.}
+
+\indent Our fundamental view of electricity is the same in principle, but we do not need to elaborate a notation such as $d\mathbf{E}^\bullet$, $e^\bullet$, etc., in connection with $\dot\kappa$ to serve the purposes of $d\dot M$, $\dot m$, etc., in connection with $\dot\mu$. The tubes in the case of electricity (strength $V_0\dot\kappa' d\alpha$, just as strength of momentum tube $=V_0\dot\mu' d\alpha$) are called current tubes. If we were dealing with the smallest portions of matter it would accord with the prevalent views of to-day to suppose the two sets of tubes to be identical, but for matter in bulk we must consider them to be independent. Fortunately this is without any influence on the deductions we have to make from our fundamental principles.
+
+\indent Our principle of stationary action is that
+\begin{equation}
+  \delta\int^n\!\int Wdb=0,
+  \tag{6}
+\end{equation}
+where $W$ is an invariant scalar density (meaning that $l^{-1}W$ is invariant) function of position consisting of three parts
+\begin{equation}
+  W=\dot m+f(\dot\omega,\theta)+l\bigl(c-\tfrac12G\bigr),
+  \tag{7}
+\end{equation}
+the first, material, being $\dot m$ already described and equal to $\sqrt{(V_0\dot\mu\theta\dot\mu)}$; the second, electrical, a function $f(\dot\omega,\theta)$ of a ${}_nV_2$, $\dot\omega$, identified with Maxwell's $\mathbf{H}$ and $\mathbf{D}$ as in §20, and of $\theta$ the fundamental linity of the manifold; and the third, gravitational, $l(c-\tfrac12G)$ where $G$ is the scalar curvature $-V_0\zeta C\zeta$, the cosmological constant $c$ possibly being zero, though Einstein teaches that it \emph{must} differ from zero.
+
+\indent The variations implied by $\delta$ in (6) are of three independent kinds; (1) an arbitrary increment in $\theta$
+\begin{equation}
+  \delta\theta=\theta_0,
+  \tag{8}
+\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}170\hfill \textit{Prof. A. McAulay.}\end{center}
+at every point of the manifold; (2) an arbitrary increment in $\dot\omega$
+\begin{equation}
+  \delta\dot\omega=V_2\nabla v^\bullet\qquad(v^\bullet=V_3w^\bullet)
+  \tag{9}
+\end{equation}
+at every point, of such a kind that the current tubes, that is to say $\dot\kappa$, which last is \emph{defined} by
+\begin{equation}
+  \dot\kappa=V_1\nabla\dot\omega
+  \tag{10}
+\end{equation}
+remain unvaried; and (3) an arbitrary displacement which shifts the tubes, momentum and current, together,
+\begin{equation}
+  \delta p=\epsilon
+  \tag{11}
+\end{equation}
+without alteration of their strengths, $V_0\dot\mu'd\alpha$, $V_0\dot\kappa'd\alpha$.
+
+\indent [\emph{Added October, 1921.}---A consequence of remarks which occur below is so obvious that it is singular that only now have I happened to recognise it. If it is assumed that for the first two variations $(\delta\theta=\theta_0$ and $\delta\dot\omega=V_2\nabla v^\bullet)$ the stationary condition (6) holds; then \emph{it follows as a mathematical deduction} that the stationary condition also holds for the third variation $(\delta p=\epsilon)$ which shifts the tubes. Clearly then our postulated principle of stationary action should not include the \emph{assumption} of the stationary condition for the third variation. The reader will easily justify the assertions that have just been made, if he will take as the proof of the equation $T_{\xi}^{(t)}\zeta=0$, the indication of a proof, immediately following the identity (35) below. This equation $T_{\xi}^{(t)}\zeta=0$ is virtually the necessary and sufficient condition for the existence of the stationary condition under the variation $\delta p=\epsilon$.]
+
+\indent The integral of (6) extends over any arbitrary finite region at the boundary of which $\theta_0$, $\dot\omega$ and $\epsilon$ all vanish.
+
+\indent $\omega^\times$, eventually to be identified with Maxwell's $\mathbf{B}$ and $\mathbf{E}$ as in §20, is \emph{defined} by
+\begin{equation}
+  \omega^\times=-\dot\omega\nabla
+  \tag{12}
+\end{equation}
+where $\dot\omega\nabla$, as in Quaternions, means the differential operator for which $df=-V_0d\dot\omega\,\dot\omega\nabla f$, $df$ being the increment in $f$ due to an arbitrary increment $d\dot\omega$ in $\dot\omega$.
+
+\indent It is necessary to point out that if $W$ consisted of $\dot m$ alone, \emph{the condition $\delta W=0$ would mean that a momentum tube is geodesic} because by (2) $\dot m\,db=d\dot M\,ds$, and by hypothesis $d\dot M$, the strength, is unaffected by the displacement $\epsilon$ of the tube. Indeed, following Weyl, we might use this identification to find the effects of $\epsilon$ and $\theta_0$ on the variation of $\dot m$ in (6), but we pursue another course. It seems almost unnecessary to say that for a full treatment of matter in bulk $W$ as above described is by no means adequate;
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 171\end{center}
+there are several scalar functions of position such as temperature and strain co-ordinates (adapted to the method of Relativity) that should be included in $W$ for such a treatment.\footnote{Treated in a series of three papers by the author; despatched within the past month (December, 1922) to England.} We may accept the inclusion of fluid and elastic solid stresses that Eddington so lucidly justifies in §37 of his report, despite the fact that his appeal to the kinetic theory of matter would by a precisionist be described as a departure from our elected task of dealing with matter in bulk.
+
+\indent We shall consider the effects of $w^\bullet$, $\epsilon$ and $\theta_0$ in succession because that is the order of simplicity; $\theta_0$, $w^\bullet$ and $\epsilon$ all take part in the variation of $f$; $\theta_0$ and $\epsilon$ in that of $\dot m$; and $\theta_0$ alone in that of $G$.
+
+\indent The variation due to $\dot\omega$ gives by (9) and (12)
+\[
+  0=-\int\!\int V_0\omega^\times\nabla w^\bullet\,db
+  =-\int^{n-1}\!\int V_0w^\bullet\omega^\times d\alpha
+    +\int\!\int V_0w^\bullet V_3\nabla\omega^\times\,db,
+\]
+whence, since $w^\bullet$ is zero at the boundary,
+\begin{equation}
+  V_3\nabla\omega^\times=0.
+  \tag{13}
+\end{equation}
+The process, here exhibited, of making a $\nabla$, explicitly occurring in the integrand, apply to the whole integrand, and the consequent removal of the resulting expression (or the potentiality of such removal) to the boundary, is known as integration by parts.
+
+\indent The effect of $\epsilon$ we will first consider with reference to the current tubes. For the strength of every tube to remain unchanged by the displacement it suffices that $\dot\omega$ changes in precisely the manner that it changed in §15 when $\epsilon$ indicated a change of co-ordinates. Quoting then from §15, we first have
+\[
+  l^{-1}\delta'l=-\tfrac12V_0\xi\delta\theta\theta^{-1}\xi
+  =V_0\xi\chi_0\xi=V_0\nabla\epsilon,
+\]
+and next
+\[
+  \begin{aligned}
+    \delta\dot\omega&=\dot\omega V_0\nabla\epsilon-V_2\chi_0\xi V_1\xi\dot\omega\\
+    &=\dot\omega V_0\nabla\epsilon-V_2\epsilon_9V_1\nabla_9\dot\omega
+      =V_2\nabla_9V_3\dot\omega'\epsilon_9.
+  \end{aligned}
+\]
+For the future we shall write $\delta'$ for these changes to be quoted from §15 leaving $\delta$ for a second meaning thus (Weyl's notation)
+\begin{equation}
+  \left.\begin{aligned}
+    \delta'(\ )&=(\text{value at }p+\epsilon\text{ after displacement})-(\text{value at }p\text{ before})\\
+    \delta(\ )&=(\text{value at }p\text{ after displacement})-(\text{value at }p\text{ before},)
+  \end{aligned}\right\}
+  \tag{14}
+\end{equation}
+so that
+\[
+  \delta(\ )=\delta'(\ )+V_0\epsilon\nabla\mathbin{\cdot}(\ ),
+\]
+\[
+  \delta\dot\omega=V_2\nabla_9V_3\dot\omega'\epsilon_9+V_0\epsilon\nabla\mathbin{\cdot}\dot\omega,
+\]
+\[
+  \delta f=V_0\omega_9^\times\delta\dot\omega
+  =V_0\omega_9^\times\nabla_9V_3\dot\omega'\epsilon_9
+   -V_0\mathbin{\cdot}V_3\dot\omega^\times\nabla_9V_3\dot\omega'\epsilon
+   +V_0\epsilon\nabla_9V_0\omega^\times\omega_9',
+\]
+because $V_3\nabla\omega^\times=0$. Thus $\delta f-$ (first term on right)
+\[
+  =V_0\epsilon V_1\dot\kappa'\omega^\times.
+\]
+Hence
+\begin{equation}
+  (\epsilon\text{ part})\quad\int\!\int\delta f\,db
+  =\int\!\int V_0\epsilon V_1\dot\kappa'\omega^\times\,db.
+  \tag{15}
+\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}172\hfill \textit{Prof. A. McAulay.}\end{center}
+Next calculate the corresponding part from $\delta\dot m$, in which $\delta\dot\mu$ is obtained, as with $\delta\dot\omega$ above, but $\delta\theta=0$. We shall for brevity use
+\[
+  \dot m^2=V_0\dot\mu\theta\dot\mu,\qquad \dot m\iota=\dot\mu,
+\]
+but the reader would do well at the beginning to use only $\dot m=\sqrt{(V_0\dot\mu\theta\dot\mu)}$ and not $\iota$.
+\[
+  \delta\dot m=\tfrac12\delta(\dot m^2)/\dot m
+  =V_0\iota\theta\bigl(-\epsilon_9V_0\dot\mu\nabla_9+\dot\mu V_0\nabla\epsilon+V_0\epsilon\nabla\mathbin{\cdot}\dot\mu\bigr).
+\]
+Here prepare for integration by parts by altering the incidence of $\nabla$ in the first two terms on the right, so as to apply to the whole term, and reject this part of each term. Thus $\delta\dot m-$ (the rejected parts)
+\[
+  \begin{aligned}
+    &=V_0\epsilon\bigl[(\theta\iota)_9V_0\dot\mu_9\nabla_9-\nabla\dot m+\nabla_9V_0\dot\mu_9\theta\iota\bigr]\\
+    &=V_0\epsilon\bigl(T_9\nabla_9+\tfrac12\nabla_9V_0\zeta\theta_9\theta^{-1}T\zeta\bigr)
+  \end{aligned}
+\]
+where
+\begin{equation}
+  T^\bullet\alpha^\times=lT\alpha^\times=\dot m\theta\iota V_0\alpha^\times\iota\quad[+\ \text{stress terms}]
+  \tag{16}
+\end{equation}
+(the stress terms meaning those inserted here from Eddington's argument in §37 of the Report). Thus
+\begin{equation}
+  (\epsilon\text{ part})\quad\int\!\int\delta\dot m\,db
+  =\int\!\int lV_0\epsilon T_{(\zeta)}\zeta\,db
+  \tag{17}
+\end{equation}
+by equation (19) of §15.
+
+\indent $T$ or $T^\bullet$ is called the material kinetic energy linity, or if the stress terms (say $T^{(s)}$) are included, it may be called the material stress-energy linity. The stress terms are self-conjugate and satisfy the equation $T^{(s)}=NT^{(s)}N$.
+
+\indent (15) and (17) are the only contributions of $\epsilon$ to (6), so that we have
+\begin{equation}
+  lT_{(\zeta)}\zeta+V_1\dot\kappa'\omega^\times=0.
+  \tag{18}
+\end{equation}
+We have now fully identified $\omega^\times$ with Maxwell's $\mathbf{B}$ and $\mathbf{E}$.
+
+\indent Of equations (1a), (2a), (3a), (4), (5), (6) of §20 we have decided that (1a) is quite unnecessary, is in fact better neglected than cared for (though, of course, it is a mere consequence of our present equation (13)). The other five are replaced in the present section by (10), (18), (13), (10), (12) respectively. [(10) does duty twice, since it has the obvious consequence $V_0\nabla\dot\kappa=0$.]
+
+\indent We are now about to trace the consequences flowing from the fact that $l^{-1}f$ is an invariant. These are wholly satisfactory for empty space, but not for matter in bulk, for which, in accordance with Maxwell's principles, we must modify our view as to the nature of $f$, the electrical term of the action density. It is well to show, however, that it is this invariance of $l^{-1}f$ which causes the inadequacy of our present supposition that $f$ is a function of $\dot\omega$ and $\theta$ only.
+
+\indent With our present (vacuum) assumption, we shall show that (18) can be added to, thus ($\kappa=l^{-1}\dot\kappa$)
+\begin{equation}
+  -T_{(\zeta)}\zeta=V_1\kappa\omega^\times
+  =2\bigl(l^{-1}(\thetaPi f)_{(\zeta)}\zeta\bigr).
+  \tag{19}
+\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 173\end{center}
+where, as in Quaternions, $\thetaPi$ means the self-conjugate linity differential operator given by
+\begin{equation}
+  df=-V_0d\theta\zeta\,\thetaPi f\zeta
+  \tag{20}
+\end{equation}
+where $df$ is the increment in $f$ due to the arbitrary increment $d\theta$ in $\theta$. It is, therefore, not the linity $T^\bullet$, but, instead, the linity $T^{\bullet(t)}$ (= \emph{total energy linity} $=lT^{(t)}$) given by
+\begin{equation}
+  T^{\bullet(t)}=T^\bullet+2\thetaPi f
+  \tag{21}
+\end{equation}
+which may be supposed to be handed on through space by some kind of contact action, because from (19)
+\begin{equation}
+  T_{(\zeta)}^{(t)}\zeta=0.
+  \tag{22}
+\end{equation}
+As a matter of fact, we shall later, when considering gravitation, show that this equation can be transformed to the shape
+\[
+  \phi_9\nabla_9=0.
+\]
+
+\indent We will now prove (19) on our present hypothesis [$f$ as in (7)]. Let us, for brevity, use $v^\times$ as in (3a), §20; that is, we define $v^\times$ by
+\begin{equation}
+  v^\times=V_1\dot\kappa'\omega^\times=V_1(V_1\nabla\dot\omega')\omega^\times.
+  \tag{23}
+\end{equation}
+Since $l^{-1}f$ is invariant, and since, as we saw above, before equation (14), $l^{-1}\delta'l=V_0\nabla\epsilon$, where $\epsilon$ now, as in §15, expresses an infinitesimal change of co-ordinates, we have as with $\delta\dot\omega$ above in the equation following (14)
+\[
+  fV_0\nabla\epsilon_9+V_0\epsilon\nabla f=\delta f
+  =V_0\omega^\times\delta\dot\omega'-V_0\delta\theta\zeta\,\thetaPi f\zeta.
+\]
+$\delta\dot\omega'$ is given in the equation following (14) and $\delta'\theta$ is given in §15 as $-\chi_0'\theta-\theta\chi_0'$. Hence
+\begin{equation}
+  \begin{aligned}
+    fV_0\nabla\epsilon_9+V_0\epsilon\nabla f
+    &=V_0\omega_9^\times\bigl(V_2\nabla_9V_3\dot\omega'\epsilon_9+V_0\epsilon\nabla\mathbin{\cdot}\dot\omega'\bigr)\\
+    &\quad+V_0\bigl(2\epsilon_9\thetaPi f\nabla_9-\epsilon\thetaPi f\zeta\theta_9\zeta\mathbin{\cdot}V_0\epsilon\nabla_9\bigr).
+  \end{aligned}
+  \tag{24}
+\end{equation}
+Here $\epsilon$ and all the $n^2$ derivatives $(\nabla_9,\epsilon_9)$ of $\epsilon$ are arbitrary, so that we may put arbitrary dummies $\gamma$, $\alpha^\times$, $\beta$ for $\epsilon$, $\nabla_9$, $\epsilon_9$ respectively. From the dummy $\gamma$ we get
+\[
+  \nabla f=\nabla_9V_0\dot\omega'_9\omega^\times-\nabla_9V_0\theta_9\zeta\,\thetaPi f\zeta.
+\]
+This identity, satisfied by $f$, does not depend on the invariance of $f$. It is easily seen to be a direct consequence of the assumption that $f$ is a function of $\dot\omega$ and $\theta$. A useful result is obtained from it by modifying the first term on the right, thus
+\[
+  \begin{aligned}
+    \nabla_9V_0\dot\omega'_9\omega^\times
+    &=V_1(V_3\omega^\times\nabla_9)\dot\omega'_9+v^\times &&\text{[eq. (23)]}\\
+    &=V_1(V_3\omega_9^\times\nabla_9)\dot\omega'_9+v^\times &&\text{[eq. (13)]}\\
+    &=\bigl(-\dot M_9\nabla_9+\tfrac12\nabla V_0\dot\omega'\omega^\times\bigr)+v^\times &&\text{[eq. (8) §20]},
+  \end{aligned}
+\]
+whence
+\begin{equation}
+  \nabla f=-\dot M_9\nabla_9+\tfrac12\nabla V_0\dot\omega'\omega^\times+v^\times-\nabla_9V_0\theta_9\zeta\,\thetaPi f\zeta.
+  \tag{25}
+\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}174\hfill \textit{Prof. A. McAulay.}\end{center}
+From the dummy $\beta$ above in (24)
+\begin{equation}
+  \left.\begin{aligned}
+    f\alpha^\times&=V_1(V_3\omega^\times\alpha^\times)\dot\omega+2\thetaPi f\alpha^\times,\\
+    f&=-\dot M+\tfrac12V_0\dot\omega\omega^\times+2\thetaPi f
+  \end{aligned}\right\}
+  \tag{26}
+\end{equation}
+This is an identity (remember $\omega^\times$ is defined as $-\omega\mathbin{\cdot}\nabla f$) which we have proved $f$ to satisfy by reason of the invariance of $l^{-1}f$. Putting $\alpha^\times$ in (26) $=\nabla_9$ and subtracting (25), we get (19).
+
+\indent (26) shows that $\theta^{-1}\dot M$ is self-conjugate, which the reader will at first be inclined to claim as a highly satisfactory result. I am not inclined to dispute this so far as empty space is concerned, but for matter in bulk it is precisely what we do \emph{not} desire. If $\theta^{-1}\dot M$ is self-conjugate for matter in bulk, then crystalline transmission of light cannot be explained on Maxwell's theory.
+
+\indent To prove this, choose co-ordinates such that $\iota=\iota_4$; this requires co-ordinates which at the point under consideration reduce the medium to rest. Examine the case when the co-ordinates are Galilean, and Maxwell's equations become (1a), (2a), (3a) of §20. To translate $\dot M\alpha^\times$ into quaternion form, identify the multenion $\iota_2\iota_3$, $\iota_3\iota_1$, $\iota_1\iota_2$ with the quaternion $i$, $j$, $k$ and the multenion
+\[
+  \iota_1\iota_2\iota_3\iota_4=\upsilon
+\]
+with Hamilton's $\sqrt{-1}$ in his bi-quaternion $p+q\sqrt{-1}$. Thus $\dot\omega=\mathbf{H}+\upsilon\mathbf{D}$ and $\omega^\times=\mathbf{B}+\upsilon\mathbf{E}$. Indicate a ${}_nV_1$ such as $\alpha^\times$ by $(\sigma,s_4)$ where
+\[
+  \alpha^\times=\sum s_c\iota_c\quad(c=1,2,3,4),
+  \qquad \sigma=s_1i+s_2j+s_3k,
+\]
+and indicate a ${}_nV_3$ such as $\upsilon\alpha^\times$ by $\upsilon(\sigma,s_4)=(\upsilon\sigma,\upsilon s_4)$. Thus [compare (3) and (3a) of §20]
+\[
+  \begin{aligned}
+    V_1\alpha^\times\dot\omega
+      &=V_1(\sigma,s_4)(\mathbf{H}+\upsilon\mathbf{D})\\
+      &=(V\sigma\mathbf{H}+s_4\mathbf{D},-S\sigma\mathbf{D})=(\text{say})(\sigma',s_4'),\\
+    V_1(V_1\alpha^\times\dot\omega)\omega^\times
+      &=(V\sigma'\mathbf{B}+s_4'\mathbf{E},-S\sigma'\mathbf{E})\\
+      &=(V[V\sigma\mathbf{H}+s_4\mathbf{D}]\mathbf{B}-\mathbf{E}S\sigma\mathbf{D},-S\mathbf{E}[\sigma\mathbf{H}+s_4\mathbf{D}]).
+  \end{aligned}
+\]
+adding $-\tfrac12\alpha^\times V_0\dot\omega\omega^\times$ and making a slight quaternion reduction we obtain
+\[
+  \dot M\alpha^\times=\bigl(-\tfrac12V[\mathbf{H}\sigma\mathbf{B}+\mathbf{E}\sigma\mathbf{D}]+\tfrac12V\sigma V[\mathbf{H}\mathbf{B}+\mathbf{E}\mathbf{D}]+s_4V\mathbf{D}\mathbf{B},\quad S\sigma\mathbf{E}\mathbf{H}-\tfrac12s_4S[\mathbf{B}\mathbf{H}+\mathbf{E}\mathbf{D}]\bigr).
+\]
+\indent In the square array of sixteen scalars representing the linity $\dot M$ the fourth column contains the components of $V\mathbf{D}\mathbf{B}$, the fourth row contains those of $-V\mathbf{E}\mathbf{H}$, and the constituent in the fourth row and fourth column is $-\tfrac12S(\mathbf{B}\mathbf{H}+\mathbf{E}\mathbf{D})$. The other nine scalars are those of the vector linity of $\sigma$ in the expression for $\dot M\alpha^\times$ just written. Thus the conditions that $\theta^{-1}\dot M$ shall be self-conjugate are that
+\[
+  V\mathbf{D}\mathbf{B}=V\mathbf{E}\mathbf{H},\qquad V\mathbf{H}\mathbf{B}=V\mathbf{D}\mathbf{E}.
+\]
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 175\end{center}
+\indent [These, of course, amount to saying that $\mathbf D$ is parallel to $\mathbf E$ and $\mathbf B$ to $\mathbf H$.]
+
+\indent Now in a plane light wave $V\mathbf E\mathbf H$ is parallel to the ray and $V\mathbf D\mathbf B$ is normal to the wave front, so that to say that $V\mathbf D\mathbf B=V\mathbf E\mathbf H$ is to deny the possibility of double and conical refraction.
+
+\indent Our assumption that $f$ is a function of $\dot\omega$ and $\theta$ only is contrary to Maxwell's, which asserts that $N$ and $I$ enter into the relations between $\dot\omega$ and $\omega^\times$, that is $\iota$, as well as $\dot\omega$ and $\theta$ is a constituent variable of $f$. We may take $f$ to be an explicit function of $\dot\omega$, $\dot\phi=I\dot\omega$ and $\theta$. Its general increment $df$, may be written
+\[
+  df=-V_0d\dot\omega\mathbin{\cdot}(\dot\omega\mathbin{\cdot}\nabla)f
+     -V_0d\dot\phi\mathbin{\cdot}(\dot\phi\mathbin{\cdot}\nabla)f
+     -V_0d\theta\zeta\,(\thetaPi)f\zeta.
+\]
+where $(\dot\omega\mathbin{\cdot}\nabla)$, $(\dot\phi\mathbin{\cdot}\nabla)$ and $(\thetaPi)$ are all \emph{partial} differential coefficient operators, whereas $\dot\omega\mathbin{\cdot}\nabla$ and $\thetaPi$ by contrast are \emph{total} differential operators. Thus $\dot\omega\mathbin{\cdot}\nabla f$ comes partly from $(\dot\omega\mathbin{\cdot}\nabla)f$ and partly from $(\dot\phi\mathbin{\cdot}\nabla)f$, and again $\thetaPi f$ comes partly from $(\thetaPi)f$ and partly from $(\dot\phi\mathbin{\cdot}\nabla)f$ (because $\theta$ is involved in $\dot\phi$). However, there is a part of $-V_0d\dot\omega\mathbin{\cdot}(\dot\omega\mathbin{\cdot}\nabla)f$, involving $d\iota$, still standing over.
+
+\indent [In Maxwell's own case $(\dot\phi\mathbin{\cdot}\nabla)f=(-I+N)\omega^\times$ and we might assume this equation to hold in general, though this is not done below.] Writing this outstanding part as $-V_0d\iota\nabla f$ we shall have
+\[
+  df=-V_0d\iota\nabla f-V_0d\dot\omega\,\dot\omega\mathbin{\cdot}\nabla f-V_0d\theta\zeta\,\thetaPi f\zeta.
+\]
+Thus using $d\dot\omega'$, for the moment, to stand for the increment of $\dot\omega$ depending on $d\iota$ we have
+\[
+  \dot\omega'=V_2\iota V_1\theta\iota\dot\omega',
+\]
+\[
+  d\dot\omega'=V_2d\iota V_1\theta\iota\dot\omega'+V_2\iota V_1\theta d\iota\dot\omega',
+\]
+\[
+  -V_0d\iota\nabla f=df=-V_0d\iota\zeta\bigl\{V_1[V_1\theta\iota\dot\omega'](\dot\phi\mathbin{\cdot}\nabla)f+\theta V_1\dot\omega'V_1(\dot\phi\mathbin{\cdot}\nabla)f\zeta\bigr\}.
+\]
+Thus we may understand $\nabla f$ to mean as follows
+\begin{equation}
+  \left.\begin{aligned}
+    \nabla f&=\xi^\bullet\iota
+      =N\bigl\{V_1[V_1\theta\iota\dot\omega](\psi^\bullet\mathbin{\cdot}\nabla)f
+       +\theta V_1\dot\omega V_1(\psi^\bullet\mathbin{\cdot}\nabla)f\iota\bigr\},\\
+    \text{where}\quad \xi^\bullet\alpha&=N(\psi+\psi')\alpha,\qquad
+      \psi\alpha=\theta V_1\dot\omega V_1(\psi^\bullet\mathbin{\cdot}\nabla)f\alpha,\\
+    \text{and}\quad \xi^\bullet\iota&=((\xi^\bullet\iota)).
+  \end{aligned}\right\}
+  \tag{23a}
+\end{equation}
+
+\indent [\emph{Correction added September, 1921.}---$N$ was absent from equation (23a) as given in the original paper. If $N$ is omitted it is not necessarily true, but if $N$ is included it is necessarily true, that $\xi^\bullet\iota=((\xi^\bullet\iota))$. In the original presentation it was tacitly, and erroneously, assumed that $(\dot\omega\mathbin{\cdot}\nabla)f$, $(\psi^\bullet\mathbin{\cdot}\nabla)f$ and $(\thetaPi)f$ are always invariantive. They will doubtless be so when a proper invariantive form of $f$ has been selected, and it is desirable to make such a selection when possible and convenient. We will now show that, whether such a selection has been made or not, $\nabla f$, $\dot\omega\mathbin{\cdot}\nabla f$ and $\thetaPi f$ are always invariantive, that is to say $\nabla f$ is a covariant vector density, $\dot\omega\mathbin{\cdot}\nabla f$ is a covariant ${}_nV_2$, and $\thetaPi f$ is a
+
+\newpage\thispagestyle{empty}\begin{center}176\hfill \textit{Prof. A. McAulay.}\end{center}
+contraexco vector linity density. Let us put $\tau=x\iota$ where $x$ is an arbitrary invariant scalar function of position which we shall \emph{eventually} take to be $x=1$. Thus
+\begin{equation}
+  f=f(\dot\omega,\dot\psi,\theta)=f(\dot\omega,\Gamma'\dot\omega,\theta)
+  \tag{A}
+\end{equation}
+$\Gamma'$ being that definite explicit function of $\tau$ and $\theta$ which is given by ($\Omega=$ a contravariant ${}_nV_2$ dummy)
+\begin{equation}
+  \Gamma'\Omega=V_2\tau V_1\theta\tau\Omega/V_0\tau\theta\tau.
+  \tag{B}
+\end{equation}
+From this last $d\Gamma'$ can be expressed in terms of $d\theta$ and $d\tau$ (and it may be noticed in passing that since $\Gamma'$ is homogeneous and of degree zero both in $\theta$ and in $\tau$ we have by Euler's theorem for homogeneous functions
+\begin{equation}
+  V_0\tau_\tau\nabla_9\mathbin{\cdot}\Gamma_9'=0=V_0\theta\zeta_\theta\thetaPi_9\mathbin{\cdot}\Gamma_9'.
+  \tag{C}
+\end{equation}
+the first of these explaining the presence of $N$ in (23a), for it leads to $V_0\tau_\tau\nabla f=0$). We now have
+\begin{equation}
+  \left.\begin{aligned}
+    df&=-V_0d\dot\omega\mathbin{\cdot}(\dot\omega\mathbin{\cdot}\nabla)f-V_0d\dot\psi\mathbin{\cdot}(\psi^\bullet\mathbin{\cdot}\nabla)f-V_0d\theta\zeta\,(\thetaPi f)\zeta,\\
+      &=-V_0d\dot\omega\,\dot\omega\mathbin{\cdot}\nabla f-V_0d\tau_\tau\nabla f-V_0d\theta\zeta\,\thetaPi f\zeta
+  \end{aligned}\right\}
+  \tag{D}
+\end{equation}
+the second being derived from the first by finding $d\dot\psi$ from
+\[
+  d\dot\psi=\Gamma'd\dot\omega+d\Gamma'\mathbin{\cdot}\dot\omega,
+\]
+$d\Gamma'$ coming from (B). In the second of (D) $d\dot\omega$, $d\tau$ and $d\theta$ are all \emph{independently, arbitrary and invariantive} and therefore their coefficients,
+\[
+  \dot\omega\mathbin{\cdot}\nabla f,\qquad \tau\nabla f,\qquad \thetaPi f,
+\]
+are \emph{without ambiguity and are invariantive}. These last important deductions have been made possible by using $\tau$ instead of $\iota$. $\tau$ (and therefore $d\tau$) is a general contravariant vector whereas $\iota$ is restricted by the equation $V_0\iota\theta\iota=1$.
+
+\indent From the above we obtain by straightforward filling in of detail that
+\[
+  x_\tau\nabla f=(1-I)(\psi-\psi')\iota=\xi^\bullet\iota
+\]
+as given in equation (23a) above. Since $x_\tau\nabla f$ is independent in meaning of $x$, it is natural as in (23a) to write it in the form $\nabla f$.
+
+\indent I take this opportunity of suggesting what is the proper form of $f$ \emph{in vacuo} and inside matter. \emph{In vacuo} we have
+\[
+  f=V_0\dot\omega\theta^{-1}\dot\omega=l^{-1}V_0\omega^\times\theta\omega^\times.
+\]
+Now $\theta=N\theta N'+I\theta I'$ so that
+\[
+  lf=V_0(N'\omega^\times)\theta(N'\omega^\times)+V_0(I'\omega^\times)\theta(I'\omega^\times).
+\]
+I would suggest that inside matter
+\begin{equation}
+  lf=V_0(N'\omega^\times)\xi(N'\omega^\times)+V_0(I'\omega^\times)\xi(I'\omega^\times)
+  \tag{E}
+\end{equation}
+where $\xi$ is a function of $\theta$ and of position $(p)$ only. Thus
+\begin{equation}
+  lf=V_0\omega^\times(N\xi N'+I\xi I')\omega^\times.
+  \tag{F}
+\end{equation}
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 177\end{center}
+Without loss of generality $\xi$ may be replaced first by its self-conjugate part $\tfrac12(\xi+\xi')$ since (E) is thereby unchanged, and next by the part
+\[
+  \tfrac12[N(\xi+\xi')N'+I(\xi+\xi')I']
+\]
+since (F) is thereby unchanged. With $n=4$ the general $\xi$ would involve 36 scalars, but the part we have finally reached involves only 12 scalars, namely 6 for $N(\xi+\xi')N'$ and 6 for $I(\xi+\xi')I'$. We may, as a special case, take $\xi=A\theta A'$ where $A$ is a coexco linity function of position.]
+
+\indent We have to add to the right of (24), (25), and (26) the following marked (24a), (25a), (26a) respectively:
+\[
+  V_0\epsilon\xi^\bullet\iota\mathbin{\cdot}V_0\iota\nabla_9-V_0\epsilon\nabla_8\mathbin{\cdot}V_0\iota_8\xi^\bullet\iota,\tag{24a}
+\]
+\[
+  -\nabla_8\mathbin{\cdot}V_0\iota_8\xi^\bullet\iota,\tag{25a}
+\]
+\[
+  \xi^\bullet\iota\mathbin{\cdot}V_0\iota\alpha^\times.\tag{26a}
+\]
+(15) and (19) also are modified by $V_1\kappa\omega^\times$ changing to
+\[
+  -lT_{(\zeta)}\zeta=V_1\kappa\omega^\times-\nabla_9V_0\iota_9\xi^\bullet\iota-(\xi^\bullet\iota)_9V_0\iota_9\nabla_9.\tag{15a and 19a}
+\]
+I think there can be no doubt\footnote{Especially in view of the paper twice referred to above: ``The Mechanical Forces \ldots\ in an Electromagnetic Field.''} that this amendment is the true expression for the force, cum power, per unit volume. It will be observed that no change occurs in the total energy linity $T^{\bullet(t)}=T^\bullet+2\thetaPi f$.
+
+\indent Pass now to the variation $\delta\theta=\theta_0$. There is no trouble in supplementing (15) and (17) with the $\theta_0$ parts since no integration by parts is here involved. Thus since $\dot m=\sqrt{(V_0\dot\mu\theta\dot\mu)}$, $\delta\dot m=\tfrac12V_0\iota\theta_0\dot\mu$, and
+\begin{equation}
+  (\theta_0\text{ part})\quad\delta(\dot m+f)=-\tfrac12V_0\theta_0\zeta\theta^{-1}T^{\bullet(t)}\zeta.
+  \tag{27}
+\end{equation}
+$G$ and $G^\bullet(=lG)$ are functions of $\theta$ and its first and second derivatives $(\nabla)$, and therefore of $\theta^\bullet$ and its first and second derivatives, where $\theta^\bullet=l\theta^{-1}$. Let $\theta^\bullet$ receive any infinitesimal increment $\delta\theta^\bullet$. At one part of our work we shall assume $\delta\theta^\bullet$ to have the meaning corresponding to $\delta\theta=\theta_0$ of equation (8); at another part $\delta\theta^\bullet$ will mean the actual increment $d\theta^\bullet=-V_0\alpha\nabla\mathbin{\cdot}\theta^\bullet$ of $\theta^\bullet$ on passing from the position $p$ to the position $p+d p=p+\alpha$ in the manifold; on some other occasion it may mean some combination of these; in a word, $\delta\theta^\bullet$ is any conceivable defined infinitesimal increment of $\theta^\bullet$. The following two equations are true:---
+\[
+  G^\bullet=-V_0\Omega\zeta\theta^\bullet\zeta=-V_0\nabla(F_\zeta\theta^\bullet\zeta-\theta^\bullet F_\zeta'\zeta)-V_0\zeta\theta^\bullet(F_{\zeta1}'F_{\zeta}'-F_{\zeta}'F_{\zeta1}')\zeta_1,\tag{28}
+\]
+\[
+  -V_0\Omega\zeta\delta\theta^\bullet\zeta=-V_0\nabla(F_\zeta\delta\theta^\bullet\zeta-\delta\theta^\bullet F_\zeta'\zeta)-\delta\mathbin{\cdot}V_0\zeta\theta^\bullet(F_{\zeta1}'F_{\zeta}'-F_{\zeta}'F_{\zeta1}')\zeta_1.\tag{29}
+\]
+The great similarity between these equations is connected with the fact that the second term on the right of (28) is a function homogeneous and
+
+\newpage\thispagestyle{empty}\begin{center}178\hfill \textit{Prof. A. McAulay.}\end{center}
+quadratic in the derivatives $(\nabla_9,\theta^\bullet_9)$, and also homogeneous and of degree $-1$ in $\theta^\bullet$; (28) may, as a matter of fact, be derived from (29) by means of this property if attention is paid to symmetry in $\nabla_9$, $\theta^\bullet_9$, and $\nabla_8$, $\theta^\bullet_8$, in the quadratic terms of the form $(\nabla_9,\theta^\bullet_9,\nabla_8,\theta^\bullet_8)$. The proof of (29) is here outlined, and the proof of (28) is similar and simpler. From (24) of \S\,16 (remember $F_\zeta'\zeta=l^{-1}\nabla l$)
+\[
+  \begin{aligned}
+  -V_0\Omega\zeta\delta\theta^\bullet\zeta={}&-V_0\nabla(F_\zeta\delta\theta^\bullet\zeta-\delta\theta^\bullet F_\zeta'\zeta)
+    -V_0\delta\theta^\bullet_9\nabla_9F_\zeta'\zeta+V_0\delta\theta^\bullet_9\zeta F_\zeta'\nabla_9\\
+   &{}-V_0\delta\theta^\bullet\zeta(-F_{\zeta1}'F_\zeta'+F_\zeta'F_{\zeta1}')\zeta_1.
+  \end{aligned}
+\]
+Comparing this with (29), putting $F_\zeta'\zeta=\sigma$, and noting that
+\[
+  F_\zeta\theta^\bullet\zeta=-\theta^\bullet_9\nabla_9,\qquad
+  \delta(F_\zeta\theta^\bullet\zeta)=-(\delta\theta^\bullet)_9\nabla_9
+  \tag{30}
+\]
+it will be seen that we still have to prove that
+\[
+  \begin{aligned}
+  -\delta\mathbin{\cdot}V_0\zeta\theta^\bullet(F_{\zeta1}'F_\zeta'\zeta_1-F_\zeta'\sigma)
+  ={}&V_0\sigma\delta(F_\zeta\theta^\bullet\zeta)\\
+   &{}+V_0\delta\theta^\bullet_9\zeta F_\zeta'\nabla_9
+    +V_0\delta\theta^\bullet\zeta(F_{\zeta1}'F_\zeta'\zeta_1-F_\zeta'\sigma).
+  \end{aligned}
+\]
+The only term that gives any trouble is the first on the left. In it $F_\zeta'\zeta_1$ and $\zeta$ may be interchanged because $F_\zeta'\zeta_1$ is self-conjugate in $\zeta$. Thus the term is
+\[
+  -\delta\mathbin{\cdot}V_0F_\zeta'\zeta_1\delta(\theta^\bullet F_{\zeta1}')\zeta
+  =-2V_0F_\zeta'\zeta_1\delta(\theta^\bullet F_{\zeta1}')\zeta+V_0F_\zeta'\zeta_1(\delta\theta^\bullet)F_{\zeta1}'\zeta.
+\]
+Here, in the first term on the right, we need only consider the self-conjugate part of $\delta(\theta^\bullet F_{\zeta1}')$ because $F_\zeta'\zeta_1$ is self-conjugate in $\zeta$. This self-conjugate part is simple for
+\[
+  \theta^\bullet F_\beta'+F_\beta\theta^\bullet=lV_0\beta\nabla\mathbin{\cdot}\theta^{-1}=V_0\beta\nabla\mathbin{\cdot}\theta^\bullet-\theta^\bullet V_0\beta\sigma.
+\]
+When this is used the rest of the reduction is straightforward.
+
+\indent The first of (30) may be used to modify three terms in (28) and (29). Similarly, $F_\zeta'\zeta=l^{-1}\nabla l$ may be used to modify four terms.
+
+\indent Assuming now the truth of (28) and (29) the gravitational part of the action in (6) may be put
+\[
+  \int^n\!\int(cl-\tfrac12G^\bullet)\,db=-\tfrac12\int^{n-1}\!\int V_0(\theta^\bullet_9\nabla_9+l^{-1}\nabla l)\,d\alpha+\int^n\!\int g^\bullet\,db
+  \tag{31}
+\]
+where
+\[
+  g^\bullet=cl+\tfrac12V_0\zeta\theta^\bullet(F_{\zeta1}'F_\zeta'-F_\zeta'F_{\zeta1}')\zeta_1.
+  \tag{32}
+\]
+Using (27) and (29), the last for preparing $\delta g^\bullet$ for integration by parts, we have since
+\[
+  l^{-1}\delta l=-\tfrac12V_0\zeta\theta_0\theta^{-1}\zeta,\qquad
+  \delta\theta^\bullet=-\theta^\bullet(\theta_0\theta^{-1}+\tfrac12V_0\zeta\theta_0\theta^{-1}\zeta)
+  \tag{33}
+\]
+that
+\[
+  0=\delta\int^n\!\int Wdb=-\tfrac12\int^n\!\int db\,V_0\theta^\bullet\theta_0\zeta\{T^{(t)}+(C+\tfrac12V_0\zeta_1C\zeta_1)+c\}\zeta
+\]
+where $C$ stands for $\Omega\theta^{-1}$ and not for the conjugate $\theta^{-1}\Omega$ (we have in either case $V_0\zeta C\zeta=-G$). Hence
+\[
+  T^{(t)}+(C+\tfrac12V_0\zeta C\zeta)+c=0.
+  \tag{34}
+\]
+Since $T_{(\zeta)}^{(t)}\zeta=0$ by (22) it follows that
+\[
+  (C-\tfrac12G)_{(\zeta)}\zeta=C_{(\zeta)}\zeta+\tfrac12V\nabla V_0\zeta C\zeta=0.
+  \tag{35}
+\]
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 179\end{center}
+\indent (35) has appeared incidentally in our application of stationary action, but it is really an identity satisfied by $C$ that has nothing to do with stationary action. That this is the case is proved by help of (28) and (29), from the fact that $G$ is an invariant in just the same manner as the identity (26), satisfied by $f$, was proved. Conversely, if we had chosen to establish this identity in the manner indicated (34) would furnish us with a second proof that $T_{(\zeta)}^{(t)}\zeta=0$.
+
+\indent From (29) we get another identity of importance in connection with the conservation of energy. Let the $\delta$ of (29) stand for $-V_0\alpha\nabla\mathbin{\cdot}(\ )$, and let (29) thus come to read $V_0\alpha\sigma^\times=0$. We have, of course, $\sigma^\times=0$. If the reader will write out in full the meaning of this identity he will find it can be expressed thus. [Contrary to the conventions of these papers, $t^\bullet$ is here used to denote a vector linity, because $t$ is similarly used by writers on Relativity for the corresponding ``pseudo-tensor.''] If
+\[
+  2t^\bullet\alpha^\times=-\nabla_9V_0\alpha^\times(F_\zeta\theta^\bullet_9\zeta-\theta^\bullet_9F_\zeta'\zeta)-\alpha^\times V_0\zeta\theta^\bullet(F_{\zeta1}'F_\zeta'-F_\zeta'F_{\zeta1}')\zeta_1
+  \tag{36}
+\]
+we have the identity
+\[
+  2t^\bullet_9\nabla_9=\nabla_9V_0\zeta\theta^\bullet\theta^{-1}(C-\tfrac12G^\bullet)\zeta=-2(C-\tfrac12G^\bullet)_9\nabla_9
+  \tag{37}
+\]
+by (35) just written, and (19) \S\,15.
+
+\indent The conservation of energy is regarded as the interpretation of the equation
+\[
+  0=(T^{\bullet(t)}+t^\bullet)_9\nabla_9=(T^\bullet+2\theta\thetaPi f+t^\bullet)_9\nabla_9
+  \tag{38}
+\]
+where $T^\bullet$ comes from $\dot m$ (matter), $2\theta\thetaPi f$ comes from $f$ (the electromagnetic field), and $t^\bullet$ comes from the gravitational field. $t^\bullet$ is the only one of our many symbols which is not invariantive. [The reader might suppose that the terms in (19a) above, which involve $\nabla_9$, are not invariantive, but it is not difficult to show directly that they are.]
+
+\indent A little reflection will show that \emph{the two identities (35) and (37) hold in Weyl's manifold} as well as in Riemann's. For $C$, $G$ and $F_\beta$ we have, in the notation of \S\,18, to read ${}^aC$, ${}^aG$ and ${}^aE_\beta$.
+
+\indent \textsc{\S 22. \emph{A Matter that has been Overlooked.}}---I forgot to describe in the second paper a process I frequently use in my MS. work. It may prove useful to others, and is especially convenient when $n=4$. I am reminded of it by the $w^\bullet(=V_3w^\bullet)$ of (9) \S\,21. The use of $w^\bullet$, a contravariant \emph{density} may be replaced by a complementary (${}_nV_a$ replaced by a ${}_nV_{n-a}$) covariant multenion (not density); and, similarly, a covariant anti-density may be replaced by a complementary contravariant multenion; this latter is the replacement we are already familiar with of $d p_a$ by $d s_{n-a}$ and conversely.
+
+\indent $l\dot v$ (where $\dot v=\iota_1\iota_2\ldots\iota_n$) is a covariant multenion. More generally, $xl\dot v$ where $x$ is invariant is a covariant multenion; and its reciprocal (of form
+
+\newpage\thispagestyle{empty}\begin{center}180\hfill \textit{Prof. A. McAulay.}\end{center}
+$yl^{-1}\dot v$ where $y$ is any invariant) is a contravariant multenion. It easily follows that the two linities
+\[
+  \Upsilon=l\dot v(\ ),\qquad \Upsilon^{-1}=l^{-1}\dot v^{-1}(\ )
+  \tag{1}
+\]
+are the one a $c/\invc$ and the other a $\invc/c$, that is, of the same types as $\theta$ and $\theta^{-1}$. As an example, $\Upsilon\omega^\bullet$ above ($n=4$) is a covariant vector density; multiplying by $l^{-1}$, $\dot v\omega^\bullet$ or $\omega^\bullet\dot v^{-1}$ is a covariant vector, $=\sigma^\times$ say. Thus, in (9),
+\[
+  \delta\omega^\bullet=V_2\nabla\omega^\bullet=V_2\nabla(\sigma^\times\dot v)=V_2\nabla\sigma^\times\mathbin{\cdot}\dot v.
+\]
+[When $n=4$ the complement of a ${}_4V_2$ is a second ${}_4V_2$.] This serves to indicate that our use of $V_2\nabla w^\bullet$ is not far different from the usual use of $\omega^\times=V_2\nabla\lambda$, $\delta\omega^\times=V_2\nabla\delta\lambda$. [As a matter of fact, the $f(\omega^\bullet,\theta)$ used above, and the corresponding usual expression involving $\lambda$, can be shown to be ``reciprocal'' functions in Routh's sense.]
+
+\indent [\emph{Added August, 1922.}---Let us illustrate both the methods of the present section and those of the ``digression'' in \S\,18 at the end of the second paper by considering the contractions of a certain identity,\footnote{``A New Identity affecting Questions in Relativity; and some Cognate Matters.'' A paper despatched to the \emph{Phil. Mag.}, in January, 1922, which as yet I have not seen in print.} namely,
+\[
+  V_3\zeta\varpi_\zeta'\omega=0,
+  \tag{2}
+\]
+or as we will here write it
+\[
+  V_3\zeta\varpi_\zeta'\eta^{-1}V_2\gamma^\times\epsilon^\times=0=V_3\zeta(\varpi_\zeta'\eta^{-1})_\zeta V_2\gamma^\times\epsilon^\times.
+  \tag{3}
+\]
+where $\varpi$ has the meaning given in \S\,16 above for a Weyl manifold. (The suffix $\zeta$ denotes absolute differentiation \emph{proper}.) This may be contracted twice, the contractions being obtained from the modification of (3),
+\[
+  V_0(V_3\alpha\beta\delta)(V_3\zeta\varpi_\zeta'\eta^{-1}V_2\gamma^\times\epsilon^\times)=0,
+  \tag{3a}
+\]
+by first setting $\delta,\epsilon^\times=\zeta_1,\zeta_1$, and then setting $\beta,\gamma^\times=\zeta_2,\zeta_2$; finally writing $V_2\zeta_2\zeta_1=\zeta_2''$. The contractions are
+\[
+  V_2\zeta_1V_3\zeta\varpi_\zeta'\eta^{-1}V_2\gamma^\times\zeta_1=0.
+  \tag{4}
+\]
+\[
+  V_1\zeta_2''V_3\zeta\varpi_\zeta'\eta^{-1}\zeta_2''=0.
+  \tag{5}
+\]
+(5) is the well-known identity (known, that is, in a Riemann manifold) numbered (35) in \S\,21 above. (3) asserts that a certain ${}_nV_3/{}_nV_2$ multenion linity (that is, a linity which acts solely on an arbitrary ${}_nV_2$ and converts it to a ${}_nV_3$) vanishes, (4) that a ${}_nV_2/{}_nV_1$ vanishes, and (5) that a vector vanishes.
+
+\indent Consider the number of scalar equations involved in the case of the Riemann manifold. The three identities are relations among the $\tfrac12n^3(n^2-1)$ first differential coefficients of $\varpi$. (3) is equivalent to ${}_nC_3\mathbin{\cdot}{}_nC_2$ scalar equations
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 181\end{center}
+(4) to ${}_nC_2\mathbin{\cdot}n$ such equations; and (5) to $n$ such. The cases of $n=3$ and $n=4$ are particularly instructive. With $n=3$ there are 18 differential coefficients and the other three numbers in order are 3, 9, 3; and when $n=4$ there are 80 differential coefficients, and the three numbers in order are 24, 24, 4.
+
+\indent In the case of $n=3$ there cannot, of course, really be nine independent equations resulting from the first contraction, since only three independent equations are given by (3). The details of this case are not difficult and may be left to the reader.
+
+\indent In the case of $n=4$, the relativity case, the two numbers 24, 24 above suggest that perhaps the original equation (3) and its first contraction (4) are mathematically equivalent to one another, and this proves to be true. Put $F(\ )$ for the $V_3\zeta\varpi_\zeta'\eta^{-1}(\ )$ occurring in (3), (4), (5), so that $F$ is a $(c.{}_nV_3)/(c.{}_nV_2)$, from which we deduce that $F'$ is a $(\invc.{}_nV_2)/(\invc.{}_nV_3)$, that $\Upsilon F'\Upsilon^{-1}$ is a $(c.{}_nV_2)/(c.{}_nV_3)$, and so on.
+
+\indent The contractions (4) and (5) of $F$ are
+\[
+  H\gamma^\times=V_2\zeta FV_2\gamma^\times\zeta,
+  \tag{4a}
+\]
+where $H$ is a $(c.{}_nV_2)/(c.{}_nV_1)$, and
+\[
+  \sigma^\times=V_1\zeta H\zeta=V_1\zeta_2''F\zeta_2'',
+  \tag{5a}
+\]
+$H$ and $\sigma^\times$, which are introduced for brevity, are \emph{defined} by (4a) and (5a).
+
+\indent Now, presumptively, both $F$ and $H$ involve twenty-four independent scalars ($F$ may be supposed by definition to involve the twenty-four, but $H$ might possibly involve fewer, as when above we put $n=3$), so that it appears probable that in the special case $n=4$ (and also $n=3$, but \emph{certainly} not in general for $n>4$) that not only can $H$ be expressed in terms of $F$, but also $F$ can be expressed in terms of $H$. Actually I find that
+\[
+  \Upsilon H'\Upsilon^{-1}\omega^\times=\tfrac12V_3\omega^\times\sigma^\times+F\omega^\times,
+  \tag{6}
+\]
+where $\omega^\times$ is a dummy, and $\sigma^\times$ may be expressed either in terms of $F$ or in terms of $H$. From (6), then, we easily express $F$ in terms of $H$. I do not think I have found the simplest way to (6), namely by aid of a rectangular array of twenty-four scalars specifying $F$. [In the verification of (6) we need not cumber ourselves with the inconvenience of the signs in
+\[
+  \iota_1^2=\iota_2^2=\iota_3^2=-\iota_4^2.
+\]
+It is legitimate to work with $\iota_1$, $\iota_2$, $\iota_3$, $\iota_4$, for which each $\iota_a^2=-1$.]
+
+\indent The following can also be proved. If with $n=4$, $F$ is a $(c.{}_4V_2)/(c.{}_4V_2)$, that is a ${}_4V_3$ coexco linity, and if $H$ is its first contraction and $f$ its second according to the equations
+\[
+  \left.\begin{aligned}
+    H\beta^\times&=V_1\zeta FV_2\beta^\times\zeta,\\
+    f&=-V_0\zeta H\zeta=-V_0\zeta_2''F\zeta_2''
+  \end{aligned}\right\}
+  \tag{7}
+\]
+
+\newpage\thispagestyle{empty}\begin{center}182\hfill \textit{Multenions and Differential Invariants.}\end{center}
+then, putting $C$ for the contractile part of $F$ (so that $F-C$ is the non-contractile part) we have
+\[
+  \left.\begin{aligned}
+    C\omega^\times&=\tfrac12(F-\Upsilon F'\Upsilon^{-1}+\tfrac16f)\omega^\times\\
+      &=\tfrac12V_2\zeta HV_1\omega^\times\zeta-\tfrac16f\mathbin{\cdot}\omega^\times
+  \end{aligned}\right\}
+  \tag{8}
+\]
+where $\omega^\times$ is a dummy. If in (7) and (8) $F$ is put equal to $\varpi\eta^{-1}$, or $\varpi'\eta^{-1}$, or $\varpi\theta^{-1}$, the contractions are the familiar contractions of the curvature.
+
+\indent It should here be stated that throughout the above and also in general work with contractions the contractile parts can always be written down from the following easily verified statements. If $(\beta,\gamma)$, $(\beta,\gamma^\times)$ and $(\beta^\times,\gamma^\times)$ stand for any bilinear invariant forms in two vectors then the contractile parts of the forms are
+\[
+  -n^{-1}(\zeta,\eta^{-1}\zeta)V_0\beta\eta\gamma,\qquad
+  -n^{-1}(\zeta,\zeta)V_0\beta\gamma^\times,\qquad
+  -n^{-1}(\zeta,\eta\zeta)V_0\beta^\times\eta^{-1}\gamma^\times
+\]
+respectively.
+
+\indent With the design of trying to avoid future chaos in notation I venture to recommend a development of notation to users of the present methods.
+
+\indent The single letter symbol $\omega$ is not sufficient provision for the ${}_nV_2$ meaning. Also we have an insufficient supply of letter symbols for scalars. Let us release $p$, $q$, $r$, $s$, $u$, $v$, $w$ for scalar use and provide several letters for the ${}_nV_2$ meaning. I recommend that most of the small letters in Clarendon type be ear-marked as follows. Use
+\[
+  \mathbf{p},\ \mathbf{q},\ \mathbf{r},\ \mathbf{s}
+\]
+for general multenions;
+\[
+  \mathbf{a},\ \mathbf{b},\ \mathbf{c}
+\]
+for the ${}_nV_a$, ${}_nV_b$, ${}_nV_c$ meanings;
+\[
+  \mathbf{f},\ \mathbf{g},\ \mathbf{h},\ \mathbf{i},\ \mathbf{j},\ \mathbf{k}
+\]
+for the ${}_nV_2$ meaning. [With $n=4$ we may take
+\[
+  (\mathbf{i},\mathbf{j},\mathbf{k})=(\iota_2\iota_3,\iota_3\iota_1,\iota_1\iota_2).]
+\]
+Also use $\mathbf{l}$, $\mathbf{m}$, $\mathbf{n}$ for the ${}_nV_3$ meaning. $\mathbf{d}$, $\mathbf{e}$, $\mathbf{t}$, $\mathbf{u}$, $\mathbf{v}$, $\mathbf{w}$, $\mathbf{x}$, $\mathbf{y}$, $\mathbf{z}$ may be left for analogous uses as experience guides. Similarly occasional use may be made of capitals in Clarendon type, or perhaps such capitals had better be reserved for vectors in a quaternion system, as with $\mathbf{A}$, $\mathbf{B}$, $\mathbf{C}$, $\mathbf{D}$, $\mathbf{E}$, $\mathbf{F}$, $\mathbf{H}$, $\mathbf{K}$ above (and, in other papers recently forwarded, $\mathbf{V}=$ velocity and $\mathbf{U}=$ unit radial vector).
+
+\newpage\thispagestyle{empty}\begin{center}\textit{Multenions and Differential Invariants.}\hfill 183\end{center}
+{\renewcommand\thefootnote{\fnsymbol{footnote}}\setcounter{footnote}{0}
+\indent Is it a vain hope that the publication of the present papers may encourage some young mathematician to ``cultivate Hamilton's garden,'' his \emph{linear associative vector algebra}, in spite of the genial sneers of Weyl and Eddington who virtually thank the Lord that \emph{their} hands need not be soiled by this ``somewhat forbidding''\footnote{Eddington's \emph{Report on Relativity}, preface to first edition, reproduced in second edition.}---hah---``orgy of''\footnote{English translation by Brose of Weyl's \emph{Space, Time, Matter}, p. 54.} agricultural labour? During 30 years and more I have often glanced over the hedge and wondered sadly why fellow workers should be content to turn over the, perhaps lighter, but incomparably less fertile, patches in the immediate neighbourhood of the garden.}
+
+\end{document}
