@@ -235,3 +235,16 @@ It does not yet contain:
 3. Run the benchmark protocol on hardware.
 4. Record timing, power, and code-size results in `paper/results.md`.
 5. Revise the manuscript claim to match measured evidence.
+
+## Multenions
+
+Multenions would be useful mainly in fields that model systems with many coupled quantities or higher-dimensional symmetries. Likely areas include:
+
+* Pure mathematics: abstract algebra, number systems, linear algebra, geometry, and higher-dimensional analysis.
+* Theoretical physics: spacetime models, symmetry groups, quantum theory, and extensions of familiar number systems such as complex numbers, quaternions, and octonions.
+* Computer graphics and robotics: representing rotations, orientations, transformations, and multidimensional data—although quaternions are much more established for these tasks.
+* Engineering and control theory: modeling systems with many interacting variables, provided multenion algebra gives a simpler formulation than matrices or vectors.
+* Signal processing and data science: potentially representing multichannel signals or high-dimensional data compactly.
+* Mathematical biology: modeling interacting components in cellular, neural, or biological systems, if the multenion structure matches the problem.
+
+At present, multenions appear to be a specialized or nonstandard mathematical framework rather than a widely used scientific tool. Their practical usefulness depends on the exact definition and algebraic rules. The most established applications of related hypercomplex systems are in physics, computer graphics, robotics, signal processing, and control engineering; claims about specific multenion applications should therefore be treated as research-level rather than standard practice.
